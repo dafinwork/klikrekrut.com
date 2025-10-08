@@ -48,46 +48,53 @@
 <!-- Bootstrap Icons -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
 
-<!-- Header -->
-<header class="header fixed-top">
+<!-- ==================== BAGIAN HEADER WEBSITE ==================== -->
+<header class="header fixed-top"> <!-- Bagian paling atas situs yang selalu terlihat saat di-scroll -->
   <div class="container d-flex justify-content-between align-items-center py-2">
+    <!-- Container untuk merapikan posisi logo dan menu -->
 
-    <!-- Logo -->
-    <a href="/" class="logo d-flex align-items-center">
-      <img src="assets/img/footer.png" alt="Klikrekrut Logo" class="logo-full" />
+    <!-- ==================== LOGO ==================== -->
+    <a href="/" class="logo d-flex align-items-center"> <!-- Saat logo diklik, akan kembali ke halaman utama -->
+      <img src="assets/img/footer.png" alt="Klikrekrut Logo" class="logo-full" /> <!-- Gambar logo Klik Rekrut -->
     </a>
 
-    <!-- Mobile Toggle -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <!-- ==================== TOMBOL BURGER UNTUK MOBILE ==================== -->
+    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i> <!-- Ikon garis tiga (burger menu) muncul di layar kecil -->
 
-<!-- Nav Menu -->
-<nav id="navmenu" class="navmenu">
-  <ul>
-    <li><a href="/">Services</a></li>
-    <li><a href="elearning">E-learning</a></li>
-    <li><a href="applypartner">Apply as partner</a></li>
-    <li>
-<a href="https://chat.whatsapp.com/I3mvornLsmv96QiwlcLctQ?mode=ems_copy_t" 
-   target="_blank" 
-   rel="noopener noreferrer"
-   class="btn btn-outline-light wa-btn rounded-pill px-3 py-1 d-flex align-items-center gap-2">
-    Join to Community
-</a>
+    <!-- ==================== MENU NAVIGASI ==================== -->
+    <nav id="navmenu" class="navmenu"> <!-- Bagian menu utama -->
+      <ul> <!-- Daftar menu -->
+        <li><a href="/">Services</a></li> <!-- Menu untuk halaman Services -->
+        <li><a href="elearning">E-learning</a></li> <!-- Menu untuk halaman E-learning -->
+        <li><a href="applypartner">Apply as partner</a></li> <!-- Menu untuk halaman pendaftaran mitra -->
+
+        <!-- Tombol ajakan gabung komunitas -->
+        <li>
+          <a href="https://chat.whatsapp.com/I3mvornLsmv96QiwlcLctQ?mode=ems_copy_t" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="btn btn-outline-light wa-btn rounded-pill px-3 py-1 d-flex align-items-center gap-2">
+            Join to Community <!-- Teks tombol -->
+          </a>
         </li>
       </ul>
-    </nav>
-  </div>
-</header>
+    </nav> <!-- Akhir nav -->
+  </div> <!-- Akhir container -->
+</header> <!-- Akhir header -->
 
-<!-- Overlay untuk mobile -->
- <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const joinBtn = document.getElementById("joinBtn");
-    joinBtn.addEventListener("click", function (e) {
-      // Tambahkan kelas loading
-      this.classList.add("loading");
+<!-- ==================== OVERLAY UNTUK MOBILE ==================== -->
+<!-- Overlay ini muncul saat menu mobile dibuka agar latar belakang jadi gelap -->
+<div class="mobile-nav-overlay"></div>
 
-      // Optional: kalau mau otomatis balik normal setelah 3 detik
+<!-- ==================== SCRIPT UNTUK EFEK LOADING TOMBOL KOMUNITAS ==================== -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () { // Jalankan setelah halaman selesai dimuat
+    const joinBtn = document.getElementById("joinBtn"); // Cari tombol dengan id "joinBtn"
+
+    joinBtn.addEventListener("click", function (e) { // Saat tombol diklik
+      this.classList.add("loading"); // Tambahkan efek “loading” (animasi bisa diatur di CSS)
+
+      // Optional: kembalikan tombol ke normal setelah 3 detik
       // setTimeout(() => {
       //   this.classList.remove("loading");
       // }, 3000);
@@ -95,67 +102,74 @@
   });
 </script>
 
-<!-- Overlay untuk mobile -->
-<div class="mobile-nav-overlay"></div>
+<!-- ==================== SCRIPT UNTUK MENU MOBILE ==================== -->
 <script>
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggle = document.querySelector(".mobile-nav-toggle");
-    const navmenu = document.getElementById("navmenu");
-    const overlay = document.querySelector(".mobile-nav-overlay");
+  document.addEventListener("DOMContentLoaded", function () { // Pastikan semua elemen sudah siap
+    const toggle = document.querySelector(".mobile-nav-toggle"); // Ikon burger (garis tiga)
+    const navmenu = document.getElementById("navmenu"); // Bagian menu navigasi
+    const overlay = document.querySelector(".mobile-nav-overlay"); // Latar gelap di belakang menu
 
+    // Saat tombol burger diklik
     toggle.addEventListener("click", () => {
-      navmenu.classList.toggle("active");
-      overlay.classList.toggle("active");
+      navmenu.classList.toggle("active"); // Tampilkan atau sembunyikan menu
+      overlay.classList.toggle("active"); // Tampilkan atau sembunyikan overlay
 
-      // Ganti ikon burger ↔ X
+      // Ganti ikon burger jadi tanda X, dan sebaliknya
       toggle.classList.toggle("bi-list");
       toggle.classList.toggle("bi-x");
     });
 
+    // Saat area overlay diklik (di luar menu)
     overlay.addEventListener("click", () => {
-      navmenu.classList.remove("active");
-      overlay.classList.remove("active");
-      toggle.classList.add("bi-list");
+      navmenu.classList.remove("active"); // Tutup menu
+      overlay.classList.remove("active"); // Hilangkan overlay
+      toggle.classList.add("bi-list"); // Kembalikan ikon jadi burger
       toggle.classList.remove("bi-x");
     });
   });
 </script>
-</script>
 
+<!-- ==================== BAGIAN UTAMA HALAMAN ==================== -->
+<main class="main"> <!-- Semua konten halaman utama akan dimulai di sini -->
 
-<main class="main">
 <!-- Tambahkan di layout atau halaman -->
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 
-<!-- HERO SECTION -->
-<section id="hero" class="hero-section">
-    <div class="container text-center hero-content">
-        <!-- Judul -->
-        <h1 class="hero-title">
-            Platform Belajar Rekrutmen: <br>
-            Satu Skill untuk Pekerja dan Perekrut
+<!-- ==================== HERO SECTION ==================== -->
+<section id="hero" class="hero-section"> <!-- Bagian utama hero di halaman depan -->
+    <div class="container text-center hero-content"> <!-- Pembungkus isi hero, teksnya ditengah -->
+
+        <!-- ==================== JUDUL UTAMA ==================== -->
+        <h1 class="hero-title"> <!-- Judul besar di bagian hero -->
+            Platform Belajar Rekrutmen: <br> <!-- Teks utama baris pertama -->
+            Satu Skill untuk Pekerja dan Perekrut <!-- Teks utama baris kedua -->
         </h1>
 
-        <!-- Tombol -->
-        <a href="#materi" class="btn-hero">
-            Jelajahi Materi
-            <img src="assets/img/panahputih.png" alt="Panah" class="btn-icon">
+        <!-- ==================== TOMBOL AJAKAN (CTA) ==================== -->
+        <a href="#materi" class="btn-hero"> <!-- Tombol menuju ke bagian materi -->
+            Jelajahi Materi <!-- Teks tombol -->
+            <img src="assets/img/panahputih.png" alt="Panah" class="btn-icon"> <!-- Ikon panah di dalam tombol -->
         </a>
     </div>
 
-    <!-- FITUR -->
-    <div class="hero-features">
-        <div class="feature-item">
-            <img src="assets/img/award.png" alt="Exclusive" class="feature-icon">
-            <h5>Exclusive Platform</h5>
-            <p>Kami pionir e-learning untuk pembelajaran rekrutmen</p>
+    <!-- ==================== BAGIAN FITUR ==================== -->
+    <div class="hero-features"> <!-- Tiga fitur utama hero -->
+        
+        <!-- Fitur 1 -->
+        <div class="feature-item"> <!-- Satu fitur -->
+            <img src="assets/img/award.png" alt="Exclusive" class="feature-icon"> <!-- Ikon fitur -->
+            <h5>Exclusive Platform</h5> <!-- Judul fitur -->
+            <p>Kami pionir e-learning untuk pembelajaran rekrutmen</p> <!-- Deskripsi fitur -->
         </div>
+
+        <!-- Fitur 2 -->
         <div class="feature-item">
-            <img src="assets/img/mic.png" alt="Speakers" class="feature-icon">
+            <img src="assets/img/mic.png" alt="Speakers" class="feature-icon"> <!-- Ikon fitur -->
             <h5>Top Speakers</h5>
             <p>Dibuat oleh Profesional, Praktisi & Rekruter terkurasi</p>
         </div>
+
+        <!-- Fitur 3 -->
         <div class="feature-item">
             <img src="assets/img/iconorg.png" alt="2in1" class="feature-icon">
             <h5>2 in 1 Function</h5>
@@ -163,41 +177,41 @@
         </div>
     </div>
 </section>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ==================== BOOTSTRAP JS ==================== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Library Bootstrap untuk efek & layout -->
 <style>
-/* ===== HERO SECTION ===== */
+/* ==================== HERO SECTION ==================== */
 .hero-section {
-    background: url("assets/img/desktoppx.jpg") center center no-repeat;
-    background-size: cover;
-    background-position: top;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column; 
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 70px; /* sesuaikan tinggi header */
+    background: url("assets/img/desktoppx.jpg") center center no-repeat; /* Gambar background versi desktop */
+    background-size: cover; /* Supaya gambar menutupi seluruh area */
+    background-position: top; /* Fokus gambar di bagian atas */
+    background-attachment: scroll; /* Gambar ikut bergerak saat di-scroll */
+    background-repeat: no-repeat; /* Tidak mengulang gambar */
+    width: 100%; /* Lebar penuh layar */
+    min-height: 100vh; /* Tinggi minimal 1 layar penuh */
+    display: flex; /* Gunakan flexbox agar isi bisa diatur */
+    flex-direction: column; /* Susunan isi dari atas ke bawah */
+    align-items: center; /* Tengah horizontal */
+    justify-content: center; /* Tengah vertikal */
+    text-align: center; /* Teks di tengah */
+    margin-top: 70px; /* Jarak dari header agar tidak tertutup */
 }
 
-
-/* ===== HERO CONTENT (judul + tombol) ===== */
+/* ==================== HERO CONTENT (Judul & Tombol) ==================== */
 .hero-content {
-    z-index: 2;
-    max-width: 800px;
+    z-index: 2; /* Supaya berada di atas background */
+    max-width: 800px; /* Batas lebar teks */
     margin-top: auto;
     margin-bottom: auto;
 }
 
-/* Judul */
+/* ==================== JUDUL HERO ==================== */
 .hero-title {
-  font-weight: 700;
-  font-size: 41px;
-  line-height: 1.4;
-  color: #2e6bbc;  
+  font-weight: 700; /* Huruf tebal */
+  font-size: 41px; /* Ukuran besar untuk desktop */
+  line-height: 1.4; /* Jarak antar baris teks */
+  color: #2e6bbc;  /* Warna biru utama */
   text-shadow: 
     -1px -1px 0 #fff,  
      1px -1px 0 #fff,
@@ -206,138 +220,145 @@
     -2px -2px 0 #fff,  
      2px -2px 0 #fff,
     -2px  2px 0 #fff,
-     2px  2px 0 #fff; /* tambahan biar makin tebal */
+     2px  2px 0 #fff; /* Bayangan putih di sekeliling teks agar terlihat di background */
 }
 
-/* Tombol Utama */
+/* ==================== TOMBOL UTAMA ==================== */
 .btn-hero {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(90deg, #5DE0E6, #004AAD);
-    color: #fff;
+    display: inline-flex; /* Supaya teks dan ikon sejajar horizontal */
+    align-items: center; /* Vertikal tengah */
+    gap: 10px; /* Jarak antara teks dan ikon */
+    background: linear-gradient(90deg, #5DE0E6, #004AAD); /* Warna gradasi tombol */
+    color: #fff; /* Teks putih */
     font-size: 16px;
     font-weight: 600;
-    padding: 12px 26px;
+    padding: 12px 26px; /* Ruang dalam tombol */
     border: none;
-    border-radius: 50px;
-    text-decoration: none;
+    border-radius: 50px; /* Ujung tombol melengkung */
+    text-decoration: none; /* Hilangkan garis bawah link */
     cursor: pointer;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s ease;
-    margin-top: 40px; /* sesuaikan angkanya */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Bayangan tombol */
+    transition: all 0.3s ease; /* Efek halus saat hover */
+    margin-top: 40px; /* Jarak antara tombol dan judul */
 }
 
+/* Ikon di dalam tombol */
 .btn-hero .btn-icon {
     width: 14px;
     height: 14px;
-    object-fit: contain;
-    transition: transform 0.3s ease;
+    object-fit: contain; /* Jaga proporsi ikon */
+    transition: transform 0.3s ease; /* Efek animasi halus */
 }
 
+/* Efek saat hover tombol */
 .btn-hero:hover {
-    transform: translateY(-3px) scale(1.03);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px) scale(1.03); /* Naik sedikit dan membesar */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); /* Bayangan lebih besar */
 }
 
+/* Efek ikon bergerak ke kanan saat hover */
 .btn-hero:hover .btn-icon {
     transform: translateX(5px);
 }
 
-/* ===== HERO FEATURES (pindah ke bawah) ===== */
+/* ==================== BAGIAN FITUR HERO ==================== */
 .hero-features {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 50px;
+    display: flex; /* Gunakan flexbox */
+    justify-content: center; /* Tengah horizontal */
+    flex-wrap: wrap; /* Kalau layar kecil, fitur akan turun ke bawah */
+    gap: 50px; /* Jarak antar fitur */
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Supaya tetap di atas background */
     max-width: 1100px;
     margin-bottom: 20px;
 }
 
-/* Item Fitur */
+/* Setiap fitur */
 .feature-item {
-    flex: 1;
+    flex: 1; /* Bagi ruang sama rata */
     max-width: 250px;
     display: flex;
-    flex-direction: column;
-    align-items: center;      /* icon + teks rata tengah */
-    justify-content: space-between; /* bagi ruang biar rapi */
+    flex-direction: column; /* Ikon di atas, teks di bawah */
+    align-items: center; /* Tengah semua isi */
+    justify-content: space-between; /* Rapi dengan jarak */
     text-align: center;
-    color: #2e6bbc;
-    transition: transform 0.3s ease;
+    color: #2e6bbc; /* Warna teks biru */
+    transition: transform 0.3s ease; /* Efek animasi halus */
 }
 
+/* Saat diarahkan kursor, fitur membesar sedikit */
 .feature-item:hover {
     transform: scale(1.05);
 }
 
-/* Icon */
+/* Ikon di tiap fitur */
 .feature-icon {
     width: 65px;
     height: 65px;
-    object-fit: contain;
-    margin-bottom: 12px;
+    object-fit: contain; /* Jaga proporsi gambar */
+    margin-bottom: 12px; /* Jarak bawah ikon */
 }
 
-/* Judul Fitur */
+/* Judul fitur */
 .feature-item h5 {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 6px;
-    color: #004AAD;
+    color: #004AAD; /* Warna biru tua */
 }
 
-/* Deskripsi Fitur */
+/* Deskripsi fitur */
 .feature-item p {
     font-size: 14px;
-    color: #333;
+    color: #333; /* Warna teks abu gelap */
     margin: 0;
-    line-height: 1.5;
+    line-height: 1.5; /* Supaya mudah dibaca */
 }
-/* ===== MOBILE VIEW ===== */
+
+/* ==================== TAMPILAN MOBILE (LAYAR KECIL) ==================== */
 @media (max-width: 768px) {
-    /* HERO SECTION */
+    /* Ganti gambar background untuk versi mobile */
     .hero-section {
-        background: url("assets/img/learningmobile.png") center top no-repeat; /* ✅ Ganti gambar */
-        background-size: cover;          /* biar penuh */
-        min-height: 60vh;
+        background: url("assets/img/learningmobile.png") center top no-repeat; /* Gambar versi HP */
+        background-size: cover;
+        min-height: 60vh; /* Lebih pendek agar muat di layar HP */
         padding: 40px 20px;
-        margin-top: 60px;
+        margin-top: 60px; /* Jarak dari header mobile */
     }
 
-    /* HERO CONTENT */
+    /* Atur ukuran dan posisi teks */
     .hero-content {
         max-width: 95%;
         margin-top: 100px;
         margin-bottom: 100px;
     }
 
-    /* Judul */
+    /* Ukuran judul disesuaikan */
     .hero-title {
         font-size: 28px;
         line-height: 1.3;
     }
 
-    /* Tombol */
+    /* Ukuran tombol disesuaikan */
     .btn-hero {
         font-size: 14px;
         padding: 10px 20px;
         margin-top: 40px;
     }
 
-    /* HERO FEATURES */
+    /* Fitur ditumpuk ke bawah */
     .hero-features {
         flex-direction: column;
         gap: 30px;
     }
 
+    /* Setiap fitur jadi lebih lebar dan tengah */
     .feature-item {
         max-width: 90%;
         margin: 0 auto;
     }
 
+    /* Ukuran ikon dan teks disesuaikan untuk HP */
     .feature-icon {
         width: 50px;
         height: 50px;
@@ -354,325 +375,337 @@
 }
 </style>
 
+
 <!-- ================= TESTIMONI SECTION ================= -->
-<section class="testimoni-section">
-  <div class="container">
+<section class="testimoni-section"> <!-- Bagian khusus untuk menampilkan testimoni pengguna -->
+  <div class="container"> <!-- Pembungkus utama agar layout rapi di tengah -->
 
     <!-- Judul -->
-    <h2 class="section-title">Apa Kata Mereka?</h2>
+    <h2 class="section-title">Apa Kata Mereka?</h2> <!-- Judul utama section -->
 
     <!-- Wrapper Carousel -->
-    <div class="testimoni-wrapper">
+    <div class="testimoni-wrapper"> <!-- Pembungkus semua kartu testimoni + tombol panah -->
       
       <!-- Tombol Panah Kiri -->
-      <button class="carousel-btn prev" aria-label="Previous">
-        <i class="bi bi-chevron-left"></i>
+      <button class="carousel-btn prev" aria-label="Previous"> <!-- Tombol untuk menggeser ke kiri -->
+        <i class="bi bi-chevron-left"></i> <!-- Ikon panah kiri (pakai Bootstrap Icons) -->
       </button>
 
       <!-- Track Carousel -->
-      <div class="carousel-track">
-        
-<!-- Card 1 -->
-<div class="testimoni-card">
-  <p class="testimoni-text">
-    "Materinya daging"
-  </p>
-  <div class="profile-info">
-    <h4 class="profile-name">Ela Kamilah</h4>
-    <p class="profile-role">Career Switcher</p>
-  </div>
-</div>
+      <div class="carousel-track"> <!-- Jalur utama tempat semua kartu testimoni bergeser -->
+
+        <!-- ================= CARD TESTIMONI 1 ================= -->
+        <div class="testimoni-card"> <!-- Kartu testimoni individual -->
+          <p class="testimoni-text">
+            "Materinya daging" <!-- Isi testimoni -->
+          </p>
+          <div class="profile-info"> <!-- Informasi pengguna -->
+            <h4 class="profile-name">Ela Kamilah</h4> <!-- Nama orang yang memberi testimoni -->
+            <p class="profile-role">Career Switcher</p> <!-- Profesi atau status -->
+          </div>
+        </div>
+
+        <!-- ================= CARD TESTIMONI 2 ================= -->
+        <div class="testimoni-card">
+          <p class="testimoni-text">
+            "Tips-tipsnya sangat saya perlukan"
+          </p>
+          <div class="profile-info">
+            <h4 class="profile-name">Nurul Firdaus</h4>
+            <p class="profile-role">Freshgraduate</p>
+          </div>
+        </div>
+
+        <!-- ================= CARD TESTIMONI 3 ================= -->
+        <div class="testimoni-card">
+          <p class="testimoni-text">
+            "Materinya keren!"
+          </p>
+          <div class="profile-info">
+            <h4 class="profile-name">Virda Manik</h4>
+            <p class="profile-role">Career Switcher</p>
+          </div>
+        </div>
+
+        <!-- ================= CARD TESTIMONI 4 ================= -->
+        <div class="testimoni-card">
+          <p class="testimoni-text">
+            "Materi sangat menarik dan memberikan banyak wawasan baru. Penyampaian mudah dipahami"
+          </p>
+          <div class="profile-info">
+            <h4 class="profile-name">Erdiansyah</h4>
+            <p class="profile-role">Employee</p>
+          </div>
+        </div>
+
+        <!-- ================= CARD TESTIMONI 5 ================= -->
+        <div class="testimoni-card">
+          <p class="testimoni-text">
+            "Terima kasih untuk materi dan ilmunya"
+          </p>
+          <div class="profile-info">
+            <h4 class="profile-name">Riza Surya</h4>
+            <p class="profile-role">Career Switcher</p>
+          </div>
+        </div>
+
+        <!-- ================= CARD TESTIMONI 6 ================= -->
+        <div class="testimoni-card">
+          <p class="testimoni-text">
+            "Perbanyak lagi materi supaya membantu yang ingin melamar kerja"
+          </p>
+          <div class="profile-info">
+            <h4 class="profile-name">Silvi</h4>
+            <p class="profile-role">College Student</p>
+          </div>
+        </div>
+
+        <!-- Tombol Panah Kanan -->
+        <button class="carousel-btn next" aria-label="Next"> <!-- Tombol geser ke kanan -->
+          <i class="bi bi-chevron-right"></i> <!-- Ikon panah kanan -->
+        </button>
+      </div> <!-- Akhir carousel track -->
+    </div> <!-- Akhir wrapper -->
+  </div> <!-- Akhir container -->
+</section> <!-- Akhir testimoni section -->
 
 
-<!-- Card 2 -->
-<div class="testimoni-card">
-  <p class="testimoni-text">
-    "Tips-tipsnya sangat saya perlukan"
-  </p>
-  <div class="profile-info">
-    <h4 class="profile-name">Nurul Firdaus</h4>
-    <p class="profile-role">Freshgraduate</p>
-  </div>
-</div>
-
-
-<!-- Card 3 -->
-<div class="testimoni-card">
-  <p class="testimoni-text">
-    "Materinya keren!"
-  </p>
-  <div class="profile-info">
-    <h4 class="profile-name">Virda Manik</h4>
-    <p class="profile-role">Career Switcher</p>
-  </div>
-</div>
-<!-- Card lainnya sama formatnya -->
-        <!-- Card 4 -->
-<div class="testimoni-card">
-  <p class="testimoni-text">
-    "Materi sangat menarik dan memberikan banyak wawasan baru. Penyampaian mudah dipahami"
-  </p>
-  <div class="profile-info">
-    <h4 class="profile-name">Erdiansyah</h4>
-    <p class="profile-role">Employee</p>
-  </div>
-</div>
-
-
-<!-- Card 2 -->
-<div class="testimoni-card">
-  <p class="testimoni-text">
-    "Terima kasih untuk materi dan ilmunya"
-  </p>
-  <div class="profile-info">
-    <h4 class="profile-name">Riza Surya</h4>
-    <p class="profile-role">Career Switcher</p>
-  </div>
-</div>
-
-
-<!-- Card 3 -->
-<div class="testimoni-card">
-  <p class="testimoni-text">
-    "Perbanyak lagi materi supaya membantu yang ingin melamar kerja"
-  </p>
-  <div class="profile-info">
-    <h4 class="profile-name">Silvi</h4>
-    <p class="profile-role">College Student</p>
-  </div>
-</div>
-
-
-      <!-- Tombol Panah Kanan -->
-      <button class="carousel-btn next" aria-label="Next">
-        <i class="bi bi-chevron-right"></i>
-      </button>
-    </div>
-  </div>
-</section>
-
-<!-- ================= CSS ================= -->
+<!-- ================= CSS STYLING ================= -->
 <style>
-/* Section */
+/* ================== STYLE UNTUK SECTION TESTIMONI ================== */
 .testimoni-section {
-  padding: 20px 80px;
-  text-align: center;
-  font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, #5DE0E6, #004AAD);
+  padding: 20px 80px; /* Ruang atas-bawah 20px, kiri-kanan 80px */
+  text-align: center; /* Semua teks diatur ke tengah */
+  font-family: 'Poppins', sans-serif; /* Gunakan font Poppins */
+  background: linear-gradient(135deg, #5DE0E6, #004AAD); /* Latar belakang gradasi biru */
 }
 
-/* Judul */
+/* ================== JUDUL SECTION ================== */
 .testimoni-section .section-title {
-  font-size: 28px;
-  font-weight: 700;
-  margin-bottom: -15px; /* lebih dekat ke card */
-  color: #fff;
-}
-/* Wrapper Carousel */
-.testimoni-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-  max-width: 1200px;
-  margin: auto;
-  position: relative;
-  margin-top: -30px; /* geser carousel lebih dekat ke judul */
+  font-size: 28px; /* Ukuran font besar */
+  font-weight: 700; /* Huruf tebal */
+  margin-bottom: -15px; /* Jarak ke bawah lebih dekat ke kartu */
+  color: #fff; /* Warna putih agar kontras di background biru */
 }
 
-/* Tombol Panah */
+/* ================== WRAPPER UNTUK CAROUSEL ================== */
+.testimoni-wrapper {
+  display: flex; /* Susunan horizontal */
+  align-items: center; /* Rata tengah vertikal */
+  gap: 15px; /* Jarak antar elemen di dalam wrapper */
+  max-width: 1200px; /* Batas lebar maksimal */
+  margin: auto; /* Tengah di layar */
+  position: relative; /* Untuk posisi tombol panah */
+  margin-top: -30px; /* Geser sedikit lebih dekat ke judul */
+}
+
+/* ================== TOMBOL PANAH KIRI & KANAN ================== */
 .carousel-btn {
-  background-color: #fff;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
+  background-color: #fff; /* Warna dasar putih */
+  border: none; /* Hilangkan border */
+  border-radius: 50%; /* Bentuk bulat */
+  width: 40px; /* Ukuran tombol */
   height: 40px;
-  display: flex;
+  display: flex; /* Rata tengah ikon */
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  z-index: 10;
-  display: none !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Efek bayangan */
+  cursor: pointer; /* Pointer saat diarahkan */
+  transition: all 0.3s ease-in-out; /* Efek transisi halus */
+  z-index: 10; /* Supaya di atas elemen lain */
+  display: none !important; /* Disembunyikan di desktop */
 }
 
+/* Efek hover pada tombol panah */
 .carousel-btn:hover {
-  background-color: #004AAD;
-  color: #fff;
+  background-color: #004AAD; /* Warna biru saat dihover */
+  color: #fff; /* Warna ikon putih */
 }
 
-/* Track Carousel */
+/* ================== AREA TEMPAT KARTU BERGESER ================== */
 .carousel-track {
-  display: flex;
-  gap: 20px;
-  overflow: hidden;
-  flex: 1;
-  transition: transform 0.5s ease-in-out; /* animasi geser */
+  display: flex; /* Tampilkan semua kartu sejajar */
+  gap: 20px; /* Jarak antar kartu */
+  overflow: hidden; /* Sembunyikan kartu yang keluar area */
+  flex: 1; /* Ambil ruang sisa */
+  transition: transform 0.5s ease-in-out; /* Efek geser halus */
 }
 
-
-/* Card Testimoni */
+/* ================== SETIAP KARTU TESTIMONI ================== */
 .testimoni-card {
-  background: #fff;
-  border-radius: 12px;
-  padding: 20px;
-  flex: 0 0 calc((100% - 40px) / 3);
-  min-height: 250px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-  display: flex;
+  background: #fff; /* Warna putih */
+  border-radius: 12px; /* Sudut membulat */
+  padding: 20px; /* Ruang dalam */
+  flex: 0 0 calc((100% - 40px) / 3); /* 3 kartu per baris */
+  min-height: 250px; /* Tinggi minimal kartu */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+  display: flex; /* Susun isi secara vertikal */
   flex-direction: column;
-  justify-content: flex-start;
-  text-align: left;
-  transition: transform 0.3s ease;
+  justify-content: flex-start; /* Isi mulai dari atas */
+  text-align: left; /* Teks rata kiri */
+  transition: transform 0.3s ease; /* Efek saat hover */
   position: relative;
 }
 
+/* Saat kursor di atas kartu */
 .testimoni-card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-8px); /* Kartu sedikit naik */
 }
 
-/* Foto Profil */
+/* ================== FOTO PROFIL (opsional jika ada foto) ================== */
 .profile-img {
-  width: 60px;
+  width: 60px; /* Ukuran gambar */
   height: 60px;
-  border-radius: 50%;
-  object-fit: cover;
+  border-radius: 50%; /* Bulat */
+  object-fit: cover; /* Menyesuaikan ukuran tanpa terdistorsi */
   margin-bottom: 10px;
 }
 
-/* Nama */
+/* ================== NAMA ORANG ================== */
 .profile-name {
   font-size: 16px;
   font-weight: 700;
-  color: #333;
-  margin: 0 0 5px 0;
+  color: #333; /* Abu gelap */
+  margin: 0 0 5px 0; /* Jarak bawah kecil */
 }
 
-/* Role */
+/* ================== ROLE / PROFESI ================== */
 .profile-role {
   font-size: 13px;
-  color: #777;
+  color: #777; /* Abu muda */
   margin: 0;
 }
-/* Container untuk Nama & Role */
+
+/* ================== KONTAINER UNTUK NAMA & ROLE ================== */
 .profile-info {
-  margin-top: auto; /* ✅ Nempel ke bawah */
+  margin-top: auto; /* Biar posisi tetap di bawah kartu */
 }
-/* Teks Testimoni */
+
+/* ================== TEKS TESTIMONI ================== */
 .testimoni-text {
   font-size: 14px;
   color: #555;
-  line-height: 1.6;
-  margin-bottom: 15px;
+  line-height: 1.6; /* Jarak antar baris nyaman dibaca */
+  margin-bottom: 15px; /* Jarak antara teks dan profil */
 }
 
-/* Responsive Tablet - 2 kartu */
+/* ================== RESPONSIVE TABLET (2 KARTU) ================== */
 @media (max-width: 992px) {
   .testimoni-card {
-    flex: 0 0 calc((100% - 20px) / 2);
+    flex: 0 0 calc((100% - 20px) / 2); /* 2 kartu per baris */
   }
 }
 
-/* Responsive Mobile - 1 kartu */
+/* ================== RESPONSIVE MOBILE (1 KARTU) ================== */
 @media (max-width: 600px) {
   .testimoni-card {
-    flex: 0 0 100%;
+    flex: 0 0 100%; /* 1 kartu per baris */
   }
 }
 
-  /* Tampilkan tombol di mobile */
-  .carousel-btn {
-    display: flex; /* sebelumnya none */
-    width: 35px;
-    height: 35px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 20;
-  }
+/* ================== TAMPILKAN TOMBOL DI MOBILE ================== */
+.carousel-btn {
+  display: flex; /* Aktifkan tombol di mobile */
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 50%; /* Tengah vertikal */
+  transform: translateY(-50%);
+  z-index: 20;
+}
 
-/* Tombol Panah Kiri & Kanan */
+/* ================== POSISI TOMBOL KIRI & KANAN ================== */
 .carousel-btn.prev {
-  left: -40px; /* 🔹 Lebih menjauh dari kartu */
+  left: -40px; /* Geser tombol kiri keluar sedikit */
 }
 
 .carousel-btn.next {
-  right: -40px; /* 🔹 Lebih menjauh dari kartu */
+  right: -40px; /* Geser tombol kanan keluar sedikit */
 }
 
-  .section-title {
-    white-space: nowrap;       /* Supaya tidak pecah ke baris baru */
-    font-size: 12px;           /* Kecilkan sedikit biar muat */
-    text-align: center;        /* Pastikan teks tetap rapi di tengah */
-  }
+/* ================== JUDUL DI MOBILE ================== */
+.section-title {
+  white-space: nowrap; /* Supaya teks tidak pecah ke baris lain */
+  font-size: 12px; /* Ukuran lebih kecil */
+  text-align: center; /* Tetap di tengah */
+}
 </style>
+
 
 <!-- ================= JAVASCRIPT ================= -->
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const track = document.querySelector(".carousel-track");
-  const prevBtn = document.querySelector(".carousel-btn.prev");
-  const nextBtn = document.querySelector(".carousel-btn.next");
-  const cards = document.querySelectorAll(".testimoni-card");
+document.addEventListener("DOMContentLoaded", function () { // Jalankan script setelah seluruh halaman selesai dimuat
 
-  let currentIndex = 0;
-  let cardsPerPage = getCardsPerPage();
-  const totalCards = cards.length;
+  const track = document.querySelector(".carousel-track"); // Ambil elemen utama yang berisi semua kartu testimoni
+  const prevBtn = document.querySelector(".carousel-btn.prev"); // Tombol panah kiri
+  const nextBtn = document.querySelector(".carousel-btn.next"); // Tombol panah kanan
+  const cards = document.querySelectorAll(".testimoni-card"); // Ambil semua elemen kartu testimoni
 
+  let currentIndex = 0; // Posisi index kartu yang sedang tampil
+  let cardsPerPage = getCardsPerPage(); // Jumlah kartu per tampilan tergantung ukuran layar
+  const totalCards = cards.length; // Total jumlah kartu testimoni
+
+  // ================= Fungsi untuk menentukan jumlah kartu yang tampil berdasarkan ukuran layar =================
   function getCardsPerPage() {
-    if (window.innerWidth <= 600) return 1;   // Mobile
-    if (window.innerWidth <= 992) return 2;   // Tablet
-    return 3;                                // Desktop
+    if (window.innerWidth <= 600) return 1;   // Jika layar kecil (mobile), tampilkan 1 kartu
+    if (window.innerWidth <= 992) return 2;   // Jika layar sedang (tablet), tampilkan 2 kartu
+    return 3;                                // Jika layar besar (desktop), tampilkan 3 kartu
   }
 
+  // ================= Fungsi untuk menggeser posisi carousel =================
   function updateCarousel() {
-    const cardWidth = cards[0].offsetWidth + 20; // jarak antar kartu
-    track.scrollTo({
-      left: currentIndex * cardWidth,
-      behavior: "smooth"
+    const cardWidth = cards[0].offsetWidth + 20; // Lebar satu kartu ditambah jarak antar kartu
+    track.scrollTo({ // Gulirkan kontainer carousel
+      left: currentIndex * cardWidth, // Geser berdasarkan index aktif
+      behavior: "smooth" // Gerakan halus saat bergeser
     });
   }
 
+  // ================= Event tombol "Next" =================
   nextBtn.addEventListener("click", () => {
-    if (currentIndex < totalCards - cardsPerPage) {
-      currentIndex++;
+    if (currentIndex < totalCards - cardsPerPage) { // Jika belum sampai akhir kartu
+      currentIndex++; // Geser ke kartu berikutnya
     } else {
-      currentIndex = 0;
+      currentIndex = 0; // Kalau sudah di akhir, kembali ke awal (loop)
     }
-    updateCarousel();
+    updateCarousel(); // Jalankan animasi geser
   });
 
+  // ================= Event tombol "Prev" =================
   prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
+    if (currentIndex > 0) { // Jika tidak di awal
+      currentIndex--; // Geser ke kartu sebelumnya
     } else {
-      currentIndex = totalCards - cardsPerPage;
+      currentIndex = totalCards - cardsPerPage; // Jika di awal, lompat ke akhir
     }
-    updateCarousel();
+    updateCarousel(); // Jalankan animasi geser
   });
 
-  // === Swipe Support untuk Mobile ===
-  let startX = 0;
-  let endX = 0;
-  let isDragging = false;
+  // ================= SWIPE SUPPORT UNTUK MOBILE =================
+  let startX = 0; // Posisi awal sentuhan
+  let endX = 0; // Posisi akhir sentuhan
+  let isDragging = false; // Status apakah sedang menggeser
 
+  // Saat jari pertama kali menyentuh layar
   track.addEventListener("touchstart", (e) => {
-    startX = e.touches[0].clientX;
-    isDragging = true;
+    startX = e.touches[0].clientX; // Simpan posisi awal jari
+    isDragging = true; // Tandai bahwa pengguna sedang menggeser
   });
 
+  // Saat jari bergerak di layar
   track.addEventListener("touchmove", (e) => {
-    if (!isDragging) return;
-    endX = e.touches[0].clientX;
+    if (!isDragging) return; // Kalau tidak sedang geser, keluar
+    endX = e.touches[0].clientX; // Simpan posisi terakhir jari
   });
 
+  // Saat jari diangkat (geseran selesai)
   track.addEventListener("touchend", () => {
-    if (!isDragging) return;
-    isDragging = false;
+    if (!isDragging) return; // Kalau tidak sedang geser, abaikan
+    isDragging = false; // Set status berhenti menggeser
 
-    let diff = startX - endX;
+    let diff = startX - endX; // Hitung jarak geser antara awal dan akhir
 
-    if (Math.abs(diff) > 50) { // Threshold minimal 50px
+    if (Math.abs(diff) > 50) { // Jika geseran cukup jauh (lebih dari 50px)
       if (diff > 0) {
         // Geser kiri → ke kartu berikutnya
         if (currentIndex < totalCards - cardsPerPage) {
@@ -684,62 +717,63 @@ document.addEventListener("DOMContentLoaded", function () {
           currentIndex--;
         }
       }
-      updateCarousel();
+      updateCarousel(); // Perbarui posisi setelah geser
     }
   });
 
-  // Auto-slide setiap 3 detik
+  // ================= AUTO SLIDE (BERGESER OTOMATIS SETIAP 3 DETIK) =================
   let autoSlide = setInterval(() => {
-    nextBtn.click();
-  }, 3000);
+    nextBtn.click(); // Tekan tombol "Next" secara otomatis
+  }, 3000); // Tiap 3 detik
 
-  // Hentikan auto-slide saat disentuh (biar lebih natural)
+  // ================= HENTIKAN AUTO SLIDE SAAT USER INTERAKSI =================
   track.addEventListener("touchstart", () => {
-    clearInterval(autoSlide);
+    clearInterval(autoSlide); // Stop auto-slide sementara saat disentuh
   });
 
-  // Jalanin ulang auto-slide setelah 5 detik
+  // ================= JALANKAN ULANG AUTO SLIDE SETELAH 5 DETIK =================
   track.addEventListener("touchend", () => {
     autoSlide = setInterval(() => {
-      nextBtn.click();
+      nextBtn.click(); // Jalankan lagi setelah selesai interaksi
     }, 3000);
   });
 
+  // ================= DETEKSI SAAT UKURAN LAYAR BERUBAH =================
   window.addEventListener("resize", () => {
-    cardsPerPage = getCardsPerPage();
-    updateCarousel();
+    cardsPerPage = getCardsPerPage(); // Hitung ulang jumlah kartu per tampilan
+    updateCarousel(); // Sesuaikan posisi carousel
   });
 });
-
 </script>
+<!-- ================= CLIENT & TALENT SECTION ================= -->
+<section class="client-section"> <!-- Bagian untuk menampilkan koleksi materi terbaru -->
+  <div class="container"> <!-- Pembungkus utama agar isi rapi di tengah -->
 
+    <!-- Judul -->
+    <h2 class="koleksi-title">KOLEKSI MATERI TERBARU</h2> <!-- Judul utama section -->
 
-<!-- Client & Talent Section -->
-<section class="client-section">
-  <div class="container">
-    <h2 class="koleksi-title">KOLEKSI MATERI TERBARU</h2>
-
-    <!-- Tab Buttons -->
-    <div class="tab-buttons">
-      <button class="tab active" data-target="clients">For Jobseekers</button>
-      <button class="tab" data-target="talents">For Recruiters</button>
+    <!-- ===== TAB BUTTONS (PILIHAN KATEGORI) ===== -->
+    <div class="tab-buttons"> <!-- Tombol navigasi antar tab -->
+      <button class="tab active" data-target="clients">For Jobseekers</button> <!-- Tombol tab aktif pertama -->
+      <button class="tab" data-target="talents">For Recruiters</button> <!-- Tombol tab kedua -->
     </div>
 
     <!-- ====== TAB CONTENT JOBSEEKER ====== -->
-    <div id="clients" class="tab-content active">
-      <div class="card-container">
-        <!-- Card 1 -->
-        <div class="materi-wrapper">
-          <div class="materi-card">
-            <img src="assets/img/andi.jpg" alt="Bang Andi" class="materi-img">
+    <div id="clients" class="tab-content active"> <!-- Konten untuk tab “For Jobseekers” -->
+      <div class="card-container"> <!-- Tempat kumpulan kartu materi -->
+
+        <!-- ========== CARD 1 ========== -->
+        <div class="materi-wrapper"> <!-- Pembungkus satu kartu -->
+          <div class="materi-card"> <!-- Kartu utama -->
+            <img src="assets/img/andi.jpg" alt="Bang Andi" class="materi-img"> <!-- Gambar materi -->
           </div>
-          <div class="button-group">
-            <button class="preview-btn">PREVIEW <br> MATERI</button>
-            <button class="buy-btn">BUY NOW <br> RP 19.000</button>
+          <div class="button-group"> <!-- Tombol di bawah kartu -->
+            <button class="preview-btn">PREVIEW <br> MATERI</button> <!-- Tombol lihat materi -->
+            <button class="buy-btn">BUY NOW <br> RP 19.000</button> <!-- Tombol beli materi -->
           </div>
         </div>
 
-        <!-- Card 2 -->
+        <!-- ========== CARD 2 ========== -->
         <div class="materi-wrapper">
           <div class="materi-card">
             <img src="assets/img/far.jpg" alt="Kak Faridah" class="materi-img">
@@ -750,7 +784,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
 
-        <!-- Card 3 -->
+        <!-- ========== CARD 3 ========== -->
         <div class="materi-wrapper">
           <div class="materi-card">
             <img src="assets/img/adam.jpg" alt="Mas Adam" class="materi-img">
@@ -764,9 +798,10 @@ document.addEventListener("DOMContentLoaded", function () {
     </div>
 
     <!-- ====== TAB CONTENT RECRUITER ====== -->
-    <div id="talents" class="tab-content">
+    <div id="talents" class="tab-content"> <!-- Konten untuk tab “For Recruiters” -->
       <div class="card-container">
-        <!-- Card 1 -->
+
+        <!-- ========== CARD 1 ========== -->
         <div class="materi-wrapper">
           <div class="materi-card">
             <img src="assets/img/andi.jpg" alt="Bang Andi" class="materi-img">
@@ -777,7 +812,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
 
-        <!-- Card 2 -->
+        <!-- ========== CARD 2 ========== -->
         <div class="materi-wrapper">
           <div class="materi-card">
             <img src="assets/img/far.jpg" alt="Kak Faridah" class="materi-img">
@@ -788,7 +823,7 @@ document.addEventListener("DOMContentLoaded", function () {
           </div>
         </div>
 
-        <!-- Card 3 -->
+        <!-- ========== CARD 3 ========== -->
         <div class="materi-wrapper">
           <div class="materi-card">
             <img src="assets/img/adam.jpg" alt="Mas Adam" class="materi-img">
@@ -803,102 +838,110 @@ document.addEventListener("DOMContentLoaded", function () {
   </div>
 </section>
 
-<!-- STYLE -->
+
+<!-- ================= STYLE (TAMPILAN) ================= -->
 <style>
 /* ===== KOLEKSI TITLE ===== */
 .koleksi-title {
-  font-size: 48px;
-  font-weight: 700;
-  color: #3c678b;
-  text-align: center;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  letter-spacing: 0.5px;
+  font-size: 48px; /* Ukuran font besar untuk judul */
+  font-weight: 700; /* Huruf tebal */
+  color: #3c678b; /* Warna biru keabu-abuan */
+  text-align: center; /* Rata tengah */
+  margin-bottom: 10px; /* Jarak bawah kecil */
+  margin-top: 10px; /* Jarak atas kecil */
+  letter-spacing: 0.5px; /* Spasi antar huruf */
 }
 
 /* ===== TAB BUTTONS ===== */
 .tab-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 40px;
-  margin-top: 50px;
-  flex-wrap: wrap;
+  display: flex; /* Susunan horizontal */
+  justify-content: center; /* Rata tengah */
+  gap: 10px; /* Jarak antar tombol */
+  margin-bottom: 40px; /* Jarak bawah sebelum konten */
+  margin-top: 50px; /* Jarak atas dari judul */
+  flex-wrap: wrap; /* Kalau sempit, pindah ke baris baru */
 }
+
+/* Style tombol tab */
 .tab {
-  padding: 10px 22px;
-  border: none;
-  border-radius: 8px;
-  background: #f0f0f0;
-  color: #333;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 16px;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  padding: 10px 22px; /* Ruang dalam tombol */
+  border: none; /* Tanpa border */
+  border-radius: 8px; /* Sudut membulat */
+  background: #f0f0f0; /* Warna abu muda */
+  color: #333; /* Warna teks abu gelap */
+  cursor: pointer; /* Tanda tangan saat diarahkan */
+  font-weight: 600; /* Huruf tebal sedang */
+  font-size: 16px; /* Ukuran teks sedang */
+  transition: all 0.3s ease; /* Animasi lembut */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); /* Sedikit bayangan */
 }
+
+/* Efek hover tombol */
 .tab:hover {
-  background: #e0e0e0;
+  background: #e0e0e0; /* Warna sedikit lebih gelap saat diarahkan */
 }
+
+/* Tab aktif */
 .tab.active {
-  background: linear-gradient(90deg, #5DE0E6, #004AAD);
-  color: #fff;
-  box-shadow: 0 4px 10px rgba(93, 224, 230, 0.3);
-  transform: scale(1.05);
+  background: linear-gradient(90deg, #5DE0E6, #004AAD); /* Gradasi biru */
+  color: #fff; /* Warna teks putih */
+  box-shadow: 0 4px 10px rgba(93, 224, 230, 0.3); /* Bayangan lembut */
+  transform: scale(1.05); /* Sedikit membesar */
 }
 
 /* ===== TAB CONTENT ===== */
 .tab-content {
-  display: none;
-  margin-top: 25px;
+  display: none; /* Semua konten disembunyikan dulu */
+  margin-top: 25px; /* Jarak atas dari tombol */
 }
 .tab-content.active {
-  display: block;
+  display: block; /* Hanya tab aktif yang ditampilkan */
 }
 
 /* ===== CARD CONTAINER ===== */
 .card-container {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+  display: flex; /* Susunan sejajar */
+  justify-content: center; /* Pusatkan isi */
+  gap: 30px; /* Jarak antar kartu */
+  flex-wrap: wrap; /* Kalau sempit, pindah baris */
+  margin-top: 20px; /* Jarak atas kecil */
 }
 
 /* ===== WRAPPER PER CARD ===== */
 .materi-wrapper {
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Kartu di atas, tombol di bawah */
   align-items: center;
-  width: 400px; /* 🔹 Dibuat sama kayak card poster community */
+  width: 400px; /* Lebar tiap kartu */
 }
 
 /* ===== MATERI CARD ===== */
 .materi-card {
   width: 100%;
-  background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  padding: 0; /* 🔹 Hapus padding */
+  background: #fff; /* Warna dasar putih */
+  border-radius: 16px; /* Sudut membulat */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Bayangan lembut */
+  padding: 0;
   text-align: center;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition: transform 0.35s ease, box-shadow 0.35s ease; /* Animasi halus */
   cursor: pointer;
   position: relative;
   z-index: 1;
-  border: 3px solid #5573a0ff;
-  box-shadow: 0 0 8px rgba(0, 74, 173, 0.3); /* Efek glow biru */
+  border: 3px solid #5573a0ff; /* Garis tepi biru */
+  box-shadow: 0 0 8px rgba(0, 74, 173, 0.3); /* Efek cahaya biru */
 }
 
+/* Efek saat di-hover */
 .materi-card:hover {
-  transform: scale(1.12); /* 🔹 Efek pop-out sama dengan poster community */
-  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  transform: scale(1.12); /* Membesar sedikit */
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3); /* Bayangan lebih besar */
   z-index: 10;
 }
 
-/* ===== GAMBAR ===== */
+/* ===== GAMBAR DALAM CARD ===== */
 .materi-img {
-  width: 100%;
-  border-radius: 12px;
+  width: 100%; /* Gambar isi penuh */
+  border-radius: 12px; /* Sudut membulat */
   margin-bottom: 0;
 }
 
@@ -906,8 +949,8 @@ document.addEventListener("DOMContentLoaded", function () {
 .button-group {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  margin-top: 12px;
+  gap: 12px; /* Jarak antar tombol */
+  margin-top: 12px; /* Jarak atas kecil */
 }
 
 /* ===== BUTTON STYLING ===== */
@@ -922,250 +965,277 @@ document.addEventListener("DOMContentLoaded", function () {
   transition: all 0.3s ease;
 }
 
-/* Preview Materi */
+/* Tombol “Preview Materi” */
 .preview-btn {
-  background-color: #f0f0f0;
-  color: #333;
+  background-color: #f0f0f0; /* Abu muda */
+  color: #333; /* Abu tua */
 }
 .preview-btn:hover {
-  background-color: #e0e0e0;
+  background-color: #e0e0e0; /* Lebih gelap saat dihover */
 }
 
-/* Buy Now */
+/* Tombol “Buy Now” */
 .buy-btn {
-  background-color: #333;
-  color: #fff;
+  background-color: #333; /* Hitam abu */
+  color: #fff; /* Putih */
 }
 .buy-btn:hover {
-  background-color: #004AAD;
+  background-color: #004AAD; /* Biru saat dihover */
 }
 
 /* ===== RESPONSIVE UNTUK MOBILE ===== */
 @media (max-width: 768px) {
   .card-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Ubah jadi vertikal */
+    align-items: center; /* Tengah */
   }
 
-  /* 🔹 Kurangi ukuran pop-out di mobile agar tidak kepotong */
+  /* Kartu membesar sedikit lebih kecil di mobile */
   .materi-card:hover {
     transform: scale(1.07);
   }
 
-  /* 🔹 Atur ulang lebar kartu di mobile */
+  /* Lebar kartu disesuaikan agar tidak keluar layar */
   .materi-wrapper {
     width: 90%;
   }
 }
-
 </style>
 
-<!-- SCRIPT -->
-<script>
-  const tabs = document.querySelectorAll(".tab");
-  const contents = document.querySelectorAll(".tab-content");
 
-  tabs.forEach(tab => {
-    tab.addEventListener("click", () => {
-      // hapus active dari semua tab
+<!-- ================= SCRIPT UNTUK GANTI TAB ================= -->
+<script>
+  const tabs = document.querySelectorAll(".tab"); // Ambil semua tombol tab
+  const contents = document.querySelectorAll(".tab-content"); // Ambil semua area konten tab
+
+  tabs.forEach(tab => { // Untuk setiap tombol tab
+    tab.addEventListener("click", () => { // Saat tombol diklik
+      // Hapus class "active" dari semua tab dan kontennya
       tabs.forEach(t => t.classList.remove("active"));
       contents.forEach(c => c.classList.remove("active"));
 
-      // tambahkan active hanya ke yang diklik
+      // Tambahkan class "active" hanya ke tab yang diklik
       tab.classList.add("active");
-      document.getElementById(tab.dataset.target).classList.add("active");
+      document.getElementById(tab.dataset.target).classList.add("active"); // Tampilkan konten sesuai data-target
     });
   });
 </script>
-<!-- footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-top">
-      
-      <!-- Kiri: Logo + deskripsi -->
-<div class="footer-about">
-  <img src="assets/img/Footer.png" alt="Klik Rekrut Logo" class="footer-logo">
-  <p><strong>Klik Rekrut</strong> hadir sebagai solusi rekrutmen yang ergonomis untuk mendapatkan talenta Siap Kerja.</p>
-</div>
 
-      <!-- Tengah: Menu Footer Baru -->
-      <div class="footer-center">
-        <!-- Layanan -->
+<!-- ==================== FOOTER SECTION ==================== -->
+<footer class="footer"> <!-- Bagian footer utama website -->
+  <div class="container"> <!-- Pembungkus konten agar rapi di tengah -->
+    <div class="footer-top"> <!-- Bagian atas footer (isi utama) -->
+      
+      <!-- ==================== KIRI: LOGO + DESKRIPSI ==================== -->
+      <div class="footer-about"> <!-- Kolom kiri -->
+        <img src="assets/img/Footer.png" alt="Klik Rekrut Logo" class="footer-logo"> <!-- Logo Klik Rekrut -->
+        <p>
+          <strong>Klik Rekrut</strong> hadir sebagai solusi rekrutmen yang ergonomis untuk mendapatkan talenta Siap Kerja.
+        </p> <!-- Deskripsi singkat perusahaan -->
+      </div>
+
+      <!-- ==================== TENGAH: MENU FOOTER ==================== -->
+      <div class="footer-center"> <!-- Kolom tengah berisi menu navigasi -->
+
+        <!-- Kolom 1: Layanan -->
         <div class="footer-column">
-          <h6>LAYANAN</h6>
+          <h6>LAYANAN</h6> <!-- Judul kolom -->
           <ul>
-            <li><a href="/">e-Recruitment</a></li>
-            <li><a href="elearning">e-Learning</a></li>
+            <li><a href="/">e-Recruitment</a></li> <!-- Link ke halaman utama -->
+            <li><a href="elearning">e-Learning</a></li> <!-- Link ke halaman e-learning -->
           </ul>
         </div>
-        <!-- Komunitas -->
+
+        <!-- Kolom 2: Lainnya -->
         <div class="footer-column">
           <h6>LAINNYA</h6>
           <ul>
             <li>
-  <a href="https://chat.whatsapp.com/I3mvornLsmv96QiwlcLctQ?mode=ems_copy_t" 
-     target="_blank" 
-     rel="noopener noreferrer">
-    Komunitas
-  </a>
-</li>
-
-            <li><a href="applypartner">Kemitraan</a></li>
+              <a href="https://chat.whatsapp.com/I3mvornLsmv96QiwlcLctQ?mode=ems_copy_t" 
+                 target="_blank" 
+                 rel="noopener noreferrer">
+                Komunitas
+              </a>
+            </li>
+            <li><a href="applypartner">Kemitraan</a></li> <!-- Link ke halaman kemitraan -->
           </ul>
         </div>
-        <!-- Bantuan -->
+
+        <!-- Kolom 3: Bantuan -->
         <div class="footer-column">
           <h6>BANTUAN</h6>
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=6289678868752" 
-     target="_blank" 
-     rel="noopener noreferrer">Hubungi Kami</a></li>
+            <li><a href="#">FAQ</a></li> <!-- Halaman pertanyaan umum -->
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=6289678868752" 
+                 target="_blank" 
+                 rel="noopener noreferrer">
+                Hubungi Kami
+              </a>
+            </li> <!-- Tombol kontak langsung via WhatsApp -->
           </ul>
         </div>
       </div>
 
-      <!-- Kanan: Sosial Media -->
-      <div class="footer-column footer-right">
+      <!-- ==================== KANAN: SOSIAL MEDIA ==================== -->
+      <div class="footer-column footer-right"> <!-- Kolom kanan -->
         <h6>SOCIAL MEDIA</h6>
-        <div class="social-icons">
-          <a href="https://www.tiktok.com/@klikrekrut" target="_blank"><img src="assets/img/tiktok.png" alt="Tiktok"></a>
-          <a href="https://www.instagram.com/klikrekrut/" target="_blank"><img src="assets/img/instagram.png" alt="Instagram"></a>
-          <a href="https://www.linkedin.com/company/klikrekrut/" target="_blank"><img src="assets/img/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://www.youtube.com/@klikrekrut" target="_blank"><img src="assets/img/youtube.png" alt="YouTube"></a>
+        <div class="social-icons"> <!-- Ikon media sosial -->
+          <a href="https://www.tiktok.com/@klikrekrut" target="_blank">
+            <img src="assets/img/tiktok.png" alt="Tiktok">
+          </a>
+          <a href="https://www.instagram.com/klikrekrut/" target="_blank">
+            <img src="assets/img/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/company/klikrekrut/" target="_blank">
+            <img src="assets/img/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://www.youtube.com/@klikrekrut" target="_blank">
+            <img src="assets/img/youtube.png" alt="YouTube">
+          </a>
         </div>
       </div>
+    </div> <!-- /footer-top -->
 
-    </div>
+    <!-- ==================== GARIS PEMISAH ==================== -->
+    <hr class="footer-divider"> <!-- Garis horizontal pemisah antara konten dan copyright -->
 
-    <!-- Garis Pemisah -->
-    <hr class="footer-divider">
-
-    <!-- Copyright -->
-    <div class="footer-bottom">
-      <p>© KLIKREKRUT 2025 • All Right Reserved</p>
+    <!-- ==================== COPYRIGHT ==================== -->
+    <div class="footer-bottom"> <!-- Bagian bawah footer -->
+      <p>© KLIKREKRUT 2025 • All Right Reserved</p> <!-- Hak cipta -->
     </div>
   </div>
 </footer>
 
 <style>
+/* ==================== STYLE FOOTER UTAMA ==================== */
 .footer {
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 30px 20px;
-  margin-top: 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  background-color: #f9f9f9; /* Warna latar belakang abu muda */
+  color: #333; /* Warna teks abu gelap */
+  padding: 30px 20px; /* Ruang dalam atas-bawah dan sisi */
+  margin-top: 0; /* Tidak ada jarak atas */
+  font-family: 'Poppins', sans-serif; /* Gunakan font utama situs */
+  font-size: 14px; /* Ukuran teks dasar */
 }
 
+/* Container diatur kolom vertikal */
 .footer .container {
   display: flex;
   flex-direction: column;
 }
 
+/* ==================== BAGIAN ATAS FOOTER ==================== */
 .footer-top {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-between; /* Pisahkan antar kolom kiri, tengah, kanan */
+  align-items: flex-start; /* Semua mulai dari atas */
 }
 
-/* Kiri: Logo + Deskripsi */
+/* ==================== KIRI: LOGO & DESKRIPSI ==================== */
 .footer-about {
-  max-width: 280px;
+  max-width: 280px; /* Batas lebar teks */
 }
 
 .footer-logo {
-  max-width: 120px;
+  max-width: 120px; /* Ukuran logo footer */
   margin-bottom: 8px;
 }
 
 .footer-about p {
-  font-size: 11px;
-  color: #555;
+  font-size: 11px; /* Lebih kecil agar ringkas */
+  color: #555; /* Abu keabu-abuan lembut */
   margin: 0;
 }
 
-/* Tengah: Menu Footer */
+/* ==================== TENGAH: MENU FOOTER ==================== */
 .footer-center {
   display: flex;
-  gap: 80px; /* jarak antar kolom menu */
+  gap: 80px; /* Jarak antar kolom menu */
   margin-left: 10px;
 }
 
+/* Judul kolom menu */
 .footer-column h6 {
   font-weight: 700;
   font-size: 13px;
   margin-bottom: 8px;
 }
 
+/* Hilangkan bullet list */
 .footer-column ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* Jarak antar item menu */
 .footer-column ul li {
   margin-bottom: 6px;
 }
 
+/* Link menu */
 .footer-column ul li a {
-  text-decoration: none;
+  text-decoration: none; /* Hilangkan garis bawah */
   color: #333;
   font-size: 13px;
   transition: color 0.3s;
 }
 
+/* Efek hover: tampilkan underline */
 .footer-column ul li a:hover {
   text-decoration: underline;
 }
 
-/* Sosial Media */
+/* ==================== KANAN: SOSIAL MEDIA ==================== */
 .social-icons {
   display: flex;
-  gap: 10px;
+  gap: 10px; /* Jarak antar ikon */
 }
 
+/* Ukuran dan efek ikon media sosial */
 .social-icons img {
   width: 22px;
   height: 22px;
-  object-fit: contain;
-  transition: transform 0.3s;
+  object-fit: contain; /* Menjaga rasio logo */
+  transition: transform 0.3s; /* Efek hover halus */
 }
 
+/* Efek hover memperbesar sedikit */
 .social-icons img:hover {
   transform: scale(1.1);
 }
 
-/* Garis pemisah */
+/* ==================== GARIS PEMISAH (HR) ==================== */
 .footer-divider {
   width: 100%;
   border: none;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ccc; /* Garis tipis abu */
   margin: 15px 0 5px;
 }
 
-/* Copyright */
+/* ==================== COPYRIGHT ==================== */
 .footer-bottom {
   width: 100%;
-  text-align: left;
-  font-size: 12px;
-  color: #666;
+  text-align: left; /* Rata kiri */
+  font-size: 12px; /* Kecil dan sederhana */
+  color: #666; /* Abu sedang */
 }
 
-/* Mobile */
+/* ==================== RESPONSIVE (MOBILE) ==================== */
 @media (max-width: 768px) {
   .footer-top {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column; /* Susun kolom jadi vertikal */
+    gap: 20px; /* Jarak antar bagian */
   }
 
   .footer-center {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: column; /* Menu disusun ke bawah */
+    gap: 15px; /* Jarak antar kolom */
     margin-left: 0;
   }
 }
 </style>
+
 
 
   <!-- Scroll Top -->

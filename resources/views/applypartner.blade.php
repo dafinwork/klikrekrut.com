@@ -129,88 +129,93 @@
 <main class="main">
 
 <!-- ==================== HERO PARTNER SECTION ==================== -->
-<section class="hero-partner">
-  <div class="container hero-content" data-aos="fade-up">
+<section class="hero-partner"> <!-- Bagian utama Hero untuk halaman Partner -->
+  <div class="container hero-content" data-aos="fade-up"> <!-- Container isi hero dengan animasi AOS (fade-up) -->
 
-    <!-- Judul -->
+    <!-- Judul utama -->
     <h1 class="hero-title">
-Let's Become Our Partner!
+      Let's Become Our Partner! <!-- Teks ajakan utama -->
     </h1>
 
-<!-- Partner Cards -->
-<div class="partner-cards">
+    <!-- ==================== KARTU KEMITRAAN ==================== -->
+    <div class="partner-cards"> <!-- Container untuk semua jenis kartu Partner -->
 
-  <!-- Recruiter -->
-  <div class="partner-card" data-aos="fade-up" data-aos-delay="100">
-    <h3 class="card-title">Recruiter</h3>
-    <div class="card-divider"></div>
-    <p class="card-desc">
-      <strong>Kamu bertugas memproses permintaan talenta dari klien melalui sistem manajemen rekrutmen kami.</strong><br><br>
-      Kamu akan ikut mendukung misi kami untuk menempatkan talenta terbaik di tempat yang tepat.
-    </p>
-    <a href="#" class="btn-apply">Apply here →</a>
-  </div>
+      <!-- ====== Kartu 1: Recruiter ====== -->
+      <div class="partner-card" data-aos="fade-up" data-aos-delay="100"> <!-- Satu kartu dengan animasi delay 100ms -->
+        <h3 class="card-title">Recruiter</h3> <!-- Judul kartu -->
+        <div class="card-divider"></div> <!-- Garis pembatas dekoratif -->
+        <p class="card-desc"> <!-- Deskripsi singkat tentang peran Recruiter -->
+          <strong>Kamu bertugas memproses permintaan talenta dari klien melalui sistem manajemen rekrutmen kami.</strong><br><br>
+          Kamu akan ikut mendukung misi kami untuk menempatkan talenta terbaik di tempat yang tepat.
+        </p>
+        <a href="#" class="btn-apply">Apply here →</a> <!-- Tombol ajakan untuk mendaftar -->
+      </div>
 
-  <!-- Sales -->
-  <div class="partner-card" data-aos="fade-up" data-aos-delay="200">
-    <h3 class="card-title">Sales</h3>
-    <div class="card-divider"></div>
-    <p class="card-desc">
-      <strong>Kamu bertugas mencari perusahaan yang lagi butuh kandidat terbaik.</strong><br><br>
-      Kamu akan ikut mendukung misi kami memberikan akses talenta terampil untuk bisnis di Indonesia.
-    </p>
-    <a href="#" class="btn-apply">Apply here →</a>
-  </div>
+      <!-- ====== Kartu 2: Sales ====== -->
+      <div class="partner-card" data-aos="fade-up" data-aos-delay="200"> <!-- Delay animasi sedikit lebih lama -->
+        <h3 class="card-title">Sales</h3>
+        <div class="card-divider"></div>
+        <p class="card-desc">
+          <strong>Kamu bertugas mencari perusahaan yang lagi butuh kandidat terbaik.</strong><br><br>
+          Kamu akan ikut mendukung misi kami memberikan akses talenta terampil untuk bisnis di Indonesia.
+        </p>
+        <a href="#" class="btn-apply">Apply here →</a>
+      </div>
 
-  <!-- Affiliate -->
-  <div class="partner-card" data-aos="fade-up" data-aos-delay="300">
-    <h3 class="card-title">Affiliate</h3>
-    <div class="card-divider"></div>
-    <p class="card-desc">
-      <strong>Kamu bertugas merekomendasikan pembelajaran rekrutmen kami ke recruiter dan jobseeker.</strong><br><br>
-      Kamu akan ikut mendukung misi kami untuk membantu mereka lebih jago cari pekerja dan cari kerja.
-    </p>
-    <a href="#" class="btn-apply">Apply here →</a>
-  </div>
+      <!-- ====== Kartu 3: Affiliate ====== -->
+      <div class="partner-card" data-aos="fade-up" data-aos-delay="300"> <!-- Delay animasi 300ms -->
+        <h3 class="card-title">Affiliate</h3>
+        <div class="card-divider"></div>
+        <p class="card-desc">
+          <strong>Kamu bertugas merekomendasikan pembelajaran rekrutmen kami ke recruiter dan jobseeker.</strong><br><br>
+          Kamu akan ikut mendukung misi kami untuk membantu mereka lebih jago cari pekerja dan cari kerja.
+        </p>
+        <a href="#" class="btn-apply">Apply here →</a>
+      </div>
 
-</div>
-<!-- Tombol WhatsApp -->
-<div class="whatsapp-button" data-aos="fade-up" data-aos-delay="400">
-  <a href="https://wa.me/6281234567890" target="_blank">
-    <img src="assets/img/wa.png" alt="WhatsApp">
-    Punya pertanyaan seputar kemitraan?
-  </a>
-</div>
+    </div> <!-- Akhir .partner-cards -->
+
+    <!-- ==================== TOMBOL WHATSAPP ==================== -->
+    <div class="whatsapp-button" data-aos="fade-up" data-aos-delay="400"> <!-- Tombol WA untuk pertanyaan -->
+      <a href="https://wa.me/6281234567890" target="_blank"> <!-- Buka WhatsApp di tab baru -->
+        <img src="assets/img/wa.png" alt="WhatsApp"> <!-- Icon WA -->
+        Punya pertanyaan seputar kemitraan? <!-- Teks di samping ikon -->
+      </a>
+    </div>
+  </div> <!-- Akhir .container -->
 </section>
+
 
 <!-- ==================== CSS HERO PARTNER ==================== -->
 <style>
-/* Hero Wrapper */
+/* ===== Wrapper utama Hero Partner ===== */
 .hero-partner {
-    background: url("assets/img/partner.jpg") center center no-repeat;
-    background-size: cover;
-    background-position: center top;
-    background-attachment: scroll;
-    background-repeat: no-repeat;
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin-top: 50px; /* sesuaikan tinggi header */
-    padding-top: 100px; /* kasih jarak pasti dari atas */
-    position: relative;
-    overflow: hidden;
-    }
+  background: url("assets/img/partner.jpg") center center no-repeat; /* Latar belakang gambar utama */
+  background-size: cover; /* Gambar memenuhi layar */
+  background-position: center top;
+  background-attachment: scroll; /* Gambar ikut bergulir */
+  background-repeat: no-repeat;
+  width: 100%; /* Lebar penuh */
+  min-height: 100vh; /* Tinggi minimal 1 layar penuh */
+  display: flex;
+  flex-direction: column; /* Susun konten secara vertikal */
+  align-items: center; /* Tengah secara horizontal */
+  justify-content: center; /* Tengah secara vertikal */
+  text-align: center;
+  margin-top: 50px; /* Jarak dari header tetap */
+  padding-top: 100px; /* Tambahan ruang di atas */
+  position: relative;
+  overflow: hidden; /* Sembunyikan elemen yang keluar dari area */
+}
+
+/* ===== Judul utama ===== */
 .hero-title {
-  font-weight: 700;
-  font-size: 4rem;
+  font-weight: 700; /* Teks tebal */
+  font-size: 4rem; /* Ukuran besar */
   line-height: 1.4;
-  color: #2e6bbc;  
-  margin-top: 40px; /* ✨ Tambahin jarak dari atas */
-  text-shadow: 
+  color: #2e6bbc; /* Warna biru tua */
+  margin-top: 40px; /* Jarak dari atas */
+  text-shadow:
     -1px -1px 0 #fff,  
      1px -1px 0 #fff,
     -1px  1px 0 #fff,
@@ -218,63 +223,56 @@ Let's Become Our Partner!
     -2px -2px 0 #fff,  
      2px -2px 0 #fff,
     -2px  2px 0 #fff,
-     2px  2px 0 #fff; /* tambahan biar makin tebal */
+     2px  2px 0 #fff; /* Bayangan putih agar teks terlihat jelas di atas gambar */
 }
+
+/* Warna teks dalam span (kalau ada) */
 .hero-title span {
-  color: #5DE0E6;
+  color: #5DE0E6; /* Biru muda */
 }
 
-/* Partner Cards */
-/* Container Cards */
-/* Partner Cards Container */
+/* ===== Container Kartu Partner ===== */
 .partner-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 25px;
+  display: grid; /* Gunakan layout grid */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Otomatis menyesuaikan kolom */
+  gap: 25px; /* Jarak antar kartu */
   margin-top: 100px;
-  max-width: 1100px;   /* ✨ kasih batas */
+  max-width: 1100px; /* Batas lebar maksimal */
   margin-left: auto;
-  margin-right: auto;  /* biar center */
+  margin-right: auto; /* Tengah secara horizontal */
 }
 
-
-/* Partner Card */
+/* ===== Setiap Kartu Partner ===== */
 .partner-card {
-  background: #fff;
+  background: #fff; /* Warna dasar putih */
   padding: 25px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px; /* Sudut membulat */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
   text-align: center;
-
-  /* Border tipis di dalam */
-  border: 1.5px solid #ddd;
-
-  /* Outline hitam */
-  outline: 2px solid #000;
-
-  /* Supaya tombol Apply rata di bawah */
+  border: 1.5px solid #ddd; /* Garis tipis abu */
+  outline: 2px solid #000; /* Garis luar hitam */
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* Biar tombol selalu di bawah */
   justify-content: space-between;
-
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; /* Animasi hover halus */
 }
 
+/* Efek saat kursor diarahkan */
 .partner-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  outline: 2px solid #000;
+  transform: translateY(-5px); /* Kartu naik sedikit */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); /* Bayangan makin dalam */
+  outline: 2px solid #000; /* Outline tetap */
 }
 
-/* Judul */
+/* ===== Judul pada Kartu ===== */
 .card-title {
   font-size: 22px;
   font-weight: 700;
-  color: #1c64f2;
+  color: #1c64f2; /* Biru cerah */
   margin-bottom: 12px;
 }
 
-/* Divider */
+/* Garis pembatas di bawah judul */
 .card-divider {
   width: 100%;
   height: 3px;
@@ -283,71 +281,76 @@ Let's Become Our Partner!
   border-radius: 5px;
 }
 
-/* Deskripsi */
+/* ===== Deskripsi Kartu ===== */
 .card-desc {
   font-size: 14px;
-  color: #333;
+  color: #333; /* Abu gelap */
   line-height: 1.6;
   margin-bottom: 25px;
-  text-align: center; /* Supaya teks lebih rapi */
+  text-align: center;
 }
 
-/* Tombol Apply */
+/* ===== Tombol Apply ===== */
 .btn-apply {
   display: inline-block;
-  background: linear-gradient(90deg, #5DE0E6, #004AAD);
+  background: linear-gradient(90deg, #5DE0E6, #004AAD); /* Gradasi biru */
   color: #fff;
   font-size: 14px;
   font-weight: 600;
   padding: 12px 28px;
-  border-radius: 25px;
+  border-radius: 25px; /* Bentuk bulat */
   text-decoration: none;
   transition: all 0.3s ease;
-
-  /* Supaya semua tombol ukurannya sama dan sejajar */
-  align-self: center;
+  align-self: center; /* Tengah di dalam kartu */
   min-width: 140px;
   text-align: center;
 }
 
+/* Efek hover pada tombol */
 .btn-apply:hover {
   opacity: 0.9;
   transform: scale(1.05);
 }
-/* Tombol WhatsApp */
+
+/* ===== Tombol WhatsApp ===== */
 .whatsapp-button {
   margin-top: 30px;
   display: flex;
-  justify-content: center;
+  justify-content: center; /* Tengah di bawah */
 }
 
+/* Style tombol WhatsApp */
 .whatsapp-button a {
   display: flex;
-  align-items: center;
-  gap: 10px;
-  background-color: #25D366;
+  align-items: center; /* Ikon sejajar dengan teks */
+  gap: 10px; /* Jarak antara ikon dan teks */
+  background-color: #25D366; /* Warna khas WhatsApp */
   color: white;
   font-size: 16px;
   font-weight: 600;
   padding: 12px 24px;
-  border-radius: 50px;
+  border-radius: 50px; /* Tombol oval */
   text-decoration: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
 }
 
+/* Hover tombol WA */
 .whatsapp-button a:hover {
   background-color: #1ebe5d;
   transform: scale(1.05);
 }
 
+/* Ukuran ikon WhatsApp */
 .whatsapp-button img {
   width: 28px;
   height: 28px;
 }
+
+/* ===== RESPONSIVE UNTUK MOBILE ===== */
 @media (max-width: 768px) {
   .hero-partner {
-    background: url("assets/img/applymobile.png") center center no-repeat;
+    background: url("assets/img/applymobile.png") center center no-repeat; /* Ganti background untuk mobile */
     background-size: cover;
     background-position: center top;
     background-attachment: scroll;
@@ -355,207 +358,233 @@ Let's Become Our Partner!
   }
 
   .hero-title {
-    font-size: 36px;
-    margin-top: 40px; /* ✨ Tambahin jarak dari atas */
+    font-size: 36px; /* Kecilkan ukuran teks di HP */
+    margin-top: 40px;
   }
 
-.hero-content {
-  max-width: 1200px;   /* batas lebar */
-  margin: 0 auto;      /* biar center */
-  padding: 0 20px;     /* biar ada ruang kanan kiri */
-}
-
+  .hero-content {
+    max-width: 1200px;
+    margin: 0 auto; /* Tengah konten */
+    padding: 0 20px; /* Jarak kanan kiri */
+  }
 }
 </style>
-<!-- footer -->
-<footer class="footer">
-  <div class="container">
-    <div class="footer-top">
-      
-      <!-- Kiri: Logo + deskripsi -->
-<div class="footer-about">
-  <img src="assets/img/Footer.png" alt="Klik Rekrut Logo" class="footer-logo">
-  <p><strong>Klik Rekrut</strong> hadir sebagai solusi rekrutmen yang ergonomis untuk mendapatkan talenta Siap Kerja.</p>
-</div>
 
-      <!-- Tengah: Menu Footer Baru -->
-      <div class="footer-center">
-        <!-- Layanan -->
+<!-- ==================== FOOTER SECTION ==================== -->
+<footer class="footer"> <!-- Bagian footer utama website -->
+  <div class="container"> <!-- Pembungkus konten agar rapi di tengah -->
+    <div class="footer-top"> <!-- Bagian atas footer (isi utama) -->
+      
+      <!-- ==================== KIRI: LOGO + DESKRIPSI ==================== -->
+      <div class="footer-about"> <!-- Kolom kiri -->
+        <img src="assets/img/Footer.png" alt="Klik Rekrut Logo" class="footer-logo"> <!-- Logo Klik Rekrut -->
+        <p>
+          <strong>Klik Rekrut</strong> hadir sebagai solusi rekrutmen yang ergonomis untuk mendapatkan talenta Siap Kerja.
+        </p> <!-- Deskripsi singkat perusahaan -->
+      </div>
+
+      <!-- ==================== TENGAH: MENU FOOTER ==================== -->
+      <div class="footer-center"> <!-- Kolom tengah berisi menu navigasi -->
+
+        <!-- Kolom 1: Layanan -->
         <div class="footer-column">
-          <h6>LAYANAN</h6>
+          <h6>LAYANAN</h6> <!-- Judul kolom -->
           <ul>
-            <li><a href="/">e-Recruitment</a></li>
-            <li><a href="elearning">e-Learning</a></li>
+            <li><a href="/">e-Recruitment</a></li> <!-- Link ke halaman utama -->
+            <li><a href="elearning">e-Learning</a></li> <!-- Link ke halaman e-learning -->
           </ul>
         </div>
-        <!-- Komunitas -->
+
+        <!-- Kolom 2: Lainnya -->
         <div class="footer-column">
           <h6>LAINNYA</h6>
           <ul>
             <li>
-  <a href="https://chat.whatsapp.com/I3mvornLsmv96QiwlcLctQ?mode=ems_copy_t" 
-     target="_blank" 
-     rel="noopener noreferrer">
-    Komunitas
-  </a>
-</li>
-
-            <li><a href="applypartner">Kemitraan</a></li>
+              <a href="https://chat.whatsapp.com/I3mvornLsmv96QiwlcLctQ?mode=ems_copy_t" 
+                 target="_blank" 
+                 rel="noopener noreferrer">
+                Komunitas
+              </a>
+            </li>
+            <li><a href="applypartner">Kemitraan</a></li> <!-- Link ke halaman kemitraan -->
           </ul>
         </div>
-        <!-- Bantuan -->
+
+        <!-- Kolom 3: Bantuan -->
         <div class="footer-column">
           <h6>BANTUAN</h6>
           <ul>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=6289678868752" 
-     target="_blank" 
-     rel="noopener noreferrer">Hubungi Kami</a></li>
+            <li><a href="#">FAQ</a></li> <!-- Halaman pertanyaan umum -->
+            <li>
+              <a href="https://api.whatsapp.com/send?phone=6289678868752" 
+                 target="_blank" 
+                 rel="noopener noreferrer">
+                Hubungi Kami
+              </a>
+            </li> <!-- Tombol kontak langsung via WhatsApp -->
           </ul>
         </div>
       </div>
 
-      <!-- Kanan: Sosial Media -->
-      <div class="footer-column footer-right">
+      <!-- ==================== KANAN: SOSIAL MEDIA ==================== -->
+      <div class="footer-column footer-right"> <!-- Kolom kanan -->
         <h6>SOCIAL MEDIA</h6>
-        <div class="social-icons">
-          <a href="https://www.tiktok.com/@klikrekrut" target="_blank"><img src="assets/img/tiktok.png" alt="Tiktok"></a>
-          <a href="https://www.instagram.com/klikrekrut/" target="_blank"><img src="assets/img/instagram.png" alt="Instagram"></a>
-          <a href="https://www.linkedin.com/company/klikrekrut/" target="_blank"><img src="assets/img/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://www.youtube.com/@klikrekrut" target="_blank"><img src="assets/img/youtube.png" alt="YouTube"></a>
+        <div class="social-icons"> <!-- Ikon media sosial -->
+          <a href="https://www.tiktok.com/@klikrekrut" target="_blank">
+            <img src="assets/img/tiktok.png" alt="Tiktok">
+          </a>
+          <a href="https://www.instagram.com/klikrekrut/" target="_blank">
+            <img src="assets/img/instagram.png" alt="Instagram">
+          </a>
+          <a href="https://www.linkedin.com/company/klikrekrut/" target="_blank">
+            <img src="assets/img/linkedin.png" alt="LinkedIn">
+          </a>
+          <a href="https://www.youtube.com/@klikrekrut" target="_blank">
+            <img src="assets/img/youtube.png" alt="YouTube">
+          </a>
         </div>
       </div>
+    </div> <!-- /footer-top -->
 
-    </div>
+    <!-- ==================== GARIS PEMISAH ==================== -->
+    <hr class="footer-divider"> <!-- Garis horizontal pemisah antara konten dan copyright -->
 
-    <!-- Garis Pemisah -->
-    <hr class="footer-divider">
-
-    <!-- Copyright -->
-    <div class="footer-bottom">
-      <p>© KLIKREKRUT 2025 • All Right Reserved</p>
+    <!-- ==================== COPYRIGHT ==================== -->
+    <div class="footer-bottom"> <!-- Bagian bawah footer -->
+      <p>© KLIKREKRUT 2025 • All Right Reserved</p> <!-- Hak cipta -->
     </div>
   </div>
 </footer>
 
 <style>
+/* ==================== STYLE FOOTER UTAMA ==================== */
 .footer {
-  background-color: #f9f9f9;
-  color: #333;
-  padding: 30px 20px;
-  margin-top: 0;
-  font-family: 'Poppins', sans-serif;
-  font-size: 14px;
+  background-color: #f9f9f9; /* Warna latar belakang abu muda */
+  color: #333; /* Warna teks abu gelap */
+  padding: 30px 20px; /* Ruang dalam atas-bawah dan sisi */
+  margin-top: 0; /* Tidak ada jarak atas */
+  font-family: 'Poppins', sans-serif; /* Gunakan font utama situs */
+  font-size: 14px; /* Ukuran teks dasar */
 }
 
+/* Container diatur kolom vertikal */
 .footer .container {
   display: flex;
   flex-direction: column;
 }
 
+/* ==================== BAGIAN ATAS FOOTER ==================== */
 .footer-top {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  justify-content: space-between; /* Pisahkan antar kolom kiri, tengah, kanan */
+  align-items: flex-start; /* Semua mulai dari atas */
 }
 
-/* Kiri: Logo + Deskripsi */
+/* ==================== KIRI: LOGO & DESKRIPSI ==================== */
 .footer-about {
-  max-width: 280px;
+  max-width: 280px; /* Batas lebar teks */
 }
 
 .footer-logo {
-  max-width: 120px;
+  max-width: 120px; /* Ukuran logo footer */
   margin-bottom: 8px;
 }
 
 .footer-about p {
-  font-size: 11px;
-  color: #555;
+  font-size: 11px; /* Lebih kecil agar ringkas */
+  color: #555; /* Abu keabu-abuan lembut */
   margin: 0;
 }
 
-/* Tengah: Menu Footer */
+/* ==================== TENGAH: MENU FOOTER ==================== */
 .footer-center {
   display: flex;
-  gap: 80px; /* jarak antar kolom menu */
+  gap: 80px; /* Jarak antar kolom menu */
   margin-left: 10px;
 }
 
+/* Judul kolom menu */
 .footer-column h6 {
   font-weight: 700;
   font-size: 13px;
   margin-bottom: 8px;
 }
 
+/* Hilangkan bullet list */
 .footer-column ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
+/* Jarak antar item menu */
 .footer-column ul li {
   margin-bottom: 6px;
 }
 
+/* Link menu */
 .footer-column ul li a {
-  text-decoration: none;
+  text-decoration: none; /* Hilangkan garis bawah */
   color: #333;
   font-size: 13px;
   transition: color 0.3s;
 }
 
+/* Efek hover: tampilkan underline */
 .footer-column ul li a:hover {
   text-decoration: underline;
 }
 
-/* Sosial Media */
+/* ==================== KANAN: SOSIAL MEDIA ==================== */
 .social-icons {
   display: flex;
-  gap: 10px;
+  gap: 10px; /* Jarak antar ikon */
 }
 
+/* Ukuran dan efek ikon media sosial */
 .social-icons img {
   width: 22px;
   height: 22px;
-  object-fit: contain;
-  transition: transform 0.3s;
+  object-fit: contain; /* Menjaga rasio logo */
+  transition: transform 0.3s; /* Efek hover halus */
 }
 
+/* Efek hover memperbesar sedikit */
 .social-icons img:hover {
   transform: scale(1.1);
 }
 
-/* Garis pemisah */
+/* ==================== GARIS PEMISAH (HR) ==================== */
 .footer-divider {
   width: 100%;
   border: none;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #ccc; /* Garis tipis abu */
   margin: 15px 0 5px;
 }
 
-/* Copyright */
+/* ==================== COPYRIGHT ==================== */
 .footer-bottom {
   width: 100%;
-  text-align: left;
-  font-size: 12px;
-  color: #666;
+  text-align: left; /* Rata kiri */
+  font-size: 12px; /* Kecil dan sederhana */
+  color: #666; /* Abu sedang */
 }
 
-/* Mobile */
+/* ==================== RESPONSIVE (MOBILE) ==================== */
 @media (max-width: 768px) {
   .footer-top {
-    flex-direction: column;
-    gap: 20px;
+    flex-direction: column; /* Susun kolom jadi vertikal */
+    gap: 20px; /* Jarak antar bagian */
   }
 
   .footer-center {
-    flex-direction: column;
-    gap: 15px;
+    flex-direction: column; /* Menu disusun ke bawah */
+    gap: 15px; /* Jarak antar kolom */
     margin-left: 0;
   }
 }
 </style>
+
 
 
   <!-- Scroll Top -->
