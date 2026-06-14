@@ -7,16 +7,6 @@
       <img src="assets/img/Header.png" alt="Klikrekrut Logo" class="logo-full" />
     </a>
 
-    <!-- Toggle Switch (Moved outside navmenu for mobile visibility) -->
-    <div class="view-toggle-wrapper d-flex align-items-center ms-auto me-3">
-      <div class="view-toggle-container d-flex align-items-center" style="background: transparent; border: none; padding: 0;">
-        <input type="checkbox" id="main-view-toggle" class="d-none">
-        <span class="toggle-label active" id="label-talent">Talent</span>
-        <span class="text-white mx-2 toggle-separator" style="opacity: 0.5;">|</span>
-        <span class="toggle-label" id="label-business">Business</span>
-      </div>
-    </div>
-
     <!-- Mobile Toggle -->
     <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
@@ -32,7 +22,7 @@
         
         <!-- Business Links -->
         <div id="nav-business-links" class="d-flex flex-column flex-xl-row align-items-center" style="display: none !important;">
-          <li><a href="#hero">What is RaaS</a></li>
+          <li><a href="#what-is-raas">What is RaaS</a></li>
           <li><a href="#why-raas">Why RaaS?</a></li>
           <li class="dropdown"><a href="#" class="dropdown-toggle-btn"><span>Services</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul class="dropdown-menu-list">
@@ -43,7 +33,16 @@
             </ul>
           </li>
         </div>
-        
+
+        <!-- Toggle Switch -->
+        <li class="ms-xl-auto ms-0 view-toggle-wrapper mt-3 mt-xl-0">
+          <div class="view-toggle-container d-flex align-items-center">
+            <input type="checkbox" id="main-view-toggle" class="d-none">
+            <span class="toggle-label active" id="label-talent">Talent</span>
+            <span class="text-white mx-2 toggle-separator" style="opacity: 0.5;">/</span>
+            <span class="toggle-label" id="label-business">Business</span>
+          </div>
+        </li>
       </ul>
     </nav>
   </div>
