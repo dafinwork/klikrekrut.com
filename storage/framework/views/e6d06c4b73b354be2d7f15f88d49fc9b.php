@@ -196,3 +196,4 @@
     }
   });
 </script>
+<?php /**PATH C:\laragon\www\kliksoft\resources\views/partials/navbar.blade.php ENDPATH**/ ?>
