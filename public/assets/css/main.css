@@ -412,7 +412,7 @@ h6 {
   display: block;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .navmenu ul li:hover ul {
     display: none !important;
   }
@@ -446,7 +446,7 @@ h6 {
   .mobile-nav-toggle {
     display: block;
     position: relative;
-    z-index: 10001;
+    z-index: 10002;
     font-size: 28px;
     color: white;
     cursor: pointer;
@@ -455,23 +455,21 @@ h6 {
   #navmenu {
     position: fixed;
     top: 0;
-    right: 0;
-    height: 100%;
+    right: -100%;
+    height: 100vh;
     width: 280px;
     background-color: #ffffff;
-    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.1);
-    padding: 80px 20px 20px;
-    transform: translateX(100%);
-    transition: transform 0.3s ease-in-out;
-    opacity: 1;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    padding: 80px 25px 30px;
+    transition: right 0.35s ease-in-out;
     overflow-y: auto;
-    z-index: 9999;
+    z-index: 10001;
     display: flex;
     flex-direction: column;
   }
 
   #navmenu.active {
-    transform: translateX(0);
+    right: 0;
   }
 
   .navmenu ul {
@@ -480,11 +478,12 @@ h6 {
     padding-left: 0;
     margin: 0;
     width: 100%;
+    gap: 0;
   }
 
   .navmenu ul li {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 
   .navmenu ul li a {
@@ -492,20 +491,47 @@ h6 {
     width: 100%;
     color: #004AAD;
     font-weight: 500;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(0, 74, 173, 0.08);
+    font-size: 15px;
   }
 
-  .navmenu ul li ul {
+  /* Dropdown submenu inside mobile */
+  .navmenu ul li ul,
+  .navmenu ul li .dropdown-menu-list {
+    position: static !important;
+    box-shadow: none !important;
+    background: #f5f8fc !important;
+    border-radius: 8px !important;
     max-height: 0;
     overflow: hidden;
     opacity: 0;
-    transition: max-height 0.4s ease, opacity 0.3s ease;
+    transition: max-height 0.35s ease, opacity 0.25s ease;
+    display: flex !important;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
   }
 
-  .navmenu ul li.open > ul {
-    max-height: 300px;
+  .navmenu ul li.open > ul,
+  .navmenu ul li.open > .dropdown-menu-list {
+    max-height: 400px;
     opacity: 1;
+    padding: 5px 0;
+  }
+
+  .navmenu ul li ul li a,
+  .navmenu ul li .dropdown-menu-list li a {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-bottom: none;
+    color: #333;
+  }
+
+  .navmenu ul li ul li a:hover,
+  .navmenu ul li .dropdown-menu-list li a:hover {
+    background: #e8f0fe;
+    color: #004AAD;
   }
 
   .navmenu ul li .btn {
@@ -519,6 +545,34 @@ h6 {
     font-weight: 500;
   }
 
+  /* Toggle wrapper inside mobile sidebar */
+  .view-toggle-wrapper {
+    margin-left: 0 !important;
+    margin-top: 25px !important;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 74, 173, 0.1);
+  }
+
+  .view-toggle-container {
+    background: #f0f4f8 !important;
+    border: none !important;
+    padding: 8px 20px !important;
+    border-radius: 50px !important;
+  }
+
+  .toggle-label {
+    color: rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .toggle-label.active {
+    color: #004AAD !important;
+  }
+
+  .toggle-separator {
+    color: rgba(0, 0, 0, 0.3) !important;
+  }
+
+  /* Mobile nav overlay */
   .mobile-nav-overlay {
     position: fixed;
     top: 0;
@@ -526,7 +580,7 @@ h6 {
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.4);
-    z-index: 9998;
+    z-index: 9999;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease;

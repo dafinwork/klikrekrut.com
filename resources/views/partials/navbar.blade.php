@@ -8,7 +8,7 @@
     </a>
 
     <!-- Mobile Toggle -->
-    <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+    <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
 
     <!-- Nav Menu -->
     <nav id="navmenu" class="navmenu d-flex align-items-center">
