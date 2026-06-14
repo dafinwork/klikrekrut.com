@@ -360,14 +360,14 @@
   }
   body { overflow-x: hidden; }
   .raas-card {
-    min-width: 250px;
-    max-width: 260px;
-    margin: 0 -35px; /* Overlap cards more to fit in screen */
+    min-width: 240px;
+    max-width: 250px;
+    margin: 0 -60px; /* Heavily overlap to fit all 3 on small screens */
   }
   .raas-card.side {
     display: flex;
     opacity: 0.5;
-    transform: scale(0.7);
+    transform: scale(0.6);
     z-index: 1;
   }
   .raas-card.center {
