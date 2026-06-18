@@ -10,7 +10,7 @@
           <p class="hero-talent-desc mt-3">
             Akses mentoring, kelas karir, dan pembelajaran rekrutmen<br class="d-none d-md-block">untuk meningkatkan peluangmu diterima kerja.
           </p>
-          <a href="#" class="btn btn-hero-talent mt-4 d-inline-flex align-items-center">
+          <a href="#testi-talent-section" class="btn btn-hero-talent mt-4 d-inline-flex align-items-center">
             Akses Layanan <i class="bi bi-arrow-down-right ms-2" style="-webkit-text-stroke: 1px;"></i>
           </a>
         </div>
@@ -23,7 +23,7 @@
   </section>
 
   <!-- ==================== TESTIMONIALS SECTION ==================== -->
-  <section class="testi-talent-section bg-white text-center">
+  <section id="testi-talent-section" class="testi-talent-section bg-white text-center">
     <div class="container">
       <div class="mb-5">
         <span class="badge title-capsule px-4 py-2 fs-4">Apa Kata Mereka Yang Telah Diterima Kerja?</span>
