@@ -336,21 +336,31 @@
               <input type="text" class="form-control" id="name" required placeholder="Masukkan nama Anda">
             </div>
             <div class="mb-3">
-              <label for="company" class="form-label text-muted small">Nama Perusahaan</label>
+              <label for="company" class="form-label text-muted small">Company Name</label>
               <input type="text" class="form-control" id="company" required placeholder="Masukkan nama perusahaan">
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label text-muted small">Alamat Email</label>
-              <input type="email" class="form-control" id="email" required placeholder="email@perusahaan.com">
+              <label for="scale" class="form-label text-muted small">Company Scale</label>
+              <select class="form-control" id="scale" required>
+                <option value="" disabled selected>Pilih Skala Perusahaan...</option>
+                <option value="Startup">Startup</option>
+                <option value="SME / Medium Enterprise">SME / Medium Enterprise</option>
+                <option value="Corporate">Corporate</option>
+              </select>
             </div>
-            <div class="mb-4">
-              <label for="service" class="form-label text-muted small">Pilih Layanan</label>
+            <div class="mb-3">
+              <label for="service" class="form-label text-muted small">Service Needed</label>
               <select class="form-control" id="service" required>
                 <option value="" disabled selected>Pilih Layanan...</option>
+                <option value="Strategic Consulting">Strategic Consulting</option>
                 <option value="End-to-end Process">End-to-end Process</option>
                 <option value="CV Screening Assistant">CV Screening Assistant</option>
                 <option value="Sourcing Kandidat">Sourcing Kandidat</option>
               </select>
+            </div>
+            <div class="mb-4">
+              <label for="challenge" class="form-label text-muted small">Your Current Challenge</label>
+              <textarea class="form-control" id="challenge" required placeholder="Jelaskan tantangan/kebutuhan rekrutmen Anda saat ini" rows="3"></textarea>
             </div>
             <button type="submit" class="btn w-100 fw-bold" style="background: black; color: white; border-radius: 8px; padding: 12px;">Kirim Pesan via WhatsApp</button>
           </form>
@@ -365,10 +375,11 @@
     e.preventDefault();
     const name = document.getElementById('name').value;
     const company = document.getElementById('company').value;
-    const email = document.getElementById('email').value;
+    const scale = document.getElementById('scale').value;
     const service = document.getElementById('service').value;
+    const challenge = document.getElementById('challenge').value;
     
-    const text = `Halo tim KLIK Rekrut! Saya tertarik dengan layanan RaaS.%0A%0A*Nama:* ${name}%0A*Perusahaan:* ${company}%0A*Email:* ${email}%0A*Layanan:* ${service}%0A%0AMohon info lebih lanjut, terima kasih.`;
+    const text = `Halo tim KLIK Rekrut! Saya tertarik dengan layanan RaaS.%0A%0A*Nama:* ${name}%0A*Perusahaan:* ${company}%0A*Skala Perusahaan:* ${scale}%0A*Layanan:* ${service}%0A*Tantangan:* ${challenge}%0A%0AMohon info lebih lanjut, terima kasih.`;
     const waNumber = "6281234567890"; // Ganti dengan nomor asli
     
     window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank');

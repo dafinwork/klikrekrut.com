@@ -252,8 +252,8 @@
             peluang karir atau proyek yang sesuai dengan kemampuan kamu.
           </p>
           <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-md-start">
-            <a href="#" class="btn btn-success rounded-pill px-4 fw-bold shadow-sm" style="background-color: #7ed957; border-color: #7ed957;">Daftar Jadi Talent</a>
-            <a href="#" class="btn btn-outline-light rounded-pill px-4 fw-bold">Lihat Job Mading</a>
+            <a href="https://forms.gle/PHXQUC2PCPBamJqu9" target="_blank" class="btn btn-success rounded-pill px-4 fw-bold shadow-sm" style="background-color: #7ed957; border-color: #7ed957;">Daftar Jadi Talent</a>
+            <a href="https://bit.ly/m/klikrekrut" target="_blank" class="btn btn-outline-light rounded-pill px-4 fw-bold">Lihat Job Mading</a>
           </div>
         </div>
 
