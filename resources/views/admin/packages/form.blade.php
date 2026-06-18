@@ -25,7 +25,8 @@
                 </div>
                 <div class="col-md-6">
                     <label class="form-label fw-semibold">Badge Label (Optional)</label>
-                    <input type="text" name="badge" class="form-control" placeholder="e.g. CONSULT, CAREER" value="{{ old('badge', $package->badge ?? '') }}">
+                    <input type="text" name="badge" class="form-control" placeholder="e.g. HOT DEAL, BESTSELLER" value="{{ old('badge', $package->badge ?? '') }}">
+                    <small class="text-muted">Hanya tampil untuk E-Learning. Kosongkan untuk Mentoring.</small>
                 </div>
             </div>
 
@@ -43,6 +44,7 @@
                 <div class="col-md-6">
                     <label class="form-label fw-semibold">Price (Rp)</label>
                     <input type="number" name="price" class="form-control" required value="{{ old('price', $package->price ?? 0) }}">
+                    <small class="text-muted">Isi 0 untuk menampilkan "Free".</small>
                 </div>
                 <div class="col-md-6">
                     <label class="form-label fw-semibold">YouTube Preview Link (Optional)</label>
@@ -60,6 +62,36 @@
                 <input type="file" name="image" class="form-control" accept="image/*">
             </div>
 
+            <hr class="my-4">
+            <h5 class="fw-bold mb-3"><i class="bi bi-gear"></i> Detail Tambahan</h5>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Tanggal & Jam Event</label>
+                <input type="datetime-local" name="event_date" class="form-control" value="{{ old('event_date', isset($package) && $package->event_date ? $package->event_date->format('Y-m-d\TH:i') : '') }}">
+                <small class="text-muted">Khusus Live Class — digunakan untuk countdown otomatis.</small>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold">Nama Speaker / Mentor</label>
+                    <input type="text" name="speaker_name" class="form-control" placeholder="e.g. Kak Andi" value="{{ old('speaker_name', $package->speaker_name ?? '') }}">
+                </div>
+                <div class="col-md-6">
+                    <label class="form-label fw-semibold">Profil Speaker / Mentor</label>
+                    <input type="text" name="speaker_profile" class="form-control" placeholder="e.g. Senior HR Google" value="{{ old('speaker_profile', $package->speaker_profile ?? '') }}">
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label fw-semibold">Background / Deskripsi Event</label>
+                <textarea name="background_info" class="form-control" rows="3" placeholder="Deskripsi lengkap tentang kelas/event ini...">{{ old('background_info', $package->background_info ?? '') }}</textarea>
+            </div>
+
+            <div class="mb-4">
+                <label class="form-label fw-semibold">Benefit / Manfaat</label>
+                <textarea name="benefits" class="form-control" rows="3" placeholder="Manfaat mengikuti kelas ini... (satu per baris)">{{ old('benefits', $package->benefits ?? '') }}</textarea>
+            </div>
+
             <div class="text-end">
                 <button type="submit" class="btn btn-primary px-4 fw-bold">{{ isset($package) ? 'Update Package' : 'Save Package' }}</button>
             </div>
@@ -67,3 +99,4 @@
     </div>
 </div>
 @endsection
+

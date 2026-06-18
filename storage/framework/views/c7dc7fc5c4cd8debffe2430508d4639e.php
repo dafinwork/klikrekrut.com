@@ -202,9 +202,38 @@
             <div class="col-md-4">
               <div class="card session-card h-100 text-start shadow-sm border-0">
                 <div class="position-relative">
-                  <?php if($package->badge): ?>
-                    <span class="badge position-absolute top-0 start-0 m-3" style="background-color: #004AAD; font-size: 10px; font-weight: bold;"><?php echo e(strtoupper($package->badge)); ?></span>
+
+                  
+                  <?php if($typeName === 'Live Class' && $package->event_date): ?>
+                    <?php
+                      $now = \Carbon\Carbon::now()->startOfDay();
+                      $eventDay = $package->event_date->copy()->startOfDay();
+                      $diffDays = $now->diffInDays($eventDay, false);
+                      if ($diffDays > 3) {
+                        $countdownText = $diffDays . ' hari lagi';
+                      } elseif ($diffDays == 3) {
+                        $countdownText = '3 hari lagi';
+                      } elseif ($diffDays == 2) {
+                        $countdownText = '2 hari lagi';
+                      } elseif ($diffDays == 1) {
+                        $countdownText = '1 hari lagi';
+                      } elseif ($diffDays == 0) {
+                        $countdownText = 'Hari ini';
+                      } else {
+                        $countdownText = null; // event sudah lewat
+                      }
+                    ?>
+                    <?php if($countdownText): ?>
+                      <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2" style="background-color: #00B894; font-size: 11px; font-weight: bold; border-radius: 6px; z-index: 2;">
+                        <i class="bi bi-clock me-1"></i><?php echo e($countdownText); ?>
+
+                      </span>
+                    <?php endif; ?>
+                  <?php elseif($typeName === 'E-Learning' && $package->badge): ?>
+                    <span class="badge position-absolute top-0 start-0 m-3 px-3 py-2" style="background-color: #E17055; font-size: 11px; font-weight: bold; border-radius: 6px; z-index: 2;"><?php echo e(strtoupper($package->badge)); ?></span>
                   <?php endif; ?>
+                  
+
                   <?php if($package->image): ?>
                     <img src="<?php echo e(asset('storage/' . $package->image)); ?>" class="card-img-top session-img" alt="<?php echo e($package->title); ?>" style="height: 200px; object-fit: cover;">
                   <?php else: ?>
@@ -213,16 +242,53 @@
                 </div>
                 <div class="card-body p-4 d-flex flex-column">
                   <h6 class="card-title fw-bold" style="color: #004AAD;"><?php echo e($package->title); ?></h6>
-                  <?php if($package->subtitle): ?>
-                    <small class="text-info mb-3 d-block"><?php echo e($package->subtitle); ?></small>
+
+                  
+                  <?php if($typeName === 'Mentoring' && $package->subtitle): ?>
+                    <small class="text-info mb-2 d-block"><?php echo e($package->subtitle); ?></small>
                   <?php endif; ?>
-                  <h5 class="fw-bold mb-4">Rp <?php echo e(number_format($package->price, 0, ',', '.')); ?></h5>
+
+                  
+                  <?php if($typeName === 'Live Class' && $package->event_date): ?>
+                    <small class="text-muted mb-2 d-block">
+                      <i class="bi bi-calendar-event me-1"></i><?php echo e($package->event_date->translatedFormat('l, d M Y • H:i')); ?>
+
+                    </small>
+                  <?php endif; ?>
+
+                  
+                  <?php if($package->price == 0): ?>
+                    <h5 class="fw-bold mb-4" style="color: #00B894;">Free</h5>
+                  <?php else: ?>
+                    <h5 class="fw-bold mb-4">Rp <?php echo e(number_format($package->price, 0, ',', '.')); ?></h5>
+                  <?php endif; ?>
+                  
                   
                   <div class="mt-auto d-flex gap-2">
-                    <?php if($package->preview_link): ?>
-                      <button class="btn btn-outline-secondary flex-grow-1 session-btn-outline preview-btn" data-bs-toggle="modal" data-bs-target="#previewModal" data-url="<?php echo e($package->preview_link); ?>">Preview</button>
+                    <?php if($typeName === 'Live Class'): ?>
+                      <button class="btn btn-outline-secondary flex-grow-1 session-btn-outline detail-btn" data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-title="<?php echo e($package->title); ?>"
+                        data-speaker="<?php echo e($package->speaker_name); ?>"
+                        data-speaker-profile="<?php echo e($package->speaker_profile); ?>"
+                        data-background="<?php echo e($package->background_info); ?>"
+                        data-benefits="<?php echo e($package->benefits); ?>"
+                        data-event-date="<?php echo e($package->event_date ? $package->event_date->translatedFormat('l, d M Y • H:i') : ''); ?>">Detail</button>
+                      <button class="btn btn-primary flex-grow-1 session-btn-primary buy-btn" data-bs-toggle="modal" data-bs-target="#qrisModal" data-title="<?php echo e($package->title); ?>" data-price="<?php echo e($package->price); ?>">Ikut Kelas</button>
+                    <?php elseif($typeName === 'E-Learning'): ?>
+                      <?php if($package->preview_link): ?>
+                        <button class="btn btn-outline-secondary flex-grow-1 session-btn-outline preview-btn" data-bs-toggle="modal" data-bs-target="#previewModal" data-url="<?php echo e($package->preview_link); ?>">Preview</button>
+                      <?php endif; ?>
+                      <button class="btn btn-primary flex-grow-1 session-btn-primary buy-btn" data-bs-toggle="modal" data-bs-target="#qrisModal" data-title="<?php echo e($package->title); ?>" data-price="<?php echo e($package->price); ?>">Beli Akses</button>
+                    <?php elseif($typeName === 'Mentoring'): ?>
+                      <button class="btn btn-outline-secondary flex-grow-1 session-btn-outline detail-btn" data-bs-toggle="modal" data-bs-target="#detailModal"
+                        data-title="<?php echo e($package->title); ?>"
+                        data-speaker="<?php echo e($package->speaker_name); ?>"
+                        data-speaker-profile="<?php echo e($package->speaker_profile); ?>"
+                        data-background="<?php echo e($package->background_info); ?>"
+                        data-benefits="<?php echo e($package->benefits); ?>"
+                        data-event-date="">Detail</button>
+                      <button class="btn btn-primary flex-grow-1 session-btn-primary buy-btn" data-bs-toggle="modal" data-bs-target="#qrisModal" data-title="<?php echo e($package->title); ?>" data-price="<?php echo e($package->price); ?>">Ajukan Sesi</button>
                     <?php endif; ?>
-                    <button class="btn btn-primary flex-grow-1 session-btn-primary buy-btn" data-bs-toggle="modal" data-bs-target="#qrisModal" data-title="<?php echo e($package->title); ?>" data-price="<?php echo e($package->price); ?>">Beli Sesi</button>
                   </div>
                 </div>
               </div>
@@ -265,7 +331,48 @@
     </div>
   </section>
 
-  <!-- ==================== PREVIEW MODAL ==================== -->
+  <!-- ==================== DETAIL MODAL (Live Class & Mentoring) ==================== -->
+  <div class="modal fade" id="detailModal" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content border-0 rounded-4 shadow">
+        <div class="modal-header border-bottom-0 pb-0 px-4 pt-4">
+          <h5 class="modal-title fw-bold" id="detailModalTitle" style="color: #004AAD;">Detail Kelas</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body px-4 pb-4 pt-2">
+          <!-- Event Date -->
+          <div id="detailEventDate" class="mb-3 d-none">
+            <small class="text-muted"><i class="bi bi-calendar-event me-1"></i><span id="detailEventDateText"></span></small>
+          </div>
+
+          <!-- Speaker Info -->
+          <div id="detailSpeakerSection" class="mb-3 d-none">
+            <div class="d-flex align-items-center gap-2 mb-2">
+              <i class="bi bi-person-circle fs-4" style="color: #004AAD;"></i>
+              <div>
+                <strong id="detailSpeakerName" class="d-block"></strong>
+                <small id="detailSpeakerProfile" class="text-muted"></small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Background Info -->
+          <div id="detailBackgroundSection" class="mb-3 d-none">
+            <h6 class="fw-bold mb-2"><i class="bi bi-info-circle me-1"></i> Tentang</h6>
+            <p id="detailBackgroundText" class="text-muted mb-0" style="white-space: pre-line;"></p>
+          </div>
+
+          <!-- Benefits -->
+          <div id="detailBenefitsSection" class="d-none">
+            <h6 class="fw-bold mb-2"><i class="bi bi-star me-1"></i> Manfaat</h6>
+            <div id="detailBenefitsText" class="text-muted" style="white-space: pre-line;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== PREVIEW MODAL (E-Learning YouTube) ==================== -->
   <div class="modal fade" id="previewModal" tabindex="-1" aria-labelledby="previewModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg">
       <div class="modal-content border-0 bg-transparent">
@@ -308,10 +415,63 @@
     </div>
   </div>
 
-  <!-- Modal Script logic -->
+  <!-- ==================== ALL MODAL SCRIPTS ==================== -->
   <script>
     document.addEventListener('DOMContentLoaded', function() {
-      // Preview logic
+
+      // ===== DETAIL MODAL LOGIC (Live Class & Mentoring) =====
+      const detailButtons = document.querySelectorAll('.detail-btn');
+      detailButtons.forEach(btn => {
+        btn.addEventListener('click', function() {
+          const title = this.getAttribute('data-title') || '';
+          const speaker = this.getAttribute('data-speaker') || '';
+          const speakerProfile = this.getAttribute('data-speaker-profile') || '';
+          const background = this.getAttribute('data-background') || '';
+          const benefits = this.getAttribute('data-benefits') || '';
+          const eventDate = this.getAttribute('data-event-date') || '';
+
+          document.getElementById('detailModalTitle').textContent = title;
+
+          // Event Date
+          const dateSection = document.getElementById('detailEventDate');
+          if (eventDate) {
+            dateSection.classList.remove('d-none');
+            document.getElementById('detailEventDateText').textContent = eventDate;
+          } else {
+            dateSection.classList.add('d-none');
+          }
+
+          // Speaker
+          const speakerSection = document.getElementById('detailSpeakerSection');
+          if (speaker) {
+            speakerSection.classList.remove('d-none');
+            document.getElementById('detailSpeakerName').textContent = speaker;
+            document.getElementById('detailSpeakerProfile').textContent = speakerProfile;
+          } else {
+            speakerSection.classList.add('d-none');
+          }
+
+          // Background
+          const bgSection = document.getElementById('detailBackgroundSection');
+          if (background) {
+            bgSection.classList.remove('d-none');
+            document.getElementById('detailBackgroundText').textContent = background;
+          } else {
+            bgSection.classList.add('d-none');
+          }
+
+          // Benefits
+          const benefitsSection = document.getElementById('detailBenefitsSection');
+          if (benefits) {
+            benefitsSection.classList.remove('d-none');
+            document.getElementById('detailBenefitsText').textContent = benefits;
+          } else {
+            benefitsSection.classList.add('d-none');
+          }
+        });
+      });
+
+      // ===== PREVIEW MODAL LOGIC (E-Learning YouTube) =====
       const previewModal = document.getElementById('previewModal');
       const previewIframe = document.getElementById('previewIframe');
       
@@ -331,8 +491,7 @@
         previewIframe.src = ''; // stop video playing
       });
 
-      // QRIS logic
-      const qrisModal = document.getElementById('qrisModal');
+      // ===== QRIS MODAL LOGIC (All types) =====
       const qrisPackageName = document.getElementById('qrisPackageName');
       const qrisPackagePrice = document.getElementById('qrisPackagePrice');
       const waConfirmBtn = document.getElementById('waConfirmBtn');
@@ -344,7 +503,7 @@
           const price = parseInt(this.getAttribute('data-price'));
           
           qrisPackageName.textContent = title;
-          qrisPackagePrice.textContent = 'Rp ' + price.toLocaleString('id-ID');
+          qrisPackagePrice.textContent = price === 0 ? 'Free' : 'Rp ' + price.toLocaleString('id-ID');
           
           const waPhone = '6281234567890'; // Ganti dengan nomor WA admin
           const message = `Halo, saya sudah melakukan pembayaran untuk paket *${title}*. Berikut bukti transfernya:`;

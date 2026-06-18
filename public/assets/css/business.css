@@ -285,9 +285,9 @@
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: white;
-  color: #004AAD;
-  border: 1px solid #004AAD;
+  background: #7acbe1;
+  color: white;
+  border: none;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -295,7 +295,7 @@
   box-shadow: 0 2px 5px rgba(0,0,0,0.2);
   transition: all 0.3s ease;
 }
-.raas-nav-btn:hover { background: #004AAD; color: white; }
+.raas-nav-btn:hover { background: #52a5bd; color: white; }
 .raas-nav-btn.prev { left: -20px; }
 .raas-nav-btn.next { right: -20px; }
 .badge-popular {

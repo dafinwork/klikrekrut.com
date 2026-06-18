@@ -29,7 +29,12 @@ class PackageController extends Controller
             'subtitle' => 'nullable|string',
             'price' => 'required|numeric',
             'preview_link' => 'nullable|url',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'event_date' => 'nullable|date',
+            'speaker_name' => 'nullable|string',
+            'speaker_profile' => 'nullable|string',
+            'background_info' => 'nullable|string',
+            'benefits' => 'nullable|string',
         ]);
 
         if ($request->hasFile('image')) {
@@ -54,7 +59,12 @@ class PackageController extends Controller
             'subtitle' => 'nullable|string',
             'price' => 'required|numeric',
             'preview_link' => 'nullable|url',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048'
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'event_date' => 'nullable|date',
+            'speaker_name' => 'nullable|string',
+            'speaker_profile' => 'nullable|string',
+            'background_info' => 'nullable|string',
+            'benefits' => 'nullable|string',
         ]);
 
         if ($request->hasFile('image')) {
@@ -77,3 +87,4 @@ class PackageController extends Controller
         return redirect()->route('admin.packages.index')->with('success', 'Package deleted successfully.');
     }
 }
+

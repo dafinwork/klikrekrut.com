@@ -254,12 +254,13 @@
       <div class="raas-carousel-wrapper">
       
       <div class="raas-card side">
-        <div class="raas-card-header">CV Screening Assistant</div>
+        <div class="raas-card-header">CV Sourcing Assistant</div>
         <div class="raas-card-body">
           <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Screening CV sesuai kebutuhan</li>
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Shortlist kandidat terpilih</li>
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Pembuatan laporan screening</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Asistensi pencarian CV kandidat yang prequalified</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Penjadwalan intial interview</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Garansi kandidat hadir interview</li>
           </ul>
         </div>
       </div>
@@ -271,7 +272,7 @@
           <p class="text-center text-muted text-sm mb-3">Layanan rekrutmen setara headhunting profesional dengan biaya yang jauh lebih hemat.</p>
           <ul class="list-unstyled mb-0" style="font-size: 0.9rem;">
             <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Sourcing dari pencarian sampai penyortiran kandidat</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Asistensi dari pencarian sampai penyerahan kandidat</li>
             <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Penjadwalan dan pendampingan final interview</li>
             <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Garansi sampai mendapatkan kandidat yang cocok untuk di hire</li>
             <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Garansi kandidat selama 1 bulan onboarding</li>
@@ -280,18 +281,21 @@
       </div>
 
       <div class="raas-card side">
-        <div class="raas-card-header">Sourcing Kandidat</div>
+        <div class="raas-card-header">Interview Assistant</div>
         <div class="raas-card-body">
           <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Pencarian kandidat aktif dan pasif</li>
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Pendekatan awal kandidat</li>
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Database kandidat potensial</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Asistensi inteview kandidat terpilih</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Laporan komprehensif dan rekomendasi untuk membantu pengambilan keputusan</li>
           </ul>
         </div>
       </div>
 
-    </div>
       <button class="raas-nav-btn next" id="raas-next"><i class="bi bi-chevron-right"></i></button>
+    </div>
+    
+    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="200">
+      <a href="#contact" class="btn btn-primary px-5 py-2 rounded-pill fw-bold text-white shadow-sm" style="background: linear-gradient(135deg, #42b9d6, #004AAD); border: none; font-size: 1.1rem;">Pilih Layanan &rarr;</a>
     </div>
   </div>
 </section>
@@ -336,21 +340,31 @@
               <input type="text" class="form-control" id="name" required placeholder="Masukkan nama Anda">
             </div>
             <div class="mb-3">
-              <label for="company" class="form-label text-muted small">Nama Perusahaan</label>
+              <label for="company" class="form-label text-muted small">Company Name</label>
               <input type="text" class="form-control" id="company" required placeholder="Masukkan nama perusahaan">
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label text-muted small">Alamat Email</label>
-              <input type="email" class="form-control" id="email" required placeholder="email@perusahaan.com">
+              <label for="scale" class="form-label text-muted small">Company Scale</label>
+              <select class="form-control" id="scale" required>
+                <option value="" disabled selected>Pilih Skala Perusahaan...</option>
+                <option value="Startup">Startup</option>
+                <option value="SME / Medium Enterprise">SME / Medium Enterprise</option>
+                <option value="Corporate">Corporate</option>
+              </select>
             </div>
-            <div class="mb-4">
-              <label for="service" class="form-label text-muted small">Pilih Layanan</label>
+            <div class="mb-3">
+              <label for="service" class="form-label text-muted small">Service Needed</label>
               <select class="form-control" id="service" required>
                 <option value="" disabled selected>Pilih Layanan...</option>
+                <option value="Strategic Consulting">Strategic Consulting</option>
                 <option value="End-to-end Process">End-to-end Process</option>
                 <option value="CV Screening Assistant">CV Screening Assistant</option>
                 <option value="Sourcing Kandidat">Sourcing Kandidat</option>
               </select>
+            </div>
+            <div class="mb-4">
+              <label for="challenge" class="form-label text-muted small">Your Current Challenge</label>
+              <textarea class="form-control" id="challenge" required placeholder="Jelaskan tantangan/kebutuhan rekrutmen Anda saat ini" rows="3"></textarea>
             </div>
             <button type="submit" class="btn w-100 fw-bold" style="background: black; color: white; border-radius: 8px; padding: 12px;">Kirim Pesan via WhatsApp</button>
           </form>
@@ -365,10 +379,11 @@
     e.preventDefault();
     const name = document.getElementById('name').value;
     const company = document.getElementById('company').value;
-    const email = document.getElementById('email').value;
+    const scale = document.getElementById('scale').value;
     const service = document.getElementById('service').value;
+    const challenge = document.getElementById('challenge').value;
     
-    const text = `Halo tim KLIK Rekrut! Saya tertarik dengan layanan RaaS.%0A%0A*Nama:* ${name}%0A*Perusahaan:* ${company}%0A*Email:* ${email}%0A*Layanan:* ${service}%0A%0AMohon info lebih lanjut, terima kasih.`;
+    const text = `Halo tim KLIK Rekrut! Saya tertarik dengan layanan RaaS.%0A%0A*Nama:* ${name}%0A*Perusahaan:* ${company}%0A*Skala Perusahaan:* ${scale}%0A*Layanan:* ${service}%0A*Tantangan:* ${challenge}%0A%0AMohon info lebih lanjut, terima kasih.`;
     const waNumber = "6281234567890"; // Ganti dengan nomor asli
     
     window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank');

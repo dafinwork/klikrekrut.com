@@ -10,6 +10,11 @@ class Package extends Model
     use HasFactory;
 
     protected $fillable = [
-        'type', 'badge', 'image', 'title', 'subtitle', 'price', 'preview_link'
+        'type', 'badge', 'image', 'title', 'subtitle', 'price', 'preview_link',
+        'event_date', 'speaker_name', 'speaker_profile', 'background_info', 'benefits'
+    ];
+
+    protected $casts = [
+        'event_date' => 'datetime',
     ];
 }

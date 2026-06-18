@@ -178,7 +178,7 @@
     
     <div class="solution-box" data-aos="fade-up" data-aos-delay="100">
       <div class="solution-img-wrapper d-none d-lg-block">
-        <img src="assets/img/happy-person.jpg" alt="Happy Person" class="solution-img" onerror="this.src='assets/img/adam.jpg'">
+        <img src="assets/img/orangberdiri.jpg" alt="Happy Person" class="solution-img" onerror="this.src='assets/img/adam.jpg'">
       </div>
       <p class="fw-bold mb-4" style="font-size: 1.1rem; padding-left: 80px;">Perkenalkan layanan Recruiter as a Service (RaaS) yang menghemat biaya, waktu dan effort Anda dalam merekrut</p>
       <ul class="solution-list">
@@ -204,35 +204,35 @@
       <div class="mitra-track" id="mitra-track">
         <!-- Cards -->
         <div class="mitra-card">
-          <img src="assets/img/gita.jpg" alt="Gilang" class="mitra-img" onerror="this.src='assets/img/adam.jpg'">
+          <img src="assets/img/orangberdiri.jpg" alt="Gilang" class="mitra-img" onerror="this.src='assets/img/adam.jpg'">
           <div class="mitra-info">
             <h5 class="mitra-name text-white">Gilang R.</h5>
             <span class="mitra-role">Sr. Human Resource Executive</span>
           </div>
         </div>
         <div class="mitra-card">
-          <img src="assets/img/gita.jpg" alt="Alvin Trianto" class="mitra-img" onerror="this.src='assets/img/adam.jpg'">
+          <img src="assets/img/orangberdiri.jpg" alt="Alvin Trianto" class="mitra-img" onerror="this.src='assets/img/adam.jpg'">
           <div class="mitra-info">
             <h5 class="mitra-name text-white">Alvin Trianto</h5>
             <span class="mitra-role">HR Business Partner</span>
           </div>
         </div>
         <div class="mitra-card">
-          <img src="assets/img/gita.jpg" alt="May Wulansari" class="mitra-img" onerror="this.src='assets/img/adam.jpg'">
+          <img src="assets/img/orangberdiri.jpg" alt="May Wulansari" class="mitra-img" onerror="this.src='assets/img/adam.jpg'">
           <div class="mitra-info">
             <h5 class="mitra-name text-white">May Wulansari</h5>
             <span class="mitra-role">Talent Acquisition Partner</span>
           </div>
         </div>
         <div class="mitra-card">
-          <img src="assets/img/gita.jpg" alt="Pramono H." class="mitra-img" onerror="this.src='assets/img/adam.jpg'">
+          <img src="assets/img/orangberdiri.jpg" alt="Pramono H." class="mitra-img" onerror="this.src='assets/img/adam.jpg'">
           <div class="mitra-info">
             <h5 class="mitra-name text-white">Pramono H.</h5>
             <span class="mitra-role">Human Resource Manager</span>
           </div>
         </div>
         <div class="mitra-card">
-          <img src="assets/img/gita.jpg" alt="Rahma Y." class="mitra-img" onerror="this.src='assets/img/adam.jpg'">
+          <img src="assets/img/orangberdiri.jpg" alt="Rahma Y." class="mitra-img" onerror="this.src='assets/img/adam.jpg'">
           <div class="mitra-info">
             <h5 class="mitra-name text-white">Rahma Y.</h5>
             <span class="mitra-role">Sr. Human Resource Executive</span>
@@ -254,12 +254,13 @@
       <div class="raas-carousel-wrapper">
       
       <div class="raas-card side">
-        <div class="raas-card-header">CV Screening Assistant</div>
+        <div class="raas-card-header">CV Sourcing Assistant</div>
         <div class="raas-card-body">
           <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Screening CV sesuai kebutuhan</li>
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Shortlist kandidat terpilih</li>
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Pembuatan laporan screening</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Asistensi pencarian CV kandidat yang prequalified</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Penjadwalan intial interview</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Garansi kandidat hadir interview</li>
           </ul>
         </div>
       </div>
@@ -271,7 +272,7 @@
           <p class="text-center text-muted text-sm mb-3">Layanan rekrutmen setara headhunting profesional dengan biaya yang jauh lebih hemat.</p>
           <ul class="list-unstyled mb-0" style="font-size: 0.9rem;">
             <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
-            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Sourcing dari pencarian sampai penyortiran kandidat</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Asistensi dari pencarian sampai penyerahan kandidat</li>
             <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Penjadwalan dan pendampingan final interview</li>
             <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Garansi sampai mendapatkan kandidat yang cocok untuk di hire</li>
             <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Garansi kandidat selama 1 bulan onboarding</li>
@@ -280,18 +281,21 @@
       </div>
 
       <div class="raas-card side">
-        <div class="raas-card-header">Sourcing Kandidat</div>
+        <div class="raas-card-header">Interview Assistant</div>
         <div class="raas-card-body">
           <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Pencarian kandidat aktif dan pasif</li>
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Pendekatan awal kandidat</li>
-            <li><i class="bi bi-check-circle-fill text-primary me-2"></i>Database kandidat potensial</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Asistensi inteview kandidat terpilih</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Laporan komprehensif dan rekomendasi untuk membantu pengambilan keputusan</li>
           </ul>
         </div>
       </div>
 
-    </div>
       <button class="raas-nav-btn next" id="raas-next"><i class="bi bi-chevron-right"></i></button>
+    </div>
+    
+    <div class="text-center mt-5" data-aos="fade-up" data-aos-delay="200">
+      <a href="#contact" class="btn btn-primary px-5 py-2 rounded-pill fw-bold text-white shadow-sm" style="background: linear-gradient(135deg, #42b9d6, #004AAD); border: none; font-size: 1.1rem;">Pilih Layanan &rarr;</a>
     </div>
   </div>
 </section>
