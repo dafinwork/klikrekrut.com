@@ -253,7 +253,7 @@
       <button class="raas-nav-btn prev" id="raas-prev"><i class="bi bi-chevron-left"></i></button>
       <div class="raas-carousel-wrapper">
       
-      <div class="raas-card side">
+      <div class="raas-card pos-left">
         <div class="raas-card-header">CV Sourcing Assistant</div>
         <div class="raas-card-body">
           <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
@@ -265,7 +265,7 @@
         </div>
       </div>
 
-      <div class="raas-card center">
+      <div class="raas-card pos-center">
         <span class="badge-popular">Popular</span>
         <div class="raas-card-header text-center" style="font-size: 1.2rem;">End-to-end Process</div>
         <div class="raas-card-body">
@@ -280,7 +280,7 @@
         </div>
       </div>
 
-      <div class="raas-card side">
+      <div class="raas-card pos-right">
         <div class="raas-card-header">Interview Assistant</div>
         <div class="raas-card-body">
           <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
@@ -415,48 +415,73 @@
     }
   });
 
-  // RaaS Carousel Logic (Infinite Loop)
+  // RaaS Carousel Logic (Position-based Smooth Animation)
   document.addEventListener('DOMContentLoaded', () => {
     const wrapper = document.querySelector('.raas-carousel-wrapper');
     const prevBtn = document.getElementById('raas-prev');
     const nextBtn = document.getElementById('raas-next');
     if (!wrapper) return;
 
+    const positions = ['pos-left', 'pos-center', 'pos-right'];
+    let isAnimating = false;
+
     function moveCarousel(direction) {
-      const cardsArray = Array.from(wrapper.querySelectorAll('.raas-card'));
-      const currentCenter = wrapper.querySelector('.raas-card.center');
-      if (!currentCenter) return;
+      if (isAnimating) return;
+      isAnimating = true;
+
+      const cards = wrapper.querySelectorAll('.raas-card');
+      if (cards.length < 3) { isAnimating = false; return; }
+
+      // Find current position of each card
+      let cardPositions = [];
+      cards.forEach(card => {
+        const pos = positions.find(p => card.classList.contains(p));
+        cardPositions.push(pos);
+      });
 
       if (direction === 'next') {
-        // Clicked right. Kanan -> Tengah, Tengah -> Kiri, Kiri -> Belakang (Kanan)
-        const rightCard = cardsArray[2];
-        currentCenter.classList.remove('center');
-        currentCenter.classList.add('side');
-        rightCard.classList.remove('side');
-        rightCard.classList.add('center');
-        wrapper.appendChild(cardsArray[0]);
-      } else if (direction === 'prev') {
-        // Clicked left. Kiri -> Tengah, Tengah -> Kanan, Kanan -> Belakang (Kiri)
-        const leftCard = cardsArray[0];
-        currentCenter.classList.remove('center');
-        currentCenter.classList.add('side');
-        leftCard.classList.remove('side');
-        leftCard.classList.add('center');
-        wrapper.insertBefore(cardsArray[2], cardsArray[0]);
+        // Rotate right: left→center, center→right, right→left
+        cards.forEach(card => {
+          if (card.classList.contains('pos-left')) {
+            card.classList.remove('pos-left');
+            card.classList.add('pos-center');
+          } else if (card.classList.contains('pos-center')) {
+            card.classList.remove('pos-center');
+            card.classList.add('pos-right');
+          } else if (card.classList.contains('pos-right')) {
+            card.classList.remove('pos-right');
+            card.classList.add('pos-left');
+          }
+        });
+      } else {
+        // Rotate left: left→right, center→left, right→center
+        cards.forEach(card => {
+          if (card.classList.contains('pos-left')) {
+            card.classList.remove('pos-left');
+            card.classList.add('pos-right');
+          } else if (card.classList.contains('pos-center')) {
+            card.classList.remove('pos-center');
+            card.classList.add('pos-left');
+          } else if (card.classList.contains('pos-right')) {
+            card.classList.remove('pos-right');
+            card.classList.add('pos-center');
+          }
+        });
       }
+
+      // Unlock after transition ends
+      setTimeout(() => { isAnimating = false; }, 600);
     }
 
     if (nextBtn) nextBtn.addEventListener('click', () => moveCarousel('next'));
     if (prevBtn) prevBtn.addEventListener('click', () => moveCarousel('prev'));
 
-    // Attach listener to wrapper, handle clicks on cards
+    // Click side card to navigate
     wrapper.addEventListener('click', function(e) {
       const card = e.target.closest('.raas-card');
-      if (!card || !card.classList.contains('side')) return;
-      const cardsArray = Array.from(wrapper.querySelectorAll('.raas-card'));
-      const clickedIdx = cardsArray.indexOf(card);
-      if (clickedIdx === 0) moveCarousel('prev');
-      else if (clickedIdx === 2) moveCarousel('next');
+      if (!card) return;
+      if (card.classList.contains('pos-left')) moveCarousel('prev');
+      else if (card.classList.contains('pos-right')) moveCarousel('next');
     });
   });
 </script>
