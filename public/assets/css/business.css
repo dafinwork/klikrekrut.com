@@ -243,7 +243,7 @@
 }
 .raas-carousel-wrapper {
   position: relative;
-  height: 430px;
+  height: 520px;
   margin: 40px 0;
 }
 .raas-card {
@@ -379,8 +379,8 @@
   .mitra-card { flex: 0 0 100%; margin: 0 auto; }
   
   .raas-carousel-wrapper {
-    height: 420px;
-    margin: 20px 0;
+    height: 540px;
+    margin: 30px 0;
   }
   body { overflow-x: hidden; }
   .raas-card {
@@ -392,7 +392,7 @@
     opacity: 0.4;
   }
   .raas-card.pos-center {
-    transform: translate(-50%, -50%) scale(1.05);
+    transform: translate(-50%, -50%) scale(1);
     opacity: 1;
     z-index: 5;
   }
