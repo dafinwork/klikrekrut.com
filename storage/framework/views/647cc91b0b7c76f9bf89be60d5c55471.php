@@ -250,8 +250,8 @@
     <h2 class="fw-bold mb-4" data-aos="fade-up">Apa Saja Layanan RaaS<br>yang bisa Anda Pilih?</h2>
     
     <div class="raas-carousel-container position-relative" data-aos="fade-up" data-aos-delay="100">
-      <button class="raas-nav-btn prev" id="raas-prev"><i class="bi bi-chevron-left"></i></button>
       <div class="raas-carousel-wrapper">
+        <button class="raas-nav-btn prev" id="raas-prev"><i class="bi bi-chevron-left"></i></button>
       
       <div class="raas-card pos-left">
         <div class="raas-card-header">CV Sourcing Assistant</div>

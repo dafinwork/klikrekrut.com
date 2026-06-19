@@ -55,3 +55,17 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     // Package Resource Routes
     Route::resource('packages', PackageController::class);
 });
+
+// Helper Route to Serve Storage Files directly (prevents Git redeploy file loss)
+Route::get('/storage/{path}', function ($path) {
+    $filePath = storage_path('app/public/' . $path);
+    
+    if (!file_exists($filePath)) {
+        abort(404);
+    }
+    
+    $file = file_get_contents($filePath);
+    $type = mime_content_type($filePath);
+    
+    return response($file)->header('Content-Type', $type);
+})->where('path', '.*');
