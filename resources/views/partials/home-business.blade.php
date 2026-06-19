@@ -291,6 +291,28 @@
         </div>
       </div>
 
+      <div class="raas-card pos-hidden">
+        <div class="raas-card-header" style="font-size: 1.1rem;">Background Checking</div>
+        <div class="raas-card-body">
+          <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Verifikasi riwayat pendidikan dan pekerjaan kandidat secara mendalam</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Pemeriksaan rekam jejak, referensi, serta performa di perusahaan sebelumnya</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Memastikan keamanan dan kredibilitas sebelum merekrut ke dalam tim Anda</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="raas-card pos-hidden">
+        <div class="raas-card-header">Interview Support</div>
+        <div class="raas-card-body">
+          <ul class="list-unstyled mb-0" style="font-size: 0.8rem;">
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Pendampingan rekruter dari tahap persiapan hingga pelaksanaan interview</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Panduan penyusunan pertanyaan interview yang efektif dan sesuai standar industri</li>
+            <li class="mb-2"><i class="bi bi-check-circle-fill text-primary me-2"></i>Observasi karakter dan penilaian kandidat secara lebih objektif dan terstruktur</li>
+          </ul>
+        </div>
+      </div>
+
       <button class="raas-nav-btn next" id="raas-next"><i class="bi bi-chevron-right"></i></button>
     </div>
     
@@ -415,59 +437,43 @@
     }
   });
 
-  // RaaS Carousel Logic (Position-based Smooth Animation)
+  // RaaS Carousel Logic (Dynamic N cards)
   document.addEventListener('DOMContentLoaded', () => {
     const wrapper = document.querySelector('.raas-carousel-wrapper');
     const prevBtn = document.getElementById('raas-prev');
     const nextBtn = document.getElementById('raas-next');
     if (!wrapper) return;
 
-    const positions = ['pos-left', 'pos-center', 'pos-right'];
     let isAnimating = false;
+    const cards = Array.from(wrapper.querySelectorAll('.raas-card'));
+    if (cards.length === 0) return;
+
+    // Build the dynamic positions array based on DOM order: Left, Center, Right, Hidden, Hidden...
+    let classPositions = ['pos-left', 'pos-center', 'pos-right'];
+    for(let i = 3; i < cards.length; i++) {
+        classPositions.push('pos-hidden');
+    }
+
+    // Force initial apply to be safe
+    cards.forEach((card, index) => {
+        card.className = 'raas-card ' + classPositions[index];
+    });
 
     function moveCarousel(direction) {
       if (isAnimating) return;
       isAnimating = true;
 
-      const cards = wrapper.querySelectorAll('.raas-card');
-      if (cards.length < 3) { isAnimating = false; return; }
-
-      // Find current position of each card
-      let cardPositions = [];
-      cards.forEach(card => {
-        const pos = positions.find(p => card.classList.contains(p));
-        cardPositions.push(pos);
-      });
-
       if (direction === 'next') {
-        // Rotate right: left→center, center→right, right→left
-        cards.forEach(card => {
-          if (card.classList.contains('pos-left')) {
-            card.classList.remove('pos-left');
-            card.classList.add('pos-center');
-          } else if (card.classList.contains('pos-center')) {
-            card.classList.remove('pos-center');
-            card.classList.add('pos-right');
-          } else if (card.classList.contains('pos-right')) {
-            card.classList.remove('pos-right');
-            card.classList.add('pos-left');
-          }
-        });
+        // Rotate classes left: first element goes to the end
+        classPositions.push(classPositions.shift());
       } else {
-        // Rotate left: left→right, center→left, right→center
-        cards.forEach(card => {
-          if (card.classList.contains('pos-left')) {
-            card.classList.remove('pos-left');
-            card.classList.add('pos-right');
-          } else if (card.classList.contains('pos-center')) {
-            card.classList.remove('pos-center');
-            card.classList.add('pos-left');
-          } else if (card.classList.contains('pos-right')) {
-            card.classList.remove('pos-right');
-            card.classList.add('pos-center');
-          }
-        });
+        // Rotate classes right: last element goes to the front
+        classPositions.unshift(classPositions.pop());
       }
+
+      cards.forEach((card, index) => {
+        card.className = 'raas-card ' + classPositions[index];
+      });
 
       // Unlock after transition ends
       setTimeout(() => { isAnimating = false; }, 600);
