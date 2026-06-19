@@ -61,11 +61,8 @@ Route::get('/storage/{path}', function ($path) {
     $filePath = storage_path('app/public/' . $path);
     
     if (!file_exists($filePath)) {
-        abort(404);
+        abort(404, 'File not found at: ' . $filePath); // Add debug info temporarily
     }
     
-    $file = file_get_contents($filePath);
-    $type = mime_content_type($filePath);
-    
-    return response($file)->header('Content-Type', $type);
+    return response()->file($filePath);
 })->where('path', '.*');
