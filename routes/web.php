@@ -61,7 +61,7 @@ Route::get('/file-serve', function (\Illuminate\Http\Request $request) {
     $path = $request->query('path');
     if (!$path) abort(404);
     
-    $filePath = storage_path('app/public/' . $path);
+    $filePath = \Illuminate\Support\Facades\Storage::disk('public')->path($path);
     if (!file_exists($filePath)) {
         abort(404, 'File not found');
     }

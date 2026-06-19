@@ -38,10 +38,7 @@ class PackageController extends Controller
         ]);
 
         if ($request->hasFile('image')) {
-            $file = $request->file('image');
-            $filename = time() . '_' . $file->getClientOriginalName();
-            $file->move(storage_path('app/public/packages'), $filename);
-            $validated['image'] = 'packages/' . $filename;
+            $validated['image'] = $request->file('image')->store('packages', 'public');
         }
 
         Package::create($validated);
@@ -72,15 +69,9 @@ class PackageController extends Controller
 
         if ($request->hasFile('image')) {
             if ($package->image) {
-                $oldPath = storage_path('app/public/' . $package->image);
-                if (file_exists($oldPath)) {
-                    @unlink($oldPath);
-                }
+                Storage::disk('public')->delete($package->image);
             }
-            $file = $request->file('image');
-            $filename = time() . '_' . $file->getClientOriginalName();
-            $file->move(storage_path('app/public/packages'), $filename);
-            $validated['image'] = 'packages/' . $filename;
+            $validated['image'] = $request->file('image')->store('packages', 'public');
         }
 
         $package->update($validated);
@@ -90,10 +81,7 @@ class PackageController extends Controller
     public function destroy(Package $package)
     {
         if ($package->image) {
-            $oldPath = storage_path('app/public/' . $package->image);
-            if (file_exists($oldPath)) {
-                @unlink($oldPath);
-            }
+            Storage::disk('public')->delete($package->image);
         }
         $package->delete();
         return redirect()->route('admin.packages.index')->with('success', 'Package deleted successfully.');
