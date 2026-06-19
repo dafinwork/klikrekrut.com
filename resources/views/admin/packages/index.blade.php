@@ -23,7 +23,7 @@
                 <tr>
                     <td class="px-4 align-middle">
                         @if($package->image)
-                            <img src="{{ asset('storage/' . $package->image) }}" alt="{{ $package->title }}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px;">
+                            <img src="{{ route('file.serve', ['path' => $package->image]) }}" alt="{{ $package->title }}" style="width: 50px; height: 50px; object-fit: cover; border-radius: 8px;">
                         @else
                             <div style="width: 50px; height: 50px; background-color: #e9ecef; border-radius: 8px; display: flex; align-items: center; justify-content: center;">
                                 <i class="bi bi-image text-muted"></i>

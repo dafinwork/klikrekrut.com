@@ -234,7 +234,7 @@
                   {{-- Mentoring: tidak ada tag/badge --}}
 
                   @if($package->image)
-                    <img src="{{ asset('storage/' . $package->image) }}" class="card-img-top session-img" alt="{{ $package->title }}" style="height: 200px; object-fit: cover;">
+                    <img src="{{ route('file.serve', ['path' => $package->image]) }}" class="card-img-top session-img" alt="{{ $package->title }}" style="height: 200px; object-fit: cover;">
                   @else
                     <img src="{{ asset('assets/img/adam.jpg') }}" class="card-img-top session-img" alt="Placeholder" style="height: 200px; object-fit: cover;">
                   @endif

@@ -56,13 +56,15 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->group(function () {
     Route::resource('packages', PackageController::class);
 });
 
-// Helper Route to Serve Storage Files directly (prevents Git redeploy file loss)
-Route::get('/storage/{path}', function ($path) {
-    $filePath = storage_path('app/public/' . $path);
+// Helper Route to Serve Storage Files securely (bypasses Nginx static file 404 intercept on Hostinger)
+Route::get('/file-serve', function (\Illuminate\Http\Request $request) {
+    $path = $request->query('path');
+    if (!$path) abort(404);
     
+    $filePath = storage_path('app/public/' . $path);
     if (!file_exists($filePath)) {
-        abort(404, 'File not found at: ' . $filePath); // Add debug info temporarily
+        abort(404, 'File not found');
     }
     
     return response()->file($filePath);
-})->where('path', '.*');
+})->name('file.serve');
