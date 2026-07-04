@@ -1,5 +1,5 @@
 /* =========================================================================
-   BUSINESS VIEW CSS (Redesigned)
+   BUSINESS VIEW CSS (New Full Page Design)
    ========================================================================= */
 
 /* --- Typography Helpers --- */
@@ -7,399 +7,672 @@
 .fw-bold { font-weight: 700 !important; }
 .fw-black { font-weight: 900 !important; }
 
+/* ==================== HEADER OVERRIDE (Business Mode Only) ==================== */
+#main-header.business-mode {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+#main-header.business-mode .navmenu ul li a {
+  color: #004AAD !important;
+}
+#main-header.business-mode .btn-konsultasi {
+  border-color: #004AAD !important;
+  color: #004AAD !important;
+}
+#main-header.business-mode .btn-konsultasi:hover {
+  background-color: #004AAD !important;
+  color: #ffffff !important;
+}
+#main-header.business-mode .mobile-nav-toggle {
+  color: #004AAD !important;
+}
+#main-header.business-mode .logo-full {
+  content: url("../img/Footer.png") !important;
+}
+#main-header.business-mode .view-toggle-container {
+  background: rgba(0, 0, 0, 0.05) !important;
+  border-color: rgba(0, 0, 0, 0.1) !important;
+}
+#main-header.business-mode .toggle-label {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+#main-header.business-mode .toggle-label.active {
+  color: #004AAD !important;
+}
+#main-header.business-mode .toggle-separator {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
 /* ==================== HERO SECTION ==================== */
 .hero-business {
-  background: linear-gradient(180deg, #5DE0E6 0%, #004AAD 100%);
-  padding: 120px 0 0 0;
-  overflow: hidden;
+  background: linear-gradient(to bottom, #E8F4FD 80%, #ffffff 100%);
+  padding: 140px 0 60px 0;
   position: relative;
-  min-height: 600px;
-  color: white;
+  overflow: hidden;
   text-align: center;
+  color: #333;
 }
+
+.badge-raas-new {
+  background: #D5E8FA; /* Light blue, darker than hero bg #E8F4FD */
+  color: #004AAD;
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+.badge-raas-new .dot {
+  width: 8px;
+  height: 8px;
+  background-color: #6cc44a;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 8px;
+}
+
 .hero-business-title {
-  font-size: 3rem;
+  font-size: 3.2rem;
   font-weight: 800;
   line-height: 1.2;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: #4C81B8; /* A shade of blue matching the design */
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .hero-business-desc {
   font-size: 1.1rem;
-  opacity: 0.9;
-  max-width: 800px;
-  margin: 0 auto;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.5;
 }
 
-/* Trusted By in Hero */
-.trusted-by-hero {
-  margin-top: 60px;
-  background: transparent;
-  padding: 20px 0;
-}
-.trusted-by-hero p {
-  font-size: 0.9rem;
-  opacity: 0.8;
-  margin-bottom: 15px;
-}
-.trusted-logos-track {
+.hero-btn-group {
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 60px;
 }
-.trusted-logo {
-  max-height: 40px;
-  filter: brightness(0) invert(1);
-  opacity: 0.8;
-}
-
-/* ==================== COMPARISON SECTION ==================== */
-.why-raas-section {
-  padding: 80px 0;
-  background: #fff;
-}
-.why-raas-title {
-  font-size: 2rem;
-  font-weight: 800;
-  color: #000;
-  margin-bottom: 50px;
-}
-.compare-row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 30px;
-}
-.compare-title {
-  font-weight: 700;
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-}
-.compare-cards {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  width: 100%;
-  max-width: 900px;
-}
-.compare-card {
-  flex: 1;
-  border-radius: 20px;
-  padding: 20px 20px 20px 50px;
-  position: relative;
-  text-align: left;
-  font-size: 0.95rem;
-}
-.compare-card.pro {
-  background-color: #6cc44a;
+.btn-rekrut-sekarang {
+  background-color: #79D154;
   color: white;
-}
-.compare-card.con {
-  background-color: #f26d6d;
-  color: white;
-}
-.compare-icon {
-  position: absolute;
-  top: 20px;
-  left: -20px;
-  width: 45px;
-  height: 45px;
-  background: white;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 24px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}
-.compare-card.pro .compare-icon {
-  color: #6cc44a;
-}
-.compare-card.con .compare-icon {
-  color: #f26d6d;
-}
-
-/* ==================== SOLUTION SECTION ==================== */
-.solution-section {
-  padding: 60px 0;
-  background: white;
-}
-.solution-box {
-  background: #d9effc;
+  border: none;
+  padding: 12px 30px;
   border-radius: 30px;
-  padding: 40px;
+  font-weight: 500; /* Medium weight */
+  transition: all 0.3s;
+}
+.btn-rekrut-sekarang:hover {
+  background-color: #63B643;
+  color: white;
+}
+.btn-jadwalkan-demo {
+  background-color: transparent;
+  color: #79D154;
+  border: 2px solid #79D154;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-weight: 500; /* Medium weight */
+  transition: all 0.3s;
+}
+.btn-jadwalkan-demo:hover {
+  background-color: #79D154;
+  color: white;
+}
+
+/* Hero Image & Decorative Elements */
+.hero-image-container {
   position: relative;
-  text-align: left;
   max-width: 1000px;
   margin: 0 auto;
 }
-.solution-img-wrapper {
-  position: absolute;
-  left: -60px;
-  top: 50px;
+.hero-image {
+  width: 100%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
 }
-.solution-img {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 5px solid white;
+
+/* Benefit Cards at the bottom of hero */
+.hero-benefit-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 40px;
+  padding: 0 20px;
+  flex-wrap: wrap;
 }
-.solution-list {
-  padding-left: 80px;
-  list-style: none;
+.benefit-card {
+  background: white;
+  border-radius: 12px;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+  flex: 1;
+  min-width: 250px;
+  max-width: 320px;
+  text-align: left;
 }
-.solution-list li {
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 20px;
-  font-weight: 500;
-  color: #333;
-}
-.solution-list li::before {
-  content: '\F26A'; /* bi-check-circle-fill */
-  font-family: bootstrap-icons !important;
-  position: absolute;
-  left: 0;
-  top: 2px;
-  color: #333;
+.benefit-card .icon-check {
+  color: #17B384;
   font-size: 1.5rem;
 }
-
-/* ==================== MITRA REKRUTER ==================== */
-.mitra-section {
-  padding: 60px 0;
-  text-align: center;
-}
-.mitra-carousel {
-  position: relative;
-  max-width: 1200px;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 20px 40px;
-}
-.mitra-track {
-  display: flex;
-  gap: 20px;
-  transition: transform 0.3s ease;
-}
-.mitra-card {
-  flex: 0 0 calc(20% - 16px);
-  background: #000;
-  color: white;
-  border-radius: 12px;
-  overflow: hidden;
-  position: relative;
-}
-.mitra-img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-.mitra-info {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
-  padding: 15px 10px;
-  text-align: left;
-}
-.mitra-name {
+.benefit-card h6 {
+  margin: 0;
   font-weight: 700;
-  margin-bottom: 0;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
+  color: #333;
 }
-.mitra-role {
+.benefit-card p {
+  margin: 0;
   font-size: 0.75rem;
-  opacity: 0.8;
+  color: #777;
 }
-.mitra-nav {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: white;
-  color: black;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  z-index: 10;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-}
-.mitra-nav.prev { left: 0; }
-.mitra-nav.next { right: 0; }
 
-/* ==================== RAAS SERVICES ==================== */
-.raas-services-section {
-  padding: 60px 0;
-  text-align: center;
+/* ==================== APA ITU RAAS SECTION ==================== */
+.apa-itu-raas-section {
+  padding: 100px 0;
+  background: #ffffff;
+  position: relative;
   overflow: hidden;
 }
-.raas-carousel-container {
-  max-width: 1100px;
-  margin: 0 auto;
-}
-.raas-carousel-wrapper {
+.apa-itu-raas-section > .container,
+.apa-itu-raas-section .raas-fullbleed-item,
+.apa-itu-raas-section .container.px-lg-5 {
   position: relative;
-  height: 520px;
-  margin: 40px 0;
+  z-index: 2;
 }
-.raas-card {
-  position: absolute;
-  width: 320px;
-  min-height: 380px;
-  top: 50%;
-  left: 50%;
+.raas-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #4C81B8;
+  margin-bottom: 24px;
+}
+.raas-section-desc {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto 60px auto;
+  line-height: 1.7;
+}
+.raas-feature-list {
   display: flex;
   flex-direction: column;
-  border: 2px solid #004AAD;
-  border-radius: 15px;
-  background: white;
-  padding: 0;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-  cursor: pointer;
-  /* THE KEY: smooth transition on transform, opacity, box-shadow */
-  transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-              opacity 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-              box-shadow 0.6s cubic-bezier(0.4, 0, 0.2, 1),
-              z-index 0s 0.3s;
+  gap: 80px;
+  max-width: 900px;
+  margin: 0 auto;
 }
-.raas-card-header {
-  background: #004AAD;
-  color: white;
-  padding: 15px;
-  font-weight: bold;
-}
-.raas-card-body {
-  padding: 20px;
+.raas-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  background: transparent;
   text-align: left;
-  flex: 1;
 }
-
-/* === Position classes === */
-.raas-card.pos-left {
-  transform: translate(-110%, -50%) scale(0.85);
-  opacity: 0.7;
-  z-index: 1;
+.raas-feature-item.reverse {
+  flex-direction: row-reverse;
 }
-.raas-card.pos-center {
-  transform: translate(-50%, -50%) scale(1.05);
-  opacity: 1;
-  z-index: 5;
-  box-shadow: 0 15px 40px rgba(0, 74, 173, 0.2);
-  border-width: 3px;
-}
-.raas-card.pos-right {
-  transform: translate(10%, -50%) scale(0.85);
-  opacity: 0.7;
-  z-index: 1;
-}
-.raas-card.pos-hidden {
-  transform: translate(-50%, -50%) scale(0.6);
-  opacity: 0;
-  z-index: 0;
-  pointer-events: none;
-}
-
-.raas-nav-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: #7acbe1;
-  color: white;
-  border: none;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  z-index: 10;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-  transition: all 0.3s ease;
-}
-.raas-nav-btn:hover { background: #52a5bd; color: white; }
-.raas-nav-btn.prev { left: -20px; }
-.raas-nav-btn.next { right: -20px; }
-.badge-popular {
-  position: absolute;
-  top: 0;
-  left: -30px;
-  background: #FF9800;
-  color: white;
-  padding: 5px 30px;
-  transform: rotate(-45deg);
-  font-size: 0.7rem;
-  font-weight: bold;
-  z-index: 6;
-}
-
-/* ==================== WHY CHOOSE US ==================== */
-.why-choose-section {
-  padding: 60px 0;
+.raas-feature-icon {
+  flex: 0 0 250px;
   text-align: center;
 }
-.choose-icon {
-  font-size: 3rem;
-  margin-bottom: 15px;
+.raas-icon {
+  font-size: 160px;
+  color: #111;
+  line-height: 1;
 }
-.choose-title {
+.raas-feature-text {
+  flex: 1;
+}
+.raas-feature-text h4 {
+  font-weight: 800;
+  font-size: 1.5rem;
+  margin-bottom: 12px;
+  color: #000;
+}
+.raas-feature-text p {
+  color: #444;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  margin: 0;
+}
+
+/* ==================== BEBAS REPOT FULL-BLEED LAYOUT ==================== */
+.raas-fullbleed-item {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 80px;
+  padding: 0 10%;
+  gap: 30px;
+}
+.raas-fullbleed-img-col {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.bebas-repot-img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.bebas-repot-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: opacity 1s ease-in-out;
+}
+/* Crossfade animation for the second image */
+@keyframes crossfadeImage {
+  0%, 45% { opacity: 1; }
+  55%, 100% { opacity: 0; }
+}
+.bebas-repot-img.img-2 {
+  animation: crossfadeImage 8s infinite alternate;
+}
+
+/* Text column padding */
+.raas-fullbleed-text-col {
+  flex: 1;
+  padding: 0 0 40px 20px;
+}
+
+/* Colors and sizes for Bebas Repot Text */
+.bebas-repot-text h4 {
+  color: #004AAD !important;
+  font-size: 2.2rem !important;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+.bebas-repot-text p {
+  color: #2e6bbc !important;
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+}
+
+/* ==================== MIRRORED (REVERSE) FULL-BLEED LAYOUT ==================== */
+.raas-fullbleed-item.reverse {
+  flex-direction: row-reverse;
+}
+.raas-fullbleed-item.reverse .raas-fullbleed-text-col {
+  padding: 0 20px 40px 0;
+}
+
+.lebih-ekonomis-img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.lebih-ekonomis-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: opacity 1s ease-in-out;
+}
+.lebih-ekonomis-img.img-2 {
+  animation: crossfadeImage 8s infinite alternate;
+}
+
+/* Colors and sizes for Lebih Ekonomis Text */
+.lebih-ekonomis-text h4 {
+  color: #004AAD !important;
+  font-size: 2.2rem !important;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+.lebih-ekonomis-text p {
+  color: #2e6bbc !important;
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+}
+
+/* ==================== PENGISIAN POSISI FULL-BLEED ==================== */
+.pengisian-img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.pengisian-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: opacity 1s ease-in-out;
+}
+.pengisian-img.img-2 {
+  animation: crossfadeImage 8s infinite alternate;
+}
+.pengisian-text h4 {
+  color: #004AAD !important;
+  font-size: 2.2rem !important;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+.pengisian-text p {
+  color: #2e6bbc !important;
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+}
+
+/* ==================== AMAN DARI RESIKO FULL-BLEED ==================== */
+.aman-img-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: 16px;
+}
+.aman-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: opacity 1s ease-in-out;
+}
+.aman-img.img-2 {
+  animation: crossfadeImage 8s infinite alternate;
+}
+.aman-text h4 {
+  color: #004AAD !important;
+  font-size: 2.2rem !important;
+  font-weight: 800;
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+.aman-text p {
+  color: #2e6bbc !important;
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+}
+
+@media (max-width: 991px) {
+  .raas-feature-list {
+    gap: 60px;
+  }
+  .raas-feature-item {
+    gap: 30px;
+  }
+  .raas-feature-icon {
+    flex: 0 0 150px;
+  }
+  .raas-icon {
+    font-size: 120px;
+  }
+}
+@media (max-width: 767px) {
+  .apa-itu-raas-section {
+    padding: 60px 0;
+  }
+  .raas-section-title {
+    font-size: 2rem;
+  }
+  .raas-fullbleed-item, .raas-fullbleed-item.reverse {
+    flex-direction: column;
+    min-height: unset;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .raas-fullbleed-img-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+    align-self: auto;
+    padding: 0 24px;
+  }
+  .bebas-repot-img-wrapper, .lebih-ekonomis-img-wrapper, .pengisian-img-wrapper, .aman-img-wrapper {
+    min-height: 280px;
+    height: 280px;
+    margin: 0 auto;
+  }
+  .raas-fullbleed-text-col {
+    padding: 30px 24px;
+  }
+  .raas-feature-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+  .raas-feature-item.reverse {
+    flex-direction: column;
+  }
+}
+
+/* ==================== RAAS SERVICES CAROUSEL (REPLACED WITH GRID) ==================== */
+.raas-services-section {
+  padding: 80px 0;
+  background: #E8F4FD;
+}
+.raas-pricing-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+.raas-pricing-card.popular {
+  background: linear-gradient(135deg, #072f44, #126372);
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.raas-pricing-card .card-title {
+  font-weight: 800;
+  font-size: 1.4rem;
+  color: #003366;
+  margin-bottom: 25px;
+}
+.raas-pricing-card.popular .card-title {
+  color: #fff;
+  margin-top: 15px; /* space for badge */
+}
+.raas-pricing-card .card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.raas-pricing-card .card-list li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #555;
+}
+.raas-pricing-card.popular .card-list li {
+  color: rgba(255, 255, 255, 0.9);
+}
+.raas-pricing-card .card-list li i {
+  font-size: 1.2rem;
+  margin-right: 10px;
+  margin-top: -2px;
+}
+.badge-popular {
+  position: absolute;
+  top: -15px;
+  left: 30px;
+  background: #FFB800;
+  color: #000;
+  font-weight: 700;
+  padding: 6px 18px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  box-shadow: 0 4px 10px rgba(255, 184, 0, 0.3);
+}
+
+
+/* ==================== TRUSTED CLIENTS SECTION ==================== */
+.trusted-clients-section {
+  padding: 60px 0;
+  background: #ffffff;
+  text-align: center;
+}
+.trusted-clients-title {
+  font-weight: 800;
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 40px;
+}
+.trusted-clients-grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.trusted-client-logo {
+  width: 128px;
+  height: 72px;
+  object-fit: contain;
+  opacity: 0.8;
+  transition: opacity 0.3s;
+}
+.trusted-client-logo:hover {
+  opacity: 1;
+}
+
+/* ==================== FAQ SECTION ==================== */
+.faq-section {
+  position: relative;
+  overflow: hidden;
+  padding: 120px 0;
+  background: #F8FAFC; /* Clean, subtle SaaS background */
+}
+.faq-title {
+  position: relative;
+  z-index: 2;
+  font-weight: 800;
+  font-size: 2.2rem;
+  color: #000;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.faq-accordion {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.faq-accordion .accordion-item {
+  background-color: #ffffff;
+  border: 1px solid rgba(255,255,255,.45);
+  border-radius: 12px !important;
+  box-shadow: 0 8px 30px rgba(0,74,173,.06);
+  margin-bottom: 20px;
+  overflow: hidden;
+  transition: all .25s ease;
+}
+.faq-accordion .accordion-item:hover {
+  box-shadow: 0 12px 40px rgba(0,74,173,.08);
+}
+.faq-accordion .accordion-button {
+  background-color: transparent;
+  color: #004AAD;
   font-weight: 700;
   font-size: 1.1rem;
-  margin-bottom: 10px;
+  box-shadow: none !important;
+  padding: 25px 30px;
+  border: none;
 }
-.choose-desc {
-  font-size: 0.85rem;
-  opacity: 0.8;
+.faq-accordion .accordion-button:not(.collapsed) {
+  background-color: transparent;
+  color: #004AAD;
 }
-
-/* ==================== FORM CTA SECTION ==================== */
-.form-cta-section {
-  background: linear-gradient(135deg, #5DE0E6 0%, #004AAD 100%);
-  padding: 60px 0;
-  color: white;
-}
-.form-card {
-  background: white;
-  border-radius: 15px;
-  padding: 30px;
-  color: black;
-}
-.form-control {
-  background-color: #f8f9fa;
-  border: 1px solid #dee2e6;
+.faq-accordion .accordion-body {
+  padding: 0 30px 25px 30px;
+  color: #444;
+  font-size: 1.05rem;
+  line-height: 1.7;
 }
 
-/* ==================== MOBILE RESPONSIVE ==================== */
-@media (max-width: 768px) {
-  .compare-cards { flex-direction: column; padding-left: 20px; }
-  .solution-list { padding-left: 15px; }
-  .solution-img-wrapper { position: static; text-align: center; margin-bottom: 20px; }
+/* ==================== CTA SECTION ==================== */
+.btn-cta-green {
+  display: inline-block;
+  background-color: #7ED957;
+  color: #fff !important;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 12px 30px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+.btn-cta-green:hover {
+  background-color: #6bc245;
+  transform: translateY(-2px);
+}
+@media (max-width: 991px) {
+  .cta-person-img {
+    max-height: 400px !important;
+    margin-top: 30px;
+  }
+}
+
+/* ==================== RESPONSIVE (MOBILE) ==================== */
+@media (max-width: 991px) {
+  /* Hero */
+  .hero-business-title { font-size: 2rem; }
+  .hero-btn-group { flex-direction: column; padding: 0 20px; }
+  .hero-benefit-cards { flex-direction: column; }
+  .benefit-card { max-width: 100%; }
   
-  .mitra-card { flex: 0 0 100%; margin: 0 auto; }
+  /* Apa itu RaaS */
+  .raas-feature-item, .raas-feature-item.reverse {
+    flex-direction: column;
+    text-align: center;
+  }
+  .raas-feature-text { text-align: center; }
   
-  .raas-carousel-wrapper {
-    height: 540px;
-    margin: 30px 0;
-  }
-  body { overflow-x: hidden; }
-  .raas-card {
-    width: 280px;
-    min-height: 380px;
-  }
-  .raas-card.pos-left {
-    transform: translate(-95%, -50%) scale(0.8);
-    opacity: 0.4;
-  }
-  .raas-card.pos-center {
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    z-index: 5;
-  }
-  .raas-card.pos-right {
-    transform: translate(-5%, -50%) scale(0.8);
-    opacity: 0.4;
-  }
-  .raas-nav-btn.prev { left: 0px; z-index: 10; }
-  .raas-nav-btn.next { right: 0px; z-index: 10; }
+  /* RaaS Carousel */
+  .raas-carousel-container { height: 450px; }
+  .raas-card { width: 85%; max-width: 300px; padding: 20px 15px; }
+  .raas-card.pos-center { transform: translate(-50%, -50%) scale(1); }
+  .raas-card.pos-left { left: 50%; transform: translate(-50%, -50%) scale(0.85); opacity: 0; }
+  .raas-card.pos-right { left: 50%; transform: translate(-50%, -50%) scale(0.85); opacity: 0; }
+  .raas-nav-btn { top: auto; bottom: -20px; transform: none; }
+  .raas-nav-btn.prev { left: 30%; }
+  .raas-nav-btn.next { right: 30%; }
+
+  /* Trusted Clients */
+  .trusted-clients-grid { gap: 20px; }
+  .trusted-client-logo { max-height: 40px; width: 45%; }
+  
+  /* CTA */
+  .cta-section-new .row { flex-direction: column-reverse; }
+  .cta-title { text-align: center; }
+  .cta-desc { text-align: center; }
 }
