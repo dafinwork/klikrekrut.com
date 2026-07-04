@@ -100,7 +100,7 @@
   margin-bottom: 60px;
 }
 .btn-rekrut-sekarang {
-  background-color: #44658C;
+  background-color: #79D154;
   color: white;
   border: none;
   padding: 12px 30px;
@@ -109,20 +109,20 @@
   transition: all 0.3s;
 }
 .btn-rekrut-sekarang:hover {
-  background-color: #355173;
+  background-color: #63B643;
   color: white;
 }
 .btn-jadwalkan-demo {
   background-color: transparent;
-  color: #44658C;
-  border: 2px solid #44658C;
+  color: #79D154;
+  border: 2px solid #79D154;
   padding: 10px 30px;
   border-radius: 30px;
   font-weight: 500; /* Medium weight */
   transition: all 0.3s;
 }
 .btn-jadwalkan-demo:hover {
-  background-color: #44658C;
+  background-color: #79D154;
   color: white;
 }
 
