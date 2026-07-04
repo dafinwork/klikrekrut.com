@@ -51,38 +51,38 @@
     <div style="position: absolute; top: 20%; left: 25%; width: 50%; height: 60%; background: radial-gradient(circle at center, rgba(0,74,173,.06), transparent 65%); filter: blur(40px);"></div>
 
     <!-- Organic Blobs -->
-    <svg viewBox="0 0 500 500" style="position: absolute; top: -10%; left: -8%; width: 40%; max-width: 500px; opacity: 0.04; fill: #004AAD;">
+    <svg viewBox="0 0 500 500" style="position: absolute; top: -10%; left: -8%; width: 40%; max-width: 500px; opacity: 0.04; fill: #44658C;">
       <path d="M421,328.5Q386,407,297,434.5Q208,462,130,410.5Q52,359,48.5,263Q45,167,117,105Q189,43,284.5,58.5Q380,74,418,162Q456,250,421,328.5Z" />
     </svg>
-    <svg viewBox="0 0 500 500" style="position: absolute; bottom: -15%; right: -10%; width: 50%; max-width: 600px; opacity: 0.03; fill: #5DE0E6;">
+    <svg viewBox="0 0 500 500" style="position: absolute; bottom: -15%; right: -10%; width: 50%; max-width: 600px; opacity: 0.03; fill: #B3D2EE;">
       <path d="M441.5,316.5Q396,383,313,426.5Q230,470,147.5,425.5Q65,381,62.5,285.5Q60,190,132,130Q204,70,300.5,70.5Q397,71,442,160.5Q487,250,441.5,316.5Z" />
     </svg>
-    <svg viewBox="0 0 500 500" style="position: absolute; top: 30%; right: 5%; width: 30%; max-width: 350px; opacity: 0.03; fill: #004AAD;">
+    <svg viewBox="0 0 500 500" style="position: absolute; top: 30%; right: 5%; width: 30%; max-width: 350px; opacity: 0.03; fill: #44658C;">
       <path d="M380,312.5Q366,375,296.5,417.5Q227,460,131,430Q35,400,24.5,296.5Q14,193,89.5,123.5Q165,54,260.5,57.5Q356,61,375,155.5Q394,250,380,312.5Z" />
     </svg>
 
     <!-- Flowing Curved Lines (Top Left) -->
-    <svg viewBox="0 0 600 300" preserveAspectRatio="none" style="position: absolute; top: 5%; left: -5%; width: 55%; height: 25%; opacity: 0.06; stroke: #004AAD; fill: none; stroke-width: 1.2;">
+    <svg viewBox="0 0 600 300" preserveAspectRatio="none" style="position: absolute; top: 5%; left: -5%; width: 55%; height: 25%; opacity: 0.06; stroke: #44658C; fill: none; stroke-width: 1.2;">
       <path d="M 0,150 C 80,50 200,250 350,100 C 500,-50 600,180 700,120" />
       <path d="M 0,180 C 100,80 220,280 380,130 C 540,-20 640,200 750,150" />
     </svg>
 
     <!-- Flowing Curved Lines (Right Side) -->
-    <svg viewBox="0 0 400 500" preserveAspectRatio="none" style="position: absolute; top: 10%; right: 0; width: 25%; height: 80%; opacity: 0.05; stroke: #5DE0E6; fill: none; stroke-width: 1;">
+    <svg viewBox="0 0 400 500" preserveAspectRatio="none" style="position: absolute; top: 10%; right: 0; width: 25%; height: 80%; opacity: 0.05; stroke: #B3D2EE; fill: none; stroke-width: 1;">
       <path d="M 350,0 C 200,100 380,200 250,300 C 120,400 300,450 200,500" />
       <path d="M 380,0 C 230,120 400,220 280,330 C 150,430 330,480 230,530" />
     </svg>
 
     <!-- Flowing Curved Lines (Bottom) -->
-    <svg viewBox="0 0 800 200" preserveAspectRatio="none" style="position: absolute; bottom: 5%; left: 10%; width: 80%; height: 15%; opacity: 0.04; stroke: #004AAD; fill: none; stroke-width: 1.5;">
+    <svg viewBox="0 0 800 200" preserveAspectRatio="none" style="position: absolute; bottom: 5%; left: 10%; width: 80%; height: 15%; opacity: 0.04; stroke: #44658C; fill: none; stroke-width: 1.5;">
       <path d="M 0,100 C 150,0 300,200 500,80 C 700,-40 850,150 1000,100" />
     </svg>
 
     <!-- Circular Outlines -->
-    <svg viewBox="0 0 100 100" style="position: absolute; top: 15%; left: 5%; width: 15%; max-width: 200px; opacity: 0.04; stroke: #004AAD; stroke-width: 1.5; fill: none;">
+    <svg viewBox="0 0 100 100" style="position: absolute; top: 15%; left: 5%; width: 15%; max-width: 200px; opacity: 0.04; stroke: #44658C; stroke-width: 1.5; fill: none;">
       <circle cx="50" cy="50" r="45" />
     </svg>
-    <svg viewBox="0 0 100 100" style="position: absolute; bottom: 25%; right: 3%; width: 12%; max-width: 180px; opacity: 0.05; stroke: #5DE0E6; stroke-width: 1.5; fill: none;">
+    <svg viewBox="0 0 100 100" style="position: absolute; bottom: 25%; right: 3%; width: 12%; max-width: 180px; opacity: 0.05; stroke: #B3D2EE; stroke-width: 1.5; fill: none;">
       <circle cx="50" cy="50" r="40" />
       <circle cx="50" cy="50" r="25" />
     </svg>
@@ -91,7 +91,7 @@
     <svg width="180" height="180" style="position: absolute; top: 8%; right: 8%; opacity: 0.05;">
       <defs>
         <pattern id="heroDotGrid" width="18" height="18" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.2" fill="#004AAD" />
+          <circle cx="2" cy="2" r="1.2" fill="#44658C" />
         </pattern>
       </defs>
       <rect width="100%" height="100%" fill="url(#heroDotGrid)" />
@@ -100,7 +100,7 @@
     <svg width="150" height="150" style="position: absolute; bottom: 15%; left: 3%; opacity: 0.04;">
       <defs>
         <pattern id="heroDotGrid2" width="18" height="18" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.2" fill="#5DE0E6" />
+          <circle cx="2" cy="2" r="1.2" fill="#B3D2EE" />
         </pattern>
       </defs>
       <rect width="100%" height="100%" fill="url(#heroDotGrid2)" />
