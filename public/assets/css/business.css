@@ -444,22 +444,24 @@
   .raas-fullbleed-item, .raas-fullbleed-item.reverse {
     flex-direction: column;
     min-height: unset;
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0 !important;
+    gap: 0;
   }
   .raas-fullbleed-img-col {
     flex: 0 0 100%;
     max-width: 100%;
     align-self: auto;
-    padding: 0 24px;
+    padding: 0 20px;
   }
   .bebas-repot-img-wrapper, .lebih-ekonomis-img-wrapper, .pengisian-img-wrapper, .aman-img-wrapper {
     min-height: 280px;
     height: 280px;
     margin: 0 auto;
   }
-  .raas-fullbleed-text-col {
-    padding: 30px 24px;
+  .raas-fullbleed-text-col,
+  .raas-fullbleed-item.reverse .raas-fullbleed-text-col {
+    padding: 30px 20px !important;
+    text-align: left;
   }
   .raas-feature-item {
     flex-direction: column;
@@ -642,10 +644,16 @@
   }
 }
 
+/* Hero title: prevent wrapping on desktop only */
+.hero-title-line {
+  white-space: nowrap;
+}
+
 /* ==================== RESPONSIVE (MOBILE) ==================== */
 @media (max-width: 991px) {
   /* Hero */
-  .hero-business-title { font-size: 2rem; }
+  .hero-business-title { font-size: 1.8rem; }
+  .hero-title-line { white-space: normal; }
   .hero-btn-group { flex-direction: column; padding: 0 20px; }
   .hero-benefit-cards { flex-direction: column; }
   .benefit-card { max-width: 100%; }
@@ -672,7 +680,7 @@
   .trusted-client-logo { max-height: 40px; width: 45%; }
   
   /* CTA */
-  .cta-section-new .row { flex-direction: column-reverse; }
+  .cta-section-new .row { flex-direction: column; }
   .cta-title { text-align: center; }
   .cta-desc { text-align: center; }
 }

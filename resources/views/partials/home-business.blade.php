@@ -113,8 +113,8 @@
     </div>
     
     <h1 class="hero-business-title" data-aos="fade-up" data-aos-delay="100">
-      <span style="white-space: nowrap;">Penyedia Tenaga Rekruter Untuk</span><br>
-      <span style="white-space: nowrap;">Membantu Mencari Kandidat Terbaik</span>
+      <span class="hero-title-line">Penyedia Tenaga Rekruter Untuk</span><br>
+      <span class="hero-title-line">Membantu Mencari Kandidat Terbaik</span>
     </h1>
     
     <p class="hero-business-desc" data-aos="fade-up" data-aos-delay="200">
