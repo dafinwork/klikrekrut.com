@@ -276,8 +276,8 @@
     </div>
     <!-- Text: on the left visually (row-reverse flips it) -->
     <div class="raas-fullbleed-text-col lebih-ekonomis-text">
-      <h4>Lebih Ekonomis</h4>
-      <p>
+      <h4 style="color: #44658c !important; font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; line-height: 1.3;">Lebih Ekonomis</h4>
+      <p style="color: #252525 !important; font-size: 1.1rem; line-height: 1.8;">
         Anda terbebas dari biaya langganan bulanan platform lowongan kerja atau success fee agensi konvensional berbasis persentase yang mahal. Anda hanya membayar saat Anda membutuhkan talenta, dengan total cost yang jauh lebih murah daripada hiring tim rekruter internal secara permanen.
       </p>
     </div>
@@ -292,8 +292,8 @@
       </div>
     </div>
     <div class="raas-fullbleed-text-col pengisian-text">
-      <h4>Pengisian Posisi Lebih Cepat</h4>
-      <p>
+      <h4 style="color: #44658c !important; font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; line-height: 1.3;">Pengisian Posisi Lebih Cepat</h4>
+      <p style="color: #252525 !important; font-size: 1.1rem; line-height: 1.8;">
         Proses pengisian posisi kosong berjalan sangat cepat (sering kali di bawah 30 hari). Hal ini karena lowongan Anda dikerjakan secara keroyokan oleh jaringan mitra rekruter spesialis yang kami pilih secara tepat sesuai dengan industri bisnis Anda.
       </p>
     </div>
@@ -308,8 +308,8 @@
       </div>
     </div>
     <div class="raas-fullbleed-text-col aman-text">
-      <h4>Aman Dari Resiko</h4>
-      <p>
+      <h4 style="color: #44658c !important; font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; line-height: 1.3;">Aman Dari Resiko</h4>
+      <p style="color: #252525 !important; font-size: 1.1rem; line-height: 1.8;">
         Anda tidak perlu khawatir salah pilih orang. Jika kandidat yang kami rekomendasikan belum cocok untuk Anda atau kandidat yang lolos ternyata mengundurkan diri dalam jangka waktu tertentu, kami akan menggantinya dengan kandidat baru tanpa ada biaya tambahan (gratis)
       </p>
     </div>
@@ -320,7 +320,7 @@
 <!-- ==================== RAAS SERVICES SECTION ==================== -->
 <section class="raas-services-section" id="services">
   <div class="container text-center">
-    <h2 class="fw-bold mb-5" data-aos="fade-up" style="font-size: 2.2rem; color: #000;">Apa Saja Layanan RaaS<br>yang bisa Anda Pilih?</h2>
+    <h2 class="fw-bold mb-5" data-aos="fade-up" style="font-size: 2.2rem; color: var(--heading-color);">Apa Saja Layanan RaaS<br>yang bisa Anda Pilih?</h2>
     
     <div class="row g-4 align-items-stretch justify-content-center" data-aos="fade-up" data-aos-delay="100">
       
@@ -606,8 +606,8 @@
     <div class="row align-items-center">
       <!-- Left: Text & Button -->
       <div class="col-lg-6 mb-5 mb-lg-0 pb-lg-5" data-aos="fade-right">
-        <h2 class="fw-bold text-dark mb-4" style="font-size: 2.8rem; line-height: 1.1;">Tertarik Mencoba<br>Layanan Kami?</h2>
-        <p class="text-dark mb-5" style="font-size: 1.2rem; line-height: 1.6;">
+        <h2 class="fw-bold mb-4" style="font-size: 2.8rem; line-height: 1.1; color: var(--heading-color);">Tertarik Mencoba<br>Layanan Kami?</h2>
+        <p class="mb-5" style="font-size: 1.2rem; line-height: 1.6; color: var(--default-color);">
           Konsultasikan kebutuhan talenta Anda terlebih dahulu. Tim kami siap membantu kapan saja untuk menjelaskan detail layanan dan merancang solusi rekrutmen yang paling sesuai dengan bisnis Anda!
         </p>
         <a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-cta-green">Hubungi Kami</a>
