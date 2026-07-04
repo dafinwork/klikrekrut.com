@@ -100,7 +100,7 @@
   margin-bottom: 60px;
 }
 .btn-rekrut-sekarang {
-  background-color: #79D154;
+  background-color: #44658C;
   color: white;
   border: none;
   padding: 12px 30px;
@@ -109,20 +109,20 @@
   transition: all 0.3s;
 }
 .btn-rekrut-sekarang:hover {
-  background-color: #63B643;
+  background-color: #355173;
   color: white;
 }
 .btn-jadwalkan-demo {
   background-color: transparent;
-  color: #79D154;
-  border: 2px solid #79D154;
+  color: #44658C;
+  border: 2px solid #44658C;
   padding: 10px 30px;
   border-radius: 30px;
   font-weight: 500; /* Medium weight */
   transition: all 0.3s;
 }
 .btn-jadwalkan-demo:hover {
-  background-color: #79D154;
+  background-color: #44658C;
   color: white;
 }
 
@@ -632,7 +632,7 @@
 /* ==================== CTA SECTION ==================== */
 .btn-cta-green {
   display: inline-block;
-  background-color: #FF8D1E;
+  background-color: #7ED957;
   color: #fff !important;
   font-weight: 600;
   font-size: 1.1rem;
@@ -642,7 +642,7 @@
   transition: all 0.3s;
 }
 .btn-cta-green:hover {
-  background-color: #e07a16;
+  background-color: #6bc245;
   transform: translateY(-2px);
 }
 @media (max-width: 991px) {
