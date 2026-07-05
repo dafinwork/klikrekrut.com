@@ -54,12 +54,6 @@
     <svg viewBox="0 0 500 500" style="position: absolute; top: -10%; left: -8%; width: 40%; max-width: 500px; opacity: 0.04; fill: #44658C;">
       <path d="M421,328.5Q386,407,297,434.5Q208,462,130,410.5Q52,359,48.5,263Q45,167,117,105Q189,43,284.5,58.5Q380,74,418,162Q456,250,421,328.5Z" />
     </svg>
-    <svg viewBox="0 0 500 500" style="position: absolute; bottom: -15%; right: -10%; width: 50%; max-width: 600px; opacity: 0.03; fill: #B3D2EE;">
-      <path d="M441.5,316.5Q396,383,313,426.5Q230,470,147.5,425.5Q65,381,62.5,285.5Q60,190,132,130Q204,70,300.5,70.5Q397,71,442,160.5Q487,250,441.5,316.5Z" />
-    </svg>
-    <svg viewBox="0 0 500 500" style="position: absolute; top: 30%; right: 5%; width: 30%; max-width: 350px; opacity: 0.03; fill: #44658C;">
-      <path d="M380,312.5Q366,375,296.5,417.5Q227,460,131,430Q35,400,24.5,296.5Q14,193,89.5,123.5Q165,54,260.5,57.5Q356,61,375,155.5Q394,250,380,312.5Z" />
-    </svg>
 
     <!-- Flowing Curved Lines (Top Left) -->
     <svg viewBox="0 0 600 300" preserveAspectRatio="none" style="position: absolute; top: 5%; left: -5%; width: 55%; height: 25%; opacity: 0.06; stroke: #44658C; fill: none; stroke-width: 1.2;">
@@ -67,11 +61,7 @@
       <path d="M 0,180 C 100,80 220,280 380,130 C 540,-20 640,200 750,150" />
     </svg>
 
-    <!-- Flowing Curved Lines (Right Side) -->
-    <svg viewBox="0 0 400 500" preserveAspectRatio="none" style="position: absolute; top: 10%; right: 0; width: 25%; height: 80%; opacity: 0.05; stroke: #B3D2EE; fill: none; stroke-width: 1;">
-      <path d="M 350,0 C 200,100 380,200 250,300 C 120,400 300,450 200,500" />
-      <path d="M 380,0 C 230,120 400,220 280,330 C 150,430 330,480 230,530" />
-    </svg>
+
 
     <!-- Flowing Curved Lines (Bottom) -->
     <svg viewBox="0 0 800 200" preserveAspectRatio="none" style="position: absolute; bottom: 5%; left: 10%; width: 80%; height: 15%; opacity: 0.04; stroke: #44658C; fill: none; stroke-width: 1.5;">
@@ -82,20 +72,8 @@
     <svg viewBox="0 0 100 100" style="position: absolute; top: 15%; left: 5%; width: 15%; max-width: 200px; opacity: 0.04; stroke: #44658C; stroke-width: 1.5; fill: none;">
       <circle cx="50" cy="50" r="45" />
     </svg>
-    <svg viewBox="0 0 100 100" style="position: absolute; bottom: 25%; right: 3%; width: 12%; max-width: 180px; opacity: 0.05; stroke: #B3D2EE; stroke-width: 1.5; fill: none;">
-      <circle cx="50" cy="50" r="40" />
-      <circle cx="50" cy="50" r="25" />
-    </svg>
 
-    <!-- Dot Grid (Top Right) -->
-    <svg width="180" height="180" style="position: absolute; top: 8%; right: 8%; opacity: 0.05;">
-      <defs>
-        <pattern id="heroDotGrid" width="18" height="18" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.2" fill="#44658C" />
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#heroDotGrid)" />
-    </svg>
+
     <!-- Dot Grid (Bottom Left) -->
     <svg width="150" height="150" style="position: absolute; bottom: 15%; left: 3%; opacity: 0.04;">
       <defs>
@@ -108,50 +86,66 @@
   </div>
 
   <div class="container" style="position: relative; z-index: 2;">
-    <div class="badge-raas-new" data-aos="fade-down">
-      <span class="dot"></span> BARU: RECRUITER AS A SERVICE
-    </div>
-    
-    <h1 class="hero-business-title" data-aos="fade-up" data-aos-delay="100">
-      <span class="hero-title-line">Penyedia Tenaga Rekruter Untuk</span><br>
-      <span class="hero-title-line">Membantu Mencari Kandidat Terbaik</span>
-    </h1>
-    
-    <p class="hero-business-desc" data-aos="fade-up" data-aos-delay="200">
-      Cara hemat resource mendapatkan talent berkualitas, tanpa biaya langganan, tanpa persentase success fee dan tanpa membayar gaji tetap rekruter tiap bulan berulang kali.
-    </p>
+    <div class="row align-items-center align-items-lg-start">
+      
+      <!-- Left Column (48%) -->
+      <div class="col-lg-6 hero-content-left text-start pe-lg-4" data-aos="fade-right">
+        <div class="badge-raas-new mb-3">
+          <span class="dot"></span> BARU: RECRUITER AS A SERVICE
+        </div>
+        
+        <h1 class="hero-business-title">
+          <span class="hero-title-line">Penyedia Tenaga</span><br>
+          <span class="hero-title-line">Rekruter Profesional</span>
+        </h1>
+        
+        <p class="hero-business-desc mb-4">
+          KLIK Rekrut menyediakan jasa rekrutmen RaaS (Recruiter as a Service) untuk berbagai permintaan tenaga kerja.
+        </p>
 
-    <div class="hero-btn-group" data-aos="fade-up" data-aos-delay="300">
-      <a href="#contact" class="btn btn-rekrut-sekarang">REKRUT SEKARANG</a>
-      <a href="#services" class="btn btn-jadwalkan-demo">JADWALKAN DEMO</a>
-    </div>
-
-    <div class="hero-image-container" data-aos="fade-up" data-aos-delay="400">
-      <img src="assets/img/businesshero.png" alt="Recruiter as a Service KLIK Rekrut" class="hero-image" onerror="this.src='assets/img/adam.jpg'">
-    </div>
-
-    <div class="hero-benefit-cards" data-aos="fade-up" data-aos-delay="500">
-      <div class="benefit-card">
-        <i class="bi bi-check-circle icon-check"></i>
-        <div>
-          <h6>Cocok untuk UMKM</h6>
-          <p>Tanpa komitmen biaya besar diawal</p>
+        <div class="hero-btn-group justify-content-start d-flex flex-column flex-sm-row">
+          <a href="#contact" class="btn btn-rekrut-sekarang rounded-pill">REKRUT SEKARANG</a>
+          <a href="#services" class="btn btn-jadwalkan-demo rounded-pill">JADWALKAN DEMO</a>
         </div>
       </div>
-      <div class="benefit-card">
-        <i class="bi bi-check-circle icon-check"></i>
-        <div>
-          <h6>Solusi HR Palugada</h6>
-          <p>Membantu beban kerja ganda Anda</p>
+
+      <!-- Right Column (52%) -->
+      <div class="col-lg-6 hero-content-right mt-5 mt-lg-0 text-center" data-aos="fade-left" data-aos-delay="200" style="padding-top: 5px;">
+        <div class="hero-right-composition position-relative">
+          <img src="assets/img/businesshero.png" alt="Recruiter as a Service KLIK Rekrut" class="hero-image-main img-fluid" onerror="this.src='assets/img/adam.jpg'">
+          
+          <div class="hero-cards-row mt-4 d-flex justify-content-center gap-2 flex-wrap flex-xl-nowrap">
+            <div class="hero-small-card shadow-sm bg-white rounded">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill icon-check text-success"></i>
+                <div class="text-start">
+                  <h6 class="mb-0 fw-bold" style="font-size: 0.75rem;">Cocok untuk UMKM</h6>
+                  <small class="text-muted" style="font-size: 0.6rem; display: block;">Tanpa komitmen biaya besar diawal</small>
+                </div>
+              </div>
+            </div>
+            <div class="hero-small-card shadow-sm bg-white rounded">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill icon-check text-success"></i>
+                <div class="text-start">
+                  <h6 class="mb-0 fw-bold" style="font-size: 0.75rem;">Solusi HR Terpadu</h6>
+                  <small class="text-muted" style="font-size: 0.6rem; display: block;">Membantu beban kerja ganda Anda</small>
+                </div>
+              </div>
+            </div>
+            <div class="hero-small-card shadow-sm bg-white rounded">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-check-circle-fill icon-check text-success"></i>
+                <div class="text-start">
+                  <h6 class="mb-0 fw-bold" style="font-size: 0.75rem;">Sangat Fleksibel</h6>
+                  <small class="text-muted" style="font-size: 0.6rem; display: block;">Tersedia layanan full service hingga satuan</small>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="benefit-card">
-        <i class="bi bi-check-circle icon-check"></i>
-        <div>
-          <h6>Sangat Fleksibel</h6>
-          <p>Tersedia layanan full service hingga satuan</p>
-        </div>
-      </div>
+      
     </div>
   </div>
 </section>
@@ -240,144 +234,172 @@
     </svg>
   </div>
 
-  <div class="container text-center px-lg-5">
-    <h2 class="raas-section-title" data-aos="fade-up">Apa itu Recruiter as a Service?</h2>
-    <p class="raas-section-desc" data-aos="fade-up" data-aos-delay="100">
-      Model layanan rekrutmen berbasis jaringan rekruter on-demand, di mana memungkinkan perusahaan memiliki tim rekruter eksternal profesional tanpa harus mengontrak mereka sebagai karyawan tetap.
-    </p>
-  </div>
-
-  <!-- Feature 1: Bebas Repot - Full Width Bleed Layout -->
-  <div class="raas-fullbleed-item" id="bebas-repot-item" data-aos="fade-up" data-aos-delay="200">
-    <!-- Image: bleeds to the left edge -->
-    <div class="raas-fullbleed-img-col">
-      <div class="bebas-repot-img-wrapper">
-        <img src="assets/img/bebasrepot1.png" alt="Bebas Repot 1" class="bebas-repot-img img-1" onerror="this.src='assets/img/adam.jpg'">
-        <img src="assets/img/bebasrepot1.jpg" alt="Bebas Repot 2" class="bebas-repot-img img-2" onerror="this.src='assets/img/adam.jpg'">
+  <div class="container pb-5" style="position: relative; z-index: 5; margin-top: -30px;">
+    <div class="raas-intro-card shadow-sm bg-white rounded" data-aos="fade-up">
+      <div class="row align-items-center p-4 p-md-5">
+        <div class="col-md-5 text-start border-end-md">
+          <p class="text-uppercase fw-bold mb-2" style="color: #44658c; font-size: 0.8rem; letter-spacing: 1px;">MENGENAL MODEL BARU</p>
+          <h2 class="mb-3 mb-md-0" style="color: #44658c; font-size: 1.6rem; font-weight: 800; line-height: 1.3;">Apa itu Recruiter as a Service?</h2>
+        </div>
+        <div class="col-md-7 text-start ps-md-5">
+          <p class="mb-0" style="color: #252525; font-size: 0.9rem; line-height: 1.8;">
+            Model layanan rekrutmen berbasis jaringan rekruter on-demand, membuat perusahaan memiliki tim rekruter eksternal profesional tanpa harus mengontrak mereka sebagai karyawan tetap.
+          </p>
+        </div>
       </div>
     </div>
-    <!-- Text: sits on the right with natural padding -->
-    <div class="raas-fullbleed-text-col bebas-repot-text">
-      <h4>Bebas Repot</h4>
-      <p>
-        Merekrut mandiri sering kali menyita banyak waktu dan tenaga. Dengan layanan RaaS, seluruh rangkaian proses rekrutmen akan ditangani langsung oleh rekruter berpengalaman yang sesuai dengan industri bisnis Anda. Anda pun terhindar dari aktivitas pasang lowongan, menyortir CV, hingga mengatur jadwal wawancara yang dapat mengganggu tugas strategis Anda.
-      </p>
-    </div>
   </div>
 
-  <!-- Feature 2: Lebih Ekonomis - Full Width Mirrored Layout -->
-  <div class="raas-fullbleed-item reverse" id="lebih-ekonomis-item" data-aos="fade-up" data-aos-delay="300">
-    <!-- Image: on the right visually (row-reverse flips it) -->
-    <div class="raas-fullbleed-img-col">
-      <div class="lebih-ekonomis-img-wrapper">
-        <img src="assets/img/lebihekonomis.png" alt="Lebih Ekonomis 1" class="lebih-ekonomis-img img-1" onerror="this.src='assets/img/adam.jpg'">
-        <img src="assets/img/lebihekonomis1.png" alt="Lebih Ekonomis 2" class="lebih-ekonomis-img img-2" onerror="this.src='assets/img/adam.jpg'">
-      </div>
-    </div>
-    <!-- Text: on the left visually (row-reverse flips it) -->
-    <div class="raas-fullbleed-text-col lebih-ekonomis-text">
-      <h4 style="color: #44658c !important; font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; line-height: 1.3;">Lebih Ekonomis</h4>
-      <p style="color: #252525 !important; font-size: 1.1rem; line-height: 1.8;">
-        Anda terbebas dari biaya langganan bulanan platform lowongan kerja atau success fee agensi konvensional berbasis persentase yang mahal. Anda hanya membayar saat Anda membutuhkan talenta, dengan total cost yang jauh lebih murah daripada hiring tim rekruter internal secara permanen.
+  <!-- ==================== RAAS SERVICES SECTION (Moved) ==================== -->
+  <div class="raas-services-section" id="services" style="padding: 60px 0;">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-3" data-aos="fade-up" style="font-size: 1.7rem; color: var(--heading-color);">Apa yang Kami Tawarkan?</h2>
+      <p class="mb-5 mx-auto" data-aos="fade-up" data-aos-delay="50" style="max-width: 800px; color: #555; font-size: 0.95rem; line-height: 1.6;">
+        Cara hemat mendapatkan resource rekrutmen profesional, tanpa biaya langganan,<br>
+        tanpa membayar persentase success fee atau gaji tetap rekruter tiap bulan.
       </p>
-    </div>
-  </div>
-
-  <!-- Feature 3: Pengisian Posisi Lebih Cepat - Same as Bebas Repot (image left, text right) -->
-  <div class="raas-fullbleed-item" id="pengisian-item" data-aos="fade-up" data-aos-delay="400">
-    <div class="raas-fullbleed-img-col">
-      <div class="pengisian-img-wrapper">
-        <img src="assets/img/Pengisian.png" alt="Pengisian Posisi 1" class="pengisian-img img-1" onerror="this.src='assets/img/adam.jpg'">
-        <img src="assets/img/Pengisian1.png" alt="Pengisian Posisi 2" class="pengisian-img img-2" onerror="this.src='assets/img/adam.jpg'">
-      </div>
-    </div>
-    <div class="raas-fullbleed-text-col pengisian-text">
-      <h4 style="color: #44658c !important; font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; line-height: 1.3;">Pengisian Posisi Lebih Cepat</h4>
-      <p style="color: #252525 !important; font-size: 1.1rem; line-height: 1.8;">
-        Proses pengisian posisi kosong berjalan sangat cepat (sering kali di bawah 30 hari). Hal ini karena lowongan Anda dikerjakan secara keroyokan oleh jaringan mitra rekruter spesialis yang kami pilih secara tepat sesuai dengan industri bisnis Anda.
-      </p>
-    </div>
-  </div>
-
-  <!-- Feature 4: Aman Dari Resiko - Same as Lebih Ekonomis (text left, image right) -->
-  <div class="raas-fullbleed-item reverse" id="aman-item" data-aos="fade-up" data-aos-delay="500">
-    <div class="raas-fullbleed-img-col">
-      <div class="aman-img-wrapper">
-        <img src="assets/img/aman.png" alt="Aman Dari Resiko 1" class="aman-img img-1" onerror="this.src='assets/img/adam.jpg'">
-        <img src="assets/img/aman1.png" alt="Aman Dari Resiko 2" class="aman-img img-2" onerror="this.src='assets/img/adam.jpg'">
-      </div>
-    </div>
-    <div class="raas-fullbleed-text-col aman-text">
-      <h4 style="color: #44658c !important; font-size: 2.2rem; font-weight: 800; margin-bottom: 20px; line-height: 1.3;">Aman Dari Resiko</h4>
-      <p style="color: #252525 !important; font-size: 1.1rem; line-height: 1.8;">
-        Anda tidak perlu khawatir salah pilih orang. Jika kandidat yang kami rekomendasikan belum cocok untuk Anda atau kandidat yang lolos ternyata mengundurkan diri dalam jangka waktu tertentu, kami akan menggantinya dengan kandidat baru tanpa ada biaya tambahan (gratis)
-      </p>
-    </div>
-  </div>
-
-</section>
-
-<!-- ==================== RAAS SERVICES SECTION ==================== -->
-<section class="raas-services-section" id="services">
-  <div class="container text-center">
-    <h2 class="fw-bold mb-5" data-aos="fade-up" style="font-size: 2.2rem; color: var(--heading-color);">Apa Saja Layanan RaaS<br>yang bisa Anda Pilih?</h2>
-    
-    <div class="row g-4 align-items-stretch justify-content-center" data-aos="fade-up" data-aos-delay="100">
       
-      <!-- Card 1 -->
-      <div class="col-lg-4 text-start">
-        <div class="raas-pricing-card h-100">
-          <h4 class="card-title">CV Sourcing Assistant</h4>
-          <ul class="card-list">
-            <li><i class="bi bi-check text-success"></i> Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
-            <li><i class="bi bi-check text-success"></i> Asistensi pencarian CV kandidat yang prequalified</li>
-            <li><i class="bi bi-check text-success"></i> Penjadwalan initial interview</li>
-            <li><i class="bi bi-check text-success"></i> Garansi kandidat hadir interview</li>
-          </ul>
+      <div class="row g-4 align-items-stretch justify-content-center" data-aos="fade-up" data-aos-delay="100">
+        
+        <!-- Card 1 -->
+        <div class="col-lg-4 text-start">
+          <div class="raas-pricing-card h-100">
+            <h4 class="card-title">CV Sourcing Assistant</h4>
+            <ul class="card-list">
+              <li><i class="bi bi-check text-success"></i> Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
+              <li><i class="bi bi-check text-success"></i> Asistensi pencarian CV kandidat yang prequalified</li>
+              <li><i class="bi bi-check text-success"></i> Penjadwalan initial interview</li>
+              <li><i class="bi bi-check text-success"></i> Garansi kandidat hadir interview</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <!-- Card 2 -->
-      <div class="col-lg-4 text-start">
-        <div class="raas-pricing-card popular h-100 position-relative">
-          <div class="badge-popular">Paling Populer</div>
-          <h4 class="card-title text-white">End-to-end Process</h4>
-          <ul class="card-list text-white">
-            <li><i class="bi bi-check text-success"></i> Layanan rekrutmen setara headhunting profesional dengan biaya yang jauh lebih hemat</li>
-            <li><i class="bi bi-check text-success"></i> Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
-            <li><i class="bi bi-check text-success"></i> Asistensi dari pencarian sampai penyerahan kandidat</li>
-            <li><i class="bi bi-check text-success"></i> Penjadwalan dan pendampingan kandidat sampai final interview</li>
-            <li><i class="bi bi-check text-success"></i> Garansi sampai mendapatkan kandidat yang cocok untuk di-hire</li>
-            <li><i class="bi bi-check text-success"></i> Garansi kandidat selama 1 bulan onboarding</li>
-          </ul>
+        <!-- Card 2 -->
+        <div class="col-lg-4 text-start">
+          <div class="raas-pricing-card h-100">
+            <h4 class="card-title">Interview Assistant</h4>
+            <ul class="card-list">
+              <li><i class="bi bi-check text-success"></i> Dukungan rekruter sesuai industri bisnis Anda</li>
+              <li><i class="bi bi-check text-success"></i> Asistensi interview kandidat terpilih</li>
+              <li><i class="bi bi-check text-success"></i> Laporan kompetensi kandidat dan rekomendasi untuk membantu pengambilan keputusan</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
-      <!-- Card 3 -->
-      <div class="col-lg-4 text-start">
-        <div class="raas-pricing-card h-100">
-          <h4 class="card-title">Interview Assistant</h4>
-          <ul class="card-list">
-            <li><i class="bi bi-check text-success"></i> Dukungan rekruter sesuai industri bisnis Anda</li>
-            <li><i class="bi bi-check text-success"></i> Asistensi interview kandidat terpilih</li>
-            <li><i class="bi bi-check text-success"></i> Laporan kompetensi kandidat dan rekomendasi untuk membantu pengambilan keputusan</li>
-          </ul>
+        <!-- Card 3 (Paling Populer) -->
+        <div class="col-lg-4 text-start">
+          <div class="raas-pricing-card popular h-100 position-relative">
+            <div class="badge-popular">Paling Populer</div>
+            <h4 class="card-title text-white">End-to-end Process</h4>
+            <ul class="card-list text-white">
+              <li><i class="bi bi-check text-success"></i> Layanan rekrutmen setara headhunting profesional dengan biaya yang jauh lebih hemat</li>
+              <li><i class="bi bi-check text-success"></i> Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
+              <li><i class="bi bi-check text-success"></i> Asistensi dari pencarian sampai penyerahan kandidat</li>
+              <li><i class="bi bi-check text-success"></i> Penjadwalan dan pendampingan kandidat sampai final interview</li>
+              <li><i class="bi bi-check text-success"></i> Garansi sampai mendapatkan kandidat yang cocok untuk di-hire</li>
+              <li><i class="bi bi-check text-success"></i> Garansi kandidat selama 1 bulan onboarding</li>
+            </ul>
+          </div>
         </div>
-      </div>
 
+      </div>
     </div>
   </div>
+
+  <!-- ==================== KEUNTUNGAN RAAS GRID ==================== -->
+  <div class="raas-benefits-grid" data-aos="fade-up" data-aos-delay="100">
+    <div class="container">
+      <h2 class="raas-benefits-title text-center fw-bold mb-5" data-aos="fade-up" style="color: var(--heading-color); font-size: 1.7rem;">Apa Keuntungan Merekrut dengan RaaS?</h2>
+      
+      <div class="row g-4 justify-content-center">
+        <!-- Benefit 1: Bebas Repot -->
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="100">
+          <div class="raas-benefit-item">
+            <div class="raas-benefit-icon-circle">
+              <i class="bi bi-clipboard-check"></i>
+            </div>
+            <h5 class="raas-benefit-title">Bebas Repot</h5>
+            <p class="raas-benefit-desc">
+              Merekrut mandiri sering kali menyita banyak waktu dan tenaga. Dengan layanan RaaS, seluruh rangkaian proses rekrutmen akan ditangani langsung oleh rekruter berpengalaman yang sesuai dengan industri bisnis Anda. Anda pun terhindar dari aktivitas pasang lowongan, menyortir CV, hingga mengatur jadwal wawancara yang dapat mengganggu tugas strategis Anda.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 2: Lebih Ekonomis -->
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="raas-benefit-item">
+            <div class="raas-benefit-icon-circle">
+              <i class="bi bi-wallet2"></i>
+            </div>
+            <h5 class="raas-benefit-title">Lebih Ekonomis</h5>
+            <p class="raas-benefit-desc">
+              Anda terbebas dari biaya langganan bulanan platform lowongan kerja atau success fee agensi konvensional berbasis persentase yang mahal. Anda hanya membayar saat Anda membutuhkan talenta, dengan total cost yang jauh lebih murah daripada hiring tim rekruter internal secara permanen.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 3: Pengisian Posisi Lebih Cepat -->
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
+          <div class="raas-benefit-item">
+            <div class="raas-benefit-icon-circle">
+              <i class="bi bi-lightning-charge"></i>
+            </div>
+            <h5 class="raas-benefit-title">Pengisian Posisi Lebih Cepat</h5>
+            <p class="raas-benefit-desc">
+              Proses pengisian posisi kosong berjalan sangat cepat (sering kali di bawah 30 hari). Hal ini karena lowongan Anda dikerjakan secara keroyokan oleh jaringan mitra rekruter spesialis yang kami pilih secara tepat sesuai dengan industri bisnis Anda.
+            </p>
+          </div>
+        </div>
+
+        <!-- Benefit 4: Aman Dari Resiko -->
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+          <div class="raas-benefit-item">
+            <div class="raas-benefit-icon-circle">
+              <i class="bi bi-shield-check"></i>
+            </div>
+            <h5 class="raas-benefit-title">Aman Dari Resiko</h5>
+            <p class="raas-benefit-desc">
+              Anda tidak perlu khawatir salah pilih orang. Jika kandidat yang kami rekomendasikan belum cocok untuk Anda atau kandidat yang lolos ternyata mengundurkan diri dalam jangka waktu tertentu, kami akan menggantinya dengan kandidat baru tanpa ada biaya tambahan (gratis)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
+
 
 <!-- ==================== TRUSTED CLIENTS SECTION ==================== -->
 <section id="trusted-clients" class="trusted-clients-section">
   <div class="container">
     <h2 class="trusted-clients-title" data-aos="fade-up">Telah dipercaya oleh perusahaan dari berbagai Industri</h2>
-    <div class="trusted-clients-grid" data-aos="fade-up" data-aos-delay="100">
-      <img src="assets/img/hokkaido2.png" alt="Hokkaido" class="trusted-client-logo" />
-      <img src="assets/img/irij2.png" alt="Indonesia Research Institute" class="trusted-client-logo" />
-      <img src="assets/img/sosialoka2.png" alt="Sosialoka" class="trusted-client-logo" />
-      <img src="assets/img/nurama2.png" alt="Nurama" class="trusted-client-logo" />
+    
+    <div class="row g-4 align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-6 col-md-3 text-center">
+        <img src="assets/img/logosatupesan.png" alt="Satu Pesan" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <img src="assets/img/logoirij.png" alt="Indonesia Research Institute" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <img src="assets/img/logososialoka.png" alt="Sosialoka" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <img src="assets/img/logodeeja.png" alt="Deeja" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <img src="assets/img/logonurama.png" alt="Nurama" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <img src="assets/img/logolaroche.png" alt="Laroche Woman Basic" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <img src="assets/img/logosecretrecipe.png" alt="Secret Recipe" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+      </div>
+      <div class="col-6 col-md-3 text-center">
+        <img src="assets/img/logotonyjack.png" alt="Tonyjack" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+      </div>
     </div>
   </div>
 </section>
@@ -412,9 +434,15 @@
   </div>
 
   <div class="container">
-    <h2 class="faq-title" data-aos="fade-up">Frequently Asked Questions</h2>
-    
-    <div class="accordion faq-accordion" id="faqAccordion" data-aos="fade-up" data-aos-delay="100">
+    <div class="row align-items-start justify-content-between">
+      <div class="col-lg-4 col-md-12 mb-5 mb-lg-0" data-aos="fade-up">
+        <h2 class="faq-title mb-0 text-center text-lg-start">
+          Frequently<br class="d-none d-lg-block">Asked<br class="d-none d-lg-block">Questions
+        </h2>
+      </div>
+      
+      <div class="col-lg-7 col-md-12">
+        <div class="accordion faq-accordion w-100" id="faqAccordion" data-aos="fade-up" data-aos-delay="100">
       
       <!-- FAQ 1 -->
       <div class="accordion-item">
@@ -556,6 +584,8 @@
         </div>
       </div>
 
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -606,9 +636,9 @@
     <div class="row align-items-center">
       <!-- Left: Text & Button -->
       <div class="col-lg-6 mb-5 mb-lg-0 pb-lg-5" data-aos="fade-right">
-        <h2 class="fw-bold mb-4" style="font-size: 2.8rem; line-height: 1.1; color: var(--heading-color);">Tertarik Mencoba<br>Layanan Kami?</h2>
+        <h2 class="fw-bold mb-4" style="font-size: 2.8rem; line-height: 1.1; color: var(--heading-color);">Tertarik Mencoba Layanan Kami?</h2>
         <p class="mb-5" style="font-size: 1.2rem; line-height: 1.6; color: var(--default-color);">
-          Konsultasikan kebutuhan talenta Anda terlebih dahulu. Tim kami siap membantu kapan saja untuk menjelaskan detail layanan dan merancang solusi rekrutmen yang paling sesuai dengan bisnis Anda!
+          Konsultasikan kebutuhan talenta Anda.
         </p>
         <a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-cta-green">Hubungi Kami</a>
       </div>
