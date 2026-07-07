@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Open Graph Tags -->
-  <meta property="og:title" content="Klik Rekrut">
-  <meta property="og:description" content="Platform assisten rekrutmen">
-  <meta property="og:image" content="https://klikrekrut.com/assets/img/square.png">
+  <!-- Open Graph Tags (untuk preview saat link di-share di WhatsApp, Telegram, dll) -->
+  <meta property="og:site_name" content="Klik Rekrut">
+  <meta property="og:title" content="Klik Rekrut — Asisten Perekrut untuk Perusahaan">
+  <meta property="og:description" content="Layanan Recruiter as a Service (RaaS): dapatkan rekruter profesional on-demand tanpa biaya tetap. Cocok untuk UMKM hingga perusahaan besar.">
+  <meta property="og:image" content="https://klikrekrut.com/assets/img/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Klik Rekrut - Asisten Perekrut untuk Perusahaan">
   <meta property="og:url" content="https://klikrekrut.com">
   <meta property="og:type" content="website">
+  <meta property="og:locale" content="id_ID">
 
-  <!-- Untuk Twitter -->
+  <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Klik Rekrut">
-  <meta name="twitter:description" content="Platform assisten rekrutmen">
-  <meta name="twitter:image" content="https://klikrekrut.com/assets/img/square.png">
+  <meta name="twitter:site" content="@klikrekrut">
+  <meta name="twitter:title" content="Klik Rekrut — Asisten Perekrut untuk Perusahaan">
+  <meta name="twitter:description" content="Layanan Recruiter as a Service (RaaS): dapatkan rekruter profesional on-demand tanpa biaya tetap.">
+  <meta name="twitter:image" content="https://klikrekrut.com/assets/img/og-image.png">
 
   <!-- Meta Utama -->
   <meta charset="UTF-8">
