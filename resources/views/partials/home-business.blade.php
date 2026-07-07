@@ -1,45 +1,11 @@
   <!-- isi halaman -->
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>KLIK rekrut - Find Job</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+<!-- Fonts khusus halaman ini -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <!-- Favicons -->
-  <link rel="icon" type="image/png" href="{{ asset('assets/img/square.png') }}">
-  <link rel="apple-touch-icon" href="{{ asset('assets/img/apple-touch-icon.png') }}">
+<!-- Business page CSS -->
+<link href="{{ asset('assets/css/business.css') }}" rel="stylesheet">
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com" rel="preconnect">
-  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-
-  <!-- Main CSS File -->
-<link href="assets/css/main.css" rel="stylesheet">
-
-<!-- Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-<!-- Bootstrap Icons -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-
-
-
-<main class="main"> <!-- Awal dari konten utama halaman -->
-
-<!-- Tambahkan di layout atau halaman -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-
-<link href="assets/css/business.css" rel="stylesheet">
+<main class="main">
 
 <!-- ==================== HERO SECTION ==================== -->
 <section id="hero" class="hero-business">
@@ -89,8 +55,8 @@
     <div class="row align-items-center align-items-lg-start">
       
       <!-- Left Column (48%) -->
-      <div class="col-lg-6 hero-content-left text-start pe-lg-4" data-aos="fade-right">
-        <div class="badge-raas-new mb-3">
+      <div class="col-lg-6 hero-content-left text-center text-lg-start pe-lg-4" data-aos="fade-right">
+        <div class="badge-raas-new mb-3 mx-auto mx-lg-0 d-inline-flex">
           <span class="dot"></span> BARU: RECRUITER AS A SERVICE
         </div>
         
@@ -110,9 +76,9 @@
       </div>
 
       <!-- Right Column (52%) -->
-      <div class="col-lg-6 hero-content-right mt-5 mt-lg-0 text-center" data-aos="fade-left" data-aos-delay="200" style="padding-top: 5px;">
+      <div class="col-lg-6 hero-content-right mt-2 mt-lg-0 text-center" data-aos="fade-left" data-aos-delay="200" style="padding-top: 5px;">
         <div class="hero-right-composition position-relative">
-          <img src="assets/img/businesshero.png" alt="Recruiter as a Service KLIK Rekrut" class="hero-image-main img-fluid" onerror="this.src='assets/img/adam.jpg'">
+          <img src="assets/img/gambarhero.png" alt="Recruiter as a Service KLIK Rekrut" class="hero-image-main img-fluid" onerror="this.src='assets/img/adam.jpg'">
           
           <div class="hero-cards-row mt-4 d-flex justify-content-center gap-2 flex-wrap flex-xl-nowrap">
             <div class="hero-small-card shadow-sm bg-white rounded">
@@ -243,7 +209,7 @@
         </div>
         <div class="col-md-7 text-start ps-md-5">
           <p class="mb-0" style="color: #252525; font-size: 0.9rem; line-height: 1.8;">
-            Model layanan rekrutmen berbasis jaringan rekruter on-demand, membuat perusahaan memiliki tim rekruter eksternal profesional tanpa harus mengontrak mereka sebagai karyawan tetap.
+            Model layanan recruitment berbasis jaringan rekruter on-demand, membuat perusahaan memiliki tim perekrut eksternal profesional tanpa harus mengontrak mereka sebagai karyawan tetap.
           </p>
         </div>
       </div>
@@ -254,9 +220,8 @@
   <div class="raas-services-section" id="services" style="padding: 60px 0;">
     <div class="container text-center">
       <h2 class="fw-bold mb-3" data-aos="fade-up" style="font-size: 1.7rem; color: var(--heading-color);">Apa yang Kami Tawarkan?</h2>
-      <p class="mb-5 mx-auto" data-aos="fade-up" data-aos-delay="50" style="max-width: 800px; color: #555; font-size: 0.95rem; line-height: 1.6;">
-        Cara hemat mendapatkan resource rekrutmen profesional, tanpa biaya langganan,<br>
-        tanpa membayar persentase success fee atau gaji tetap rekruter tiap bulan.
+      <p class="mb-5 mx-auto" data-aos="fade-up" data-aos-delay="50" style="max-width: 100%; color: #555; font-size: 0.95rem; line-height: 1.6;">
+        Cara hemat mendapatkan resource rekrutmen profesional, tanpa biaya langganan, tanpa membayar persentase success fee atau gaji tetap rekruter tiap bulan.
       </p>
       
       <div class="row g-4 align-items-stretch justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -369,36 +334,44 @@
 
 </section>
 
-
 <!-- ==================== TRUSTED CLIENTS SECTION ==================== -->
 <section id="trusted-clients" class="trusted-clients-section">
   <div class="container">
     <h2 class="trusted-clients-title" data-aos="fade-up">Telah dipercaya oleh perusahaan dari berbagai Industri</h2>
     
-    <div class="row g-4 align-items-center justify-content-center" data-aos="fade-up" data-aos-delay="100">
-      <div class="col-6 col-md-3 text-center">
-        <img src="assets/img/logosatupesan.png" alt="Satu Pesan" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+    <div class="marquee-wrapper" data-aos="fade-up" data-aos-delay="100">
+      <div class="marquee-container mb-4">
+        <div class="marquee-content marquee-right">
+          <!-- Logo Set 1 -->
+          <img src="assets/img/logosatupesan.png" alt="Satu Pesan" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logoirij.png" alt="Indonesia Research Institute" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logososialoka.png" alt="Sosialoka" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logodeeja.png" alt="Deeja" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logonurama.png" alt="Nurama" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <!-- Duplicate 1 -->
+          <img src="assets/img/logosatupesan.png" alt="Satu Pesan" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logoirij.png" alt="Indonesia Research Institute" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logososialoka.png" alt="Sosialoka" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logodeeja.png" alt="Deeja" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logonurama.png" alt="Nurama" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+        </div>
       </div>
-      <div class="col-6 col-md-3 text-center">
-        <img src="assets/img/logoirij.png" alt="Indonesia Research Institute" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <img src="assets/img/logososialoka.png" alt="Sosialoka" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <img src="assets/img/logodeeja.png" alt="Deeja" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <img src="assets/img/logonurama.png" alt="Nurama" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <img src="assets/img/logolaroche.png" alt="Laroche Woman Basic" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <img src="assets/img/logosecretrecipe.png" alt="Secret Recipe" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-      </div>
-      <div class="col-6 col-md-3 text-center">
-        <img src="assets/img/logotonyjack.png" alt="Tonyjack" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+      
+      <div class="marquee-container">
+        <div class="marquee-content marquee-left">
+          <!-- Logo Set 2 -->
+          <img src="assets/img/logolaroche.png" alt="Laroche Woman Basic" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logosecretrecipe.png" alt="Secret Recipe" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logotonyjack.png" alt="Tonyjack" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logoironhead.png" alt="Ironhead" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logohanson.png" alt="Hanson" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <!-- Duplicate 2 -->
+          <img src="assets/img/logolaroche.png" alt="Laroche Woman Basic" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logosecretrecipe.png" alt="Secret Recipe" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logotonyjack.png" alt="Tonyjack" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logoironhead.png" alt="Ironhead" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logohanson.png" alt="Hanson" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+        </div>
       </div>
     </div>
   </div>
@@ -431,13 +404,18 @@
       </defs>
       <rect width="100%" height="100%" fill="url(#faqDotGrid)" />
     </svg>
+
+    <!-- 3 Question Mark Ornaments (sejajar kolom judul kiri) -->
+    <div style="position: absolute; bottom: 15%; left: 8%; font-size: 280px; font-weight: 900; color: #004AAD; opacity: 0.05; z-index: 0; pointer-events: none; line-height: 1; font-family: sans-serif; transform: rotate(-15deg);">?</div>
+    <div style="position: absolute; top: 35%; left: 12%; font-size: 180px; font-weight: 900; color: #004AAD; opacity: 0.04; z-index: 0; pointer-events: none; line-height: 1; font-family: sans-serif; transform: rotate(10deg);">?</div>
+    <div style="position: absolute; top: 10%; left: 6%; font-size: 220px; font-weight: 900; color: #004AAD; opacity: 0.03; z-index: 0; pointer-events: none; line-height: 1; font-family: sans-serif; transform: rotate(-5deg);">?</div>
   </div>
 
   <div class="container">
     <div class="row align-items-start justify-content-between">
       <div class="col-lg-4 col-md-12 mb-5 mb-lg-0" data-aos="fade-up">
         <h2 class="faq-title mb-0 text-center text-lg-start">
-          Frequently<br class="d-none d-lg-block">Asked<br class="d-none d-lg-block">Questions
+          Frequently Asked Questions
         </h2>
       </div>
       
@@ -535,7 +513,7 @@
             Berapa tarif layanan RaaS KLIK Rekrut?
           </button>
         </h2>
-        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
           <div class="accordion-body">
             Anda bisa mulai dengan "Jadwalkan Demo" untuk mengenal tarif layanan kami. Tim kami siap memandu Anda selama proses penawaran layanan.
           </div>
@@ -549,7 +527,7 @@
             Apakah KLIK Rekrut menawarkan demo gratis sebelum saya membuat komitmen?
           </button>
         </h2>
-        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight">
           <div class="accordion-body">
             Ya. Klik "Jadwalkan Demo" dan tim marketing kami akan menghubungi Anda dalam 24 jam untuk demo eksklusif gratis.
           </div>
@@ -563,7 +541,7 @@
             Berasal dari industri apa saja klien KLIK Rekrut?
           </button>
         </h2>
-        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine">
           <div class="accordion-body">
             Klien kami berasal dari berbagai bidang termasuk Consulting, Kreatif Agency, Retail, Fashion, Education, Garmen, dan lain-lain.
           </div>
@@ -577,7 +555,7 @@
             Bagaimana cara mulai menggunakan layanan RaaS dari KLIK Rekrut?
           </button>
         </h2>
-        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
+        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen">
           <div class="accordion-body">
             Anda dapat klik "Rekrut Sekarang".
           </div>
@@ -589,6 +567,8 @@
     </div>
   </div>
 </section>
+
+<!-- FAQ accordion relies on Bootstrap JS (bootstrap.bundle.min.js loaded at bottom) -->
 
 <!-- ==================== NEW CTA SECTION ==================== -->
 <section id="contact" class="cta-section-new" style="background: linear-gradient(to bottom, #ffffff, #D5E8FA); padding-top: 80px; overflow: hidden; position: relative;">
@@ -635,9 +615,9 @@
   <div class="container" style="position: relative; z-index: 2;">
     <div class="row align-items-center">
       <!-- Left: Text & Button -->
-      <div class="col-lg-6 mb-5 mb-lg-0 pb-lg-5" data-aos="fade-right">
-        <h2 class="fw-bold mb-4" style="font-size: 2.8rem; line-height: 1.1; color: var(--heading-color);">Tertarik Mencoba Layanan Kami?</h2>
-        <p class="mb-5" style="font-size: 1.2rem; line-height: 1.6; color: var(--default-color);">
+      <div class="col-lg-6 mb-0 mb-lg-0 pb-lg-5" data-aos="fade-right">
+        <h2 class="fw-bold mb-2 mb-lg-4" style="font-size: 3rem; line-height: 1.3; color: var(--heading-color);">Tertarik Mencoba Layanan Kami?</h2>
+        <p class="mb-3 mb-lg-5" style="font-size: 1rem; line-height: 1.6; color: var(--default-color);">
           Konsultasikan kebutuhan talenta Anda.
         </p>
         <a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-cta-green">Hubungi Kami</a>
@@ -968,15 +948,3 @@
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Preloader -->
-  <div id="preloader"></div>
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-
-  <!-- Main JS File -->
-  <script src="assets/js/main.js"></script>

@@ -481,6 +481,12 @@ h6 {
     gap: 0;
   }
 
+  #nav-business-links {
+    align-items: flex-start !important;
+    width: 100%;
+    padding-left: 15px;
+  }
+
   .navmenu ul li {
     width: 100%;
     margin-bottom: 0;
@@ -489,11 +495,21 @@ h6 {
   .navmenu ul li a {
     display: block;
     width: 100%;
-    color: #004AAD;
+    color: #334155;
     font-weight: 500;
-    padding: 12px 0;
-    border-bottom: 1px solid rgba(0, 74, 173, 0.08);
-    font-size: 15px;
+    padding: 15px 15px 15px 0;
+    border-bottom: none;
+    font-size: 16px;
+    text-align: left;
+    transition: color 0.3s;
+  }
+  .navmenu ul li a:hover {
+    color: #004AAD;
+  }
+  .mobile-nav-logo {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 20px;
+    margin-bottom: 20px !important;
   }
 
   /* Dropdown submenu inside mobile */

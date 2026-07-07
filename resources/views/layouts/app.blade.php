@@ -46,6 +46,9 @@
   </script>
 
   <!-- CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="{{ asset('assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/aos/aos.css') }}" rel="stylesheet">
   <link href="{{ asset('assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
@@ -57,35 +60,18 @@
 </head>
 <body>
 
-  @include('partials.navbar') {{-- Navbar global --}}
+  <!-- Preloader — harus ada di sini agar main.js bisa menghapusnya saat window.load -->
+  <div id="preloader"></div>
+
+  @include('partials.navbar')
   @yield('content')
 
   <!-- JS -->
   <script src="{{ asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/aos/aos.js') }}"></script>
+  <script src="{{ asset('assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+  <script src="{{ asset('assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+  <script src="{{ asset('assets/js/main.js') }}"></script>
 
-  <!-- Burger Menu Script -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const toggle = document.querySelector('.mobile-nav-toggle');
-      const nav = document.querySelector('.navmenu');
-      const overlay = document.querySelector('#nav-overlay');
-
-      if (toggle && nav && overlay) {
-        toggle.addEventListener('click', function () {
-          nav.classList.toggle('active');
-          overlay.classList.toggle('active');
-          toggle.classList.toggle('bi-x');
-          toggle.classList.toggle('bi-list');
-        });
-
-        overlay.addEventListener('click', function () {
-          nav.classList.remove('active');
-          overlay.classList.remove('active');
-          toggle.classList.remove('bi-x');
-          toggle.classList.add('bi-list');
-        });
-      }
-    });
-  </script>
 </body>
 </html>
