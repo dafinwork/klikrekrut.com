@@ -5,9 +5,9 @@
   <meta property="og:site_name" content="Klik Rekrut">
   <meta property="og:title" content="Klik Rekrut — Asisten Perekrut untuk Perusahaan">
   <meta property="og:description" content="Layanan Recruiter as a Service (RaaS): dapatkan rekruter profesional on-demand tanpa biaya tetap. Cocok untuk UMKM hingga perusahaan besar.">
-  <meta property="og:image" content="https://klikrekrut.com/assets/img/og-image.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
+  <meta property="og:image" content="https://klikrekrut.com/assets/img/square.png">
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
   <meta property="og:image:alt" content="Klik Rekrut - Asisten Perekrut untuk Perusahaan">
   <meta property="og:url" content="https://klikrekrut.com">
   <meta property="og:type" content="website">
@@ -18,7 +18,7 @@
   <meta name="twitter:site" content="@klikrekrut">
   <meta name="twitter:title" content="Klik Rekrut — Asisten Perekrut untuk Perusahaan">
   <meta name="twitter:description" content="Layanan Recruiter as a Service (RaaS): dapatkan rekruter profesional on-demand tanpa biaya tetap.">
-  <meta name="twitter:image" content="https://klikrekrut.com/assets/img/og-image.png">
+  <meta name="twitter:image" content="https://klikrekrut.com/assets/img/square.png">
 
   <!-- Meta Utama -->
   <meta charset="UTF-8">
