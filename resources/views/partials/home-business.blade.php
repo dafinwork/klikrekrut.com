@@ -62,7 +62,7 @@
         
         <h1 class="hero-business-title">
           <span class="hero-title-line">Penyedia Tenaga</span><br>
-          <span class="hero-title-line">Rekruter Profesional</span>
+          <span class="hero-title-line">Perekrut Profesional</span>
         </h1>
         
         <p class="hero-business-desc mb-4">
@@ -209,7 +209,7 @@
         </div>
         <div class="col-md-7 text-start ps-md-5">
           <p class="mb-0" style="color: #252525; font-size: 0.9rem; line-height: 1.8;">
-            Model layanan recruitment berbasis jaringan rekruter on-demand, membuat perusahaan memiliki tim perekrut eksternal profesional tanpa harus mengontrak mereka sebagai karyawan tetap.
+            Model layanan recruitment berbasis jaringan recruiter on-demand, membuat perusahaan memiliki tim perekrut eksternal profesional tanpa harus mengontrak mereka sebagai karyawan tetap.
           </p>
         </div>
       </div>
