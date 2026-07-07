@@ -3,8 +3,8 @@
 <head>
   <!-- Open Graph Tags (untuk preview saat link di-share di WhatsApp, Telegram, dll) -->
   <meta property="og:site_name" content="Klik Rekrut">
-  <meta property="og:title" content="Klik Rekrut — Asisten Perekrut untuk Perusahaan">
-  <meta property="og:description" content="Layanan Recruiter as a Service (RaaS): dapatkan rekruter profesional on-demand tanpa biaya tetap. Cocok untuk UMKM hingga perusahaan besar.">
+  <meta property="og:title" content="Klik Rekrut">
+  <meta property="og:description" content="Asisten Perekrut untuk Perusahaan">
   <meta property="og:image" content="https://klikrekrut.com/assets/img/square.png">
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
@@ -16,8 +16,8 @@
   <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@klikrekrut">
-  <meta name="twitter:title" content="Klik Rekrut — Asisten Perekrut untuk Perusahaan">
-  <meta name="twitter:description" content="Layanan Recruiter as a Service (RaaS): dapatkan rekruter profesional on-demand tanpa biaya tetap.">
+  <meta name="twitter:title" content="Klik Rekrut">
+  <meta name="twitter:description" content="Asisten Perekrut untuk Perusahaan">
   <meta name="twitter:image" content="https://klikrekrut.com/assets/img/square.png">
 
   <!-- Meta Utama -->
