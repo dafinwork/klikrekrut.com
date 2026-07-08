@@ -102,18 +102,6 @@
   flex-shrink: 0;
 }
 
-/* Animasi burger → X saat sidebar terbuka */
-.burger-btn.is-open .burger-line:nth-child(1) {
-  transform: translateY(7px) rotate(45deg);
-}
-.burger-btn.is-open .burger-line:nth-child(2) {
-  opacity: 0;
-  transform: scaleX(0);
-}
-.burger-btn.is-open .burger-line:nth-child(3) {
-  transform: translateY(-7px) rotate(-45deg);
-}
-
 /* ==================== MOBILE SIDEBAR ==================== */
 .mobile-sidebar {
   position: fixed;
@@ -199,7 +187,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.75);
   z-index: 10001;
 }
 .mobile-nav-overlay.active {
