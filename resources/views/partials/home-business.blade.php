@@ -172,7 +172,7 @@
     </svg>
   </div>
 
-  <div class="container pb-5" style="position: relative; z-index: 5; margin-top: -30px;">
+  <div class="container pb-5" style="position: relative; z-index: 5; padding-top: 20px;">
     <div class="raas-intro-card shadow-sm bg-white rounded" data-aos="fade-up">
       <div class="row align-items-center p-4 p-md-5">
         <div class="col-md-5 text-start border-end-md">
