@@ -294,6 +294,12 @@
 .raas-intro-card {
   border: 1px solid rgba(0,0,0,0.05);
   border-radius: 16px !important;
+  position: relative;
+  overflow: hidden;
+}
+
+.raas-intro-card::after {
+  content: none;
 }
 
 @media (min-width: 768px) {
@@ -339,7 +345,7 @@
 /* ==================== APA ITU RAAS SECTION ==================== */
 .apa-itu-raas-section {
   position: relative;
-  background: linear-gradient(to bottom, #E8F4FD 0%, #ffffff 100%);
+  background: linear-gradient(to bottom, #E8F4FD, #ffffff);
   z-index: 1;
   padding-top: 0;
 }
@@ -686,7 +692,7 @@
 .raas-services-section {
   position: relative;
   z-index: 1;
-  background: #ffffff;
+  background: linear-gradient(to bottom, #ffffff, #E8F4FD);
 }
 .raas-pricing-card {
   background: #fff;
@@ -833,16 +839,25 @@
   position: relative;
   z-index: 2;
 }
+/* Default (collapsed): tanpa background card, tanpa border, tanpa shadow */
 .faq-accordion .accordion-item {
-  background-color: #E8F4FD;
-  border: 1px solid rgba(0,74,173,.15);
+  background-color: transparent;
+  border: none;
   border-radius: 12px !important;
-  box-shadow: 0 4px 15px rgba(0,74,173,.04);
+  box-shadow: none;
   margin-bottom: 16px;
   overflow: hidden;
 }
+
+/* Saat item terbuka: baru muncul card putih */
+.faq-accordion .accordion-item:has(.accordion-button:not(.collapsed)) {
+  background-color: #ffffff;
+  border: 1px solid rgba(0,74,173,.15);
+  box-shadow: 0 4px 15px rgba(0,74,173,.04);
+}
+
 .faq-accordion .accordion-button {
-  background-color: #E8F4FD;
+  background-color: transparent;
   color: #004AAD;
   font-weight: 700;
   font-size: 0.85rem;
@@ -850,10 +865,21 @@
   padding: 20px 25px;
   border: none;
 }
+.faq-accordion .accordion-button:hover {
+  background-color: transparent;
+  color: #004AAD;
+}
+.faq-accordion .accordion-button:focus {
+  background-color: transparent;
+  box-shadow: none !important;
+}
 .faq-accordion .accordion-button:not(.collapsed) {
   background-color: #ffffff;
   color: var(--heading-color);
   box-shadow: none !important;
+}
+.faq-accordion .accordion-button:not(.collapsed):hover {
+  background-color: #ffffff;
 }
 .faq-accordion .accordion-collapse {
   background-color: #ffffff;
@@ -862,16 +888,20 @@
 .faq-accordion .accordion-body {
   background-color: transparent;
   padding: 0 25px 20px 25px;
-  color: #444;
+  color: #252525;
   font-size: 0.8rem;
   line-height: 1.7;
 }
 
 /* ==================== CTA SECTION ==================== */
+.cta-title { font-size: 3rem; }
+.cta-desc { font-size: 1rem; }
+
 .btn-cta-green {
   display: inline-block;
   background-color: #7ED957;
   color: #ffffff !important;
+  text-transform: uppercase;
   font-weight: 700;
   font-size: 0.9rem;
   padding: 10px 25px;
@@ -898,22 +928,24 @@
 
 /* ==================== RESPONSIVE (MOBILE) ==================== */
 @media (max-width: 991px) {
-  /* Hero */
+  /* Hero & CTA */
   .hero-content-left { text-align: center !important; }
   .hero-business-title { font-size: 1.6rem; }
+  .cta-title { font-size: 1.6rem !important; }
+  .cta-desc { font-size: 0.85rem !important; }
   .hero-title-line { white-space: normal; }
   .badge-raas-new { 
     margin-left: auto !important; 
     margin-right: auto !important; 
     width: fit-content; 
-    font-size: 0.5rem; 
+    font-size: 0.45rem; 
     padding: 4px 10px; 
     text-align: center;
     display: inline-flex;
     justify-content: center;
   }
   .hero-btn-group { flex-direction: row !important; justify-content: center !important; gap: 10px; padding: 0; }
-  .hero-btn-group .btn { padding: 8px 14px; font-size: 0.75rem; }
+  .hero-btn-group .btn { width: auto !important; flex: 0 0 auto; padding: 8px 18px; font-size: 0.7rem; white-space: nowrap; }
   .hero-cards-row { display: flex !important; flex-direction: column !important; gap: 8px !important; }
   .hero-cards-row .hero-small-card { width: 100% !important; min-height: 60px; display: flex; align-items: center; padding: 8px 12px; }
   .hero-business-desc { font-size: 0.85rem; }
@@ -980,7 +1012,7 @@
   .faq-section {
     padding: 40px 0;
   }
-  .faq-title { font-size: 1.3rem; text-align: center; margin-bottom: 20px; white-space: normal; }
+  .faq-title { font-size: 1.3rem !important; text-align: center; margin-bottom: 20px; white-space: nowrap !important; }
   .faq-accordion .accordion-button { padding: 15px 18px; font-size: 0.75rem; }
   .faq-accordion .accordion-body { padding: 0 18px 15px 18px; font-size: 0.72rem; }
   
@@ -998,7 +1030,10 @@
     font-size: 0.8rem !important;
   }
   /* Padding luar kartu MENGENAL MODEL BARU dan Apa yang Kami Tawarkan di mobile */
-  .apa-itu-raas-section > .container,
+  .apa-itu-raas-section > .container {
+    padding-left: 28px !important;
+    padding-right: 28px !important;
+  }
   .raas-services-section > .container {
     padding-left: 20px !important;
     padding-right: 20px !important;
@@ -1034,17 +1069,36 @@
     padding-top: 40px !important;
   }
   .cta-section-new h2 {
-    font-size: 1.9rem !important;
+    font-size: 1.7rem !important;
     line-height: 1.3 !important;
   }
   .cta-section-new p {
-    font-size: 1rem !important;
+    font-size: 0.9rem !important;
   }
   .cta-section-new .row { flex-direction: column; }
-  .cta-title { text-align: center; }
-  .cta-desc { text-align: center; }
+  .cta-title { text-align: left; }
+  .cta-desc { text-align: left; }
   .cta-person-img {
     max-height: 320px !important;
     margin-top: 0 !important;
+  }
+
+  /* Kurangi jarak hero ke section berikutnya */
+  .hero-business {
+    padding-bottom: 20px; /* sebelumnya 60px */
+  }
+
+  .apa-itu-raas-section {
+    padding-top: 0;
+  }
+
+  .apa-itu-raas-section > .container.pb-5 {
+    padding-top: 0 !important;
+  }
+
+  /* Pastikan kartu selalu di atas gradient, tidak terpengaruh */
+  .raas-intro-card {
+    position: relative;
+    z-index: 10; /* naikkan di atas layer gradient */
   }
 }

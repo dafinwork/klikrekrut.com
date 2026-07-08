@@ -86,6 +86,13 @@
       
     </div>
   </div>
+
+  <!-- Wave putih di bawah hero (bentuk seperti screenshot tapi warna putih) -->
+  <div class="hero-wave">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 100" preserveAspectRatio="none">
+      <path fill="#ffffff" d="M0,50 C144,100 288,0 432,50 C576,100 720,0 864,50 C1008,100 1152,0 1296,50 C1368,75 1404,25 1440,50 L1440,100 L0,100 Z"/>
+    </svg>
+  </div>
 </section>
 
 <!-- ==================== APA ITU RAAS SECTION ==================== -->
@@ -181,15 +188,18 @@
         </div>
         <div class="col-md-7 text-start ps-md-5">
           <p class="mb-0" style="color: #252525; font-size: 0.9rem; line-height: 1.8;">
-            Model layanan rekrutment berbasis jaringan recruiter on-demand, membuat perusahaan memiliki tim perekrut eksternal profesional tanpa harus mengontrak mereka sebagai karyawan tetap.
+            Model layanan rekrutmen berbasis jaringan recruiter on-demand, membuat perusahaan memiliki tim perekrut eksternal profesional tanpa harus mengontrak mereka sebagai karyawan tetap.
           </p>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- Gradasi putih ke bawah sesuai request (diatur margin negatif agar lebih dekat) -->
+  <div style="width: 100%; height: 80px; background: linear-gradient(to bottom, transparent, #ffffff); margin-top: -80px; margin-bottom: -1px; position: relative; z-index: 2;"></div>
+
   <!-- ==================== RAAS SERVICES SECTION (Moved) ==================== -->
-  <div class="raas-services-section" id="services" style="padding: 60px 0;">
+  <div class="raas-services-section" id="services" style="padding: 40px 0 60px 0;">
     <div class="container text-center">
       <h2 class="fw-bold mb-3" data-aos="fade-up" style="font-size: 1.7rem; color: var(--heading-color);">Apa yang Kami Tawarkan?</h2>
       <p class="mb-5 mx-auto" data-aos="fade-up" data-aos-delay="50" style="max-width: 100%; color: #555; font-size: 0.95rem; line-height: 1.6;">
@@ -351,44 +361,46 @@
 
 <!-- ==================== FAQ SECTION ==================== -->
 <section id="faq" class="faq-section">
-  <!-- Premium Background Ornaments -->
+    <!-- Premium Background Ornaments -->
   <div class="faq-ornaments-premium" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: hidden;">
-    <!-- 2. Soft Radial Glow -->
-    <div style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; background: radial-gradient(circle at center, rgba(93,224,230,.08), transparent 65%); filter: blur(30px);"></div>
-    
-    <!-- 1. Large Organic Blob -->
-    <svg viewBox="0 0 500 500" style="position: absolute; top: 10%; right: -5%; width: 60%; max-width: 800px; opacity: 0.04; fill: url(#faq-blob-grad);">
-      <defs>
-        <linearGradient id="faq-blob-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="#004AAD" />
-          <stop offset="100%" stop-color="#5DE0E6" />
-        </linearGradient>
-      </defs>
-      <path d="M421,328.5Q386,407,297,434.5Q208,462,130,410.5Q52,359,48.5,263Q45,167,117,105Q189,43,284.5,58.5Q380,74,418,162Q456,250,421,328.5Z" />
-    </svg>
-
-    <!-- 3. Dot Grid (Top Right) -->
-    <svg width="150" height="150" style="position: absolute; top: 10%; right: 10%; opacity: 0.06;">
-      <defs>
-        <pattern id="faqDotGrid" width="15" height="15" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="#004AAD" />
-        </pattern>
-      </defs>
-      <rect width="100%" height="100%" fill="url(#faqDotGrid)" />
-    </svg>
-
-    <!-- 3 Question Mark Ornaments (sejajar kolom judul kiri) -->
-    <div style="position: absolute; bottom: 15%; left: 8%; font-size: 280px; font-weight: 900; color: #004AAD; opacity: 0.05; z-index: 0; pointer-events: none; line-height: 1; font-family: sans-serif; transform: rotate(-15deg);">?</div>
-    <div style="position: absolute; top: 35%; left: 12%; font-size: 180px; font-weight: 900; color: #004AAD; opacity: 0.04; z-index: 0; pointer-events: none; line-height: 1; font-family: sans-serif; transform: rotate(10deg);">?</div>
-    <div style="position: absolute; top: 10%; left: 6%; font-size: 220px; font-weight: 900; color: #004AAD; opacity: 0.03; z-index: 0; pointer-events: none; line-height: 1; font-family: sans-serif; transform: rotate(-5deg);">?</div>
+    <!-- Soft Radial Glow -->
+    <div style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; background: radial-gradient(circle at center, rgba(165, 195, 236, 0.15), transparent 65%); filter: blur(30px);"></div>
   </div>
 
-  <div class="container">
-    <div class="row align-items-start justify-content-between">
+  <div class="container" style="max-width: 1550px;">
+    <div class="row align-items-start justify-content-between position-relative" style="z-index: 2;">
       <div class="col-lg-4 col-md-12 mb-5 mb-lg-0" data-aos="fade-up">
-        <h2 class="faq-title mb-0 text-center text-lg-start">
+        <h2 class="faq-title mb-4 text-center text-lg-start" style="color: var(--heading-color); font-weight: 800;">
           Frequently Asked Questions
         </h2>
+        
+        <!-- Ornament Question Marks SVG (matches image) -->
+        <div class="faq-ornament-svg d-none d-lg-block" style="margin-top: 20px; position: relative; width: 100%; height: 400px;">
+          <svg viewBox="0 0 500 500" style="position: absolute; top: 0; left: -20px; width: 110%; height: 110%; z-index: 0; pointer-events: none;">
+            <!-- Scattered Dots -->
+            <circle cx="80" cy="50" r="14" fill="#a4c2f4" opacity="0.9" />
+            <circle cx="250" cy="40" r="10" fill="#a4c2f4" opacity="0.7" />
+            <circle cx="150" cy="110" r="6" fill="#a4c2f4" opacity="0.6" />
+            <circle cx="320" cy="100" r="5" fill="#a4c2f4" opacity="0.8" />
+            <circle cx="220" cy="420" r="12" fill="#a4c2f4" opacity="0.8" />
+            <circle cx="340" cy="380" r="7" fill="#a4c2f4" opacity="0.6" />
+            
+            <!-- Outlined Dots -->
+            <circle cx="190" cy="160" r="12" fill="none" stroke="#a4c2f4" stroke-width="3" opacity="0.6" />
+            <circle cx="370" cy="250" r="8" fill="none" stroke="#a4c2f4" stroke-width="2" opacity="0.5" />
+            <circle cx="70" cy="350" r="15" fill="none" stroke="#a4c2f4" stroke-width="3" opacity="0.7" />
+
+            <!-- Solid Question Mark (Left) -->
+            <g transform="translate(60, 60) rotate(-15)">
+              <text x="0" y="320" font-family="'Nunito', 'Poppins', sans-serif" font-weight="900" font-size="360" fill="#a4c2f4">?</text>
+            </g>
+
+            <!-- Outline Question Mark (Right) -->
+            <g transform="translate(200, 90) rotate(5)">
+              <text x="0" y="300" font-family="'Nunito', 'Poppins', sans-serif" font-weight="900" font-size="320" fill="none" stroke="#a4c2f4" stroke-width="12" opacity="0.9">?</text>
+            </g>
+          </svg>
+        </div>
       </div>
       
       <div class="col-lg-7 col-md-12">
@@ -401,7 +413,7 @@
             Apa itu KLIK Rekrut?
           </button>
         </h2>
-        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             KLIK Rekrut adalah perusahaan penyedia layanan Recruiter as a Service (RaaS) untuk mendapatkan talenta berkualitas.
           </div>
@@ -415,7 +427,7 @@
             Bagaimana cara kerja layanan RaaS KLIK Rekrut?
           </button>
         </h2>
-        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             Tim KLIK Rekrut akan mengadakan initial meeting untuk memahami kebutuhan Anda secara mendalam. Kemudian, Pencarian Serentak oleh jaringan mitra rekruter berpengalaman. Anda hanya menerima daftar pendek (shortlist) kandidat yang sudah benar-benar siap kerja (qualified) untuk diwawancarai di tahap akhir, dilanjutkan dengan proses penawaran kerja (offering) hingga onboarding.
           </div>
@@ -429,7 +441,7 @@
             Apa keuntungan yang saya dapatkan jika menggunakan layanan RaaS KLIK Rekrut?
           </button>
         </h2>
-        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             Dengan layanan RaaS, Satu Lowongan Anda, Dikerjakan Serentak oleh Puluhan Rekruter Profesional sehingga proses pengisian posisi juga jauh lebih cepat dan tepat. Selain itu, Anda pun terbebas dari biaya langganan bulanan, success fee berbasis persentase. Anda hanya membayar saat Anda membutuhkan talenta dengan total cost yang lebih murah dari hiring tim rekruter internal, yang harus membayar gaji pokok, tunjangan, dan BPJS mereka setiap bulan, terlepas dari apakah perusahaan sedang aktif membuka lowongan atau tidak.
           </div>
@@ -443,7 +455,7 @@
             Apakah ada jaminan untuk layanan RaaS KLIK Rekrut?
           </button>
         </h2>
-        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             Ada. Jika kandidat yang kami berikan belum sesuai atau mengundurkan diri dalam 30 hari pertama, tim kami akan mencarikan pengganti yang sesuai dengan kriteria yang sama.
           </div>
@@ -457,7 +469,7 @@
             Berapa lama proses KLIK Rekrut menemukan kandidat yang tepat untuk saya?
           </button>
         </h2>
-        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive">
+        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             3 hingga 5 CV per minggu untuk posisi umum. Untuk posisi khusus, pencarian kandidat mungkin membutuhkan waktu lebih agar kualitas terbaik terpenuhi.
           </div>
@@ -471,7 +483,7 @@
             Apakah layanan RaaS KLIK Rekrut cocok untuk UMKM atau perusahaan kecil?
           </button>
         </h2>
-        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix">
+        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             Tentu saja. Layanan RaaS kami dirancang fleksibel untuk berbagai skala bisnis, mulai dari startup, UMKM, hingga perusahaan besar. Bahkan jika bisnis atau UMKM Anda belum memiliki brand perusahaan yang besar, tim kami tetap siap membantu Anda memikat dan mendapatkan kandidat terbaik secara efektif.
           </div>
@@ -485,7 +497,7 @@
             Berapa tarif layanan RaaS KLIK Rekrut?
           </button>
         </h2>
-        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven">
+        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             Anda bisa mulai dengan "Jadwalkan Demo" untuk mengenal tarif layanan kami. Tim kami siap memandu Anda selama proses penawaran layanan.
           </div>
@@ -499,7 +511,7 @@
             Apakah KLIK Rekrut menawarkan demo gratis sebelum saya membuat komitmen?
           </button>
         </h2>
-        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight">
+        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             Ya. Klik "Jadwalkan Demo" dan tim marketing kami akan menghubungi Anda dalam 24 jam untuk demo eksklusif gratis.
           </div>
@@ -513,7 +525,7 @@
             Berasal dari industri apa saja klien KLIK Rekrut?
           </button>
         </h2>
-        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine">
+        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             Klien kami berasal dari berbagai bidang termasuk Consulting, Kreatif Agency, Retail, Fashion, Education, Garmen, dan lain-lain.
           </div>
@@ -527,7 +539,7 @@
             Bagaimana cara mulai menggunakan layanan RaaS dari KLIK Rekrut?
           </button>
         </h2>
-        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen">
+        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
             Anda dapat klik "Rekrut Sekarang".
           </div>
@@ -588,8 +600,8 @@
     <div class="row align-items-center">
       <!-- Left: Text & Button -->
       <div class="col-lg-6 mb-0 mb-lg-0 pb-lg-5" data-aos="fade-right">
-        <h2 class="fw-bold mb-2 mb-lg-4" style="font-size: 3rem; line-height: 1.3; color: var(--heading-color);">Tertarik Mencoba Layanan Kami?</h2>
-        <p class="mb-3 mb-lg-5" style="font-size: 1rem; line-height: 1.6; color: var(--default-color);">
+        <h2 class="fw-bold mb-2 mb-lg-4 cta-title" style="line-height: 1.3; color: var(--heading-color);"><strong>Tertarik Mencoba</strong><br><strong>Layanan Kami?</strong></h2>
+        <p class="mb-3 mb-lg-5 cta-desc" style="line-height: 1.6; color: var(--default-color);">
           Konsultasikan kebutuhan talenta Anda.
         </p>
         <a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-cta-green">Hubungi Kami</a>
