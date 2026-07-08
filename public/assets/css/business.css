@@ -609,7 +609,7 @@
 }
 @media (max-width: 767px) {
   .apa-itu-raas-section {
-    padding: 60px 0;
+    padding: 20px 0;
   }
   .raas-section-title {
     font-size: 1.7rem;
@@ -858,7 +858,7 @@
 
 .faq-accordion .accordion-button {
   background-color: transparent;
-  color: #004AAD;
+  color: var(--heading-color) !important;
   font-weight: 700;
   font-size: 0.85rem;
   box-shadow: none !important;
@@ -867,11 +867,18 @@
 }
 .faq-accordion .accordion-button:hover {
   background-color: transparent;
-  color: #004AAD;
+  color: var(--heading-color) !important;
 }
 .faq-accordion .accordion-button:focus {
   background-color: transparent;
   box-shadow: none !important;
+}
+.faq-accordion .accordion-button::after {
+  filter: invert(38%) sepia(18%) saturate(822%) hue-rotate(169deg) brightness(88%) contrast(85%);
+}
+.faq-accordion .accordion-button:not(.collapsed)::after {
+  filter: invert(38%) sepia(18%) saturate(822%) hue-rotate(169deg) brightness(88%) contrast(85%);
+  background-image: var(--bs-accordion-btn-icon);
 }
 .faq-accordion .accordion-button:not(.collapsed) {
   background-color: #ffffff;
@@ -905,7 +912,7 @@
   font-weight: 700;
   font-size: 0.9rem;
   padding: 10px 25px;
-  border-radius: 8px;
+  border-radius: 50rem;
   text-decoration: none;
   transition: all 0.3s;
 }
@@ -993,7 +1000,7 @@
 
   /* Trusted Clients - Bigger Logos on Mobile */
   .trusted-clients-section {
-    padding: 40px 0;
+    padding: 20px 0;
   }
   .trusted-clients-title {
     font-size: 1.1rem;
@@ -1010,7 +1017,7 @@
   
   /* FAQ */
   .faq-section {
-    padding: 40px 0;
+    padding: 20px 0;
   }
   .faq-title { font-size: 1.3rem !important; text-align: center; margin-bottom: 20px; white-space: nowrap !important; }
   .faq-accordion .accordion-button { padding: 15px 18px; font-size: 0.75rem; }
@@ -1045,7 +1052,13 @@
   
   /* Benefits Grid */
   .raas-benefits-grid {
-    padding: 40px 0;
+    padding: 16px 0;
+  }
+  .raas-benefits-grid .container .row.g-4 {
+    row-gap: 2px !important;
+  }
+  .raas-benefit-item {
+    padding: 5px 15px !important;
   }
   .raas-benefits-title {
     font-size: 1.3rem !important;
@@ -1066,7 +1079,7 @@
   
   /* CTA */
   .cta-section-new {
-    padding-top: 40px !important;
+    padding-top: 20px !important;
   }
   .cta-section-new h2 {
     font-size: 1.7rem !important;
@@ -1076,6 +1089,10 @@
     font-size: 0.9rem !important;
   }
   .cta-section-new .row { flex-direction: column; }
+  .cta-section-new .col-lg-6 {
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+  }
   .cta-title { text-align: left; }
   .cta-desc { text-align: left; }
   .cta-person-img {
