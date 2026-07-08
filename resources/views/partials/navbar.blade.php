@@ -10,7 +10,7 @@
     <!-- Desktop Nav Menu -->
     <nav id="navmenu" class="navmenu d-none d-lg-flex align-items-center">
       <ul class="d-flex align-items-center mb-0 flex-row" style="gap: 15px; list-style: none; padding: 0; margin: 0;">
-        <li><a href="#services">Profil Layanan</a></li>
+        <li><a href="#services">Layanan</a></li>
         <li><a href="#trusted-clients">Klien Kami</a></li>
         <li><a href="#faq">FAQ</a></li>
         <li><a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-konsultasi">Konsultasi Sekarang</a></li>
@@ -39,7 +39,7 @@
 
   <!-- Sidebar Nav Links -->
   <nav class="mobile-sidebar-nav">
-    <a href="#services" class="mobile-sidebar-link" data-close-sidebar>Profil Layanan</a>
+    <a href="#services" class="mobile-sidebar-link" data-close-sidebar>Layanan</a>
     <hr class="mobile-sidebar-divider">
     <a href="#trusted-clients" class="mobile-sidebar-link" data-close-sidebar>Klien Kami</a>
     <hr class="mobile-sidebar-divider">
@@ -183,6 +183,12 @@
 .mobile-sidebar-cta {
   color: #004AAD !important;
   font-weight: 700;
+  border: 1.5px solid #004AAD !important;
+  border-radius: 20px;
+  margin: 8px 24px;
+  padding: 10px 24px;
+  justify-content: center;
+  width: calc(100% - 48px);
 }
 
 /* ==================== OVERLAY ==================== */

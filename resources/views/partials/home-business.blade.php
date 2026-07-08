@@ -80,35 +80,7 @@
         <div class="hero-right-composition position-relative">
           <img src="assets/img/gambarhero.png" alt="Recruiter as a Service KLIK Rekrut" class="hero-image-main img-fluid" onerror="this.src='assets/img/adam.jpg'">
           
-          <div class="hero-cards-row mt-4 d-flex justify-content-center gap-2 flex-wrap flex-xl-nowrap">
-            <div class="hero-small-card shadow-sm bg-white rounded">
-              <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-check-circle-fill icon-check text-success"></i>
-                <div class="text-start">
-                  <h6 class="mb-0 fw-bold" style="font-size: 0.75rem;">Cocok untuk UMKM</h6>
-                  <small class="text-muted" style="font-size: 0.6rem; display: block;">Tanpa komitmen biaya besar diawal</small>
-                </div>
-              </div>
-            </div>
-            <div class="hero-small-card shadow-sm bg-white rounded">
-              <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-check-circle-fill icon-check text-success"></i>
-                <div class="text-start">
-                  <h6 class="mb-0 fw-bold" style="font-size: 0.75rem;">Solusi HR Terpadu</h6>
-                  <small class="text-muted" style="font-size: 0.6rem; display: block;">Membantu beban kerja ganda Anda</small>
-                </div>
-              </div>
-            </div>
-            <div class="hero-small-card shadow-sm bg-white rounded">
-              <div class="d-flex align-items-center gap-2">
-                <i class="bi bi-check-circle-fill icon-check text-success"></i>
-                <div class="text-start">
-                  <h6 class="mb-0 fw-bold" style="font-size: 0.75rem;">Sangat Fleksibel</h6>
-                  <small class="text-muted" style="font-size: 0.6rem; display: block;">Tersedia layanan full service hingga satuan</small>
-                </div>
-              </div>
-            </div>
-          </div>
+
         </div>
       </div>
       
@@ -209,7 +181,7 @@
         </div>
         <div class="col-md-7 text-start ps-md-5">
           <p class="mb-0" style="color: #252525; font-size: 0.9rem; line-height: 1.8;">
-            Model layanan recruitment berbasis jaringan recruiter on-demand, membuat perusahaan memiliki tim perekrut eksternal profesional tanpa harus mengontrak mereka sebagai karyawan tetap.
+            Model layanan rekrutment berbasis jaringan recruiter on-demand, membuat perusahaan memiliki tim perekrut eksternal profesional tanpa harus mengontrak mereka sebagai karyawan tetap.
           </p>
         </div>
       </div>

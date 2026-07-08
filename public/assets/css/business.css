@@ -834,16 +834,16 @@
   z-index: 2;
 }
 .faq-accordion .accordion-item {
-  background-color: #ffffff;
-  border: 1px solid rgba(0,74,173,.1);
+  background-color: #E8F4FD;
+  border: 1px solid rgba(0,74,173,.15);
   border-radius: 12px !important;
   box-shadow: 0 4px 15px rgba(0,74,173,.04);
   margin-bottom: 16px;
   overflow: hidden;
 }
 .faq-accordion .accordion-button {
-  background-color: #ffffff;
-  color: var(--heading-color);
+  background-color: #E8F4FD;
+  color: #004AAD;
   font-weight: 700;
   font-size: 0.85rem;
   box-shadow: none !important;
@@ -851,12 +851,12 @@
   border: none;
 }
 .faq-accordion .accordion-button:not(.collapsed) {
-  background-color: #E8F4FD;
-  color: #004AAD;
+  background-color: #ffffff;
+  color: var(--heading-color);
   box-shadow: none !important;
 }
 .faq-accordion .accordion-collapse {
-  background-color: #E8F4FD;
+  background-color: #ffffff;
   border-top: none;
 }
 .faq-accordion .accordion-body {
@@ -996,6 +996,16 @@
   }
   .raas-intro-card p {
     font-size: 0.8rem !important;
+  }
+  /* Padding luar kartu MENGENAL MODEL BARU dan Apa yang Kami Tawarkan di mobile */
+  .apa-itu-raas-section > .container,
+  .raas-services-section > .container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .raas-services-section .row.g-4 {
+    padding-left: 8px;
+    padding-right: 8px;
   }
   
   /* Benefits Grid */

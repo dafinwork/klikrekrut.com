@@ -4,11 +4,11 @@
   <!-- Open Graph Tags (untuk preview saat link di-share di WhatsApp, Telegram, dll) -->
   <meta property="og:site_name" content="Klik Rekrut">
   <meta property="og:title" content="Klik Rekrut">
-  <meta property="og:description" content="Asisten Perekrut untuk Perusahaan">
+  <meta property="og:description" content="Asisten Rekrutmen untuk Perusahaan">
   <meta property="og:image" content="https://klikrekrut.com/assets/img/square.png">
   <meta property="og:image:width" content="512">
   <meta property="og:image:height" content="512">
-  <meta property="og:image:alt" content="Klik Rekrut - Asisten Perekrut untuk Perusahaan">
+  <meta property="og:image:alt" content="Klik Rekrut - Asisten Rekrutmen untuk Perusahaan">
   <meta property="og:url" content="https://klikrekrut.com">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="id_ID">
@@ -17,7 +17,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@klikrekrut">
   <meta name="twitter:title" content="Klik Rekrut">
-  <meta name="twitter:description" content="Asisten Perekrut untuk Perusahaan">
+  <meta name="twitter:description" content="Asisten Rekrutmen untuk Perusahaan">
   <meta name="twitter:image" content="https://klikrekrut.com/assets/img/square.png">
 
   <!-- Meta Utama -->
