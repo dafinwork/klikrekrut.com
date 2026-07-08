@@ -45,12 +45,11 @@
 
 /* ==================== HERO SECTION ==================== */
 .hero-business {
-  padding: 160px 0 40px 0;
+  padding: 160px 0 60px 0;
   position: relative;
   overflow: hidden;
   background-color: #E8F4FD !important;
   color: #333;
-  min-height: 85vh;
   display: flex;
   align-items: center;
 }
@@ -340,7 +339,7 @@
 /* ==================== APA ITU RAAS SECTION ==================== */
 .apa-itu-raas-section {
   position: relative;
-  background: linear-gradient(to bottom, #E8F4FD 0%, #ffffff 60%);
+  background: linear-gradient(to bottom, #E8F4FD 0%, #ffffff 100%);
   z-index: 1;
   padding-top: 0;
 }
@@ -687,7 +686,7 @@
 .raas-services-section {
   position: relative;
   z-index: 1;
-  background: linear-gradient(to bottom, #ffffff, #E8F4FD);
+  background: #ffffff;
 }
 .raas-pricing-card {
   background: #fff;
