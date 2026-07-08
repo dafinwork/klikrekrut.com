@@ -600,7 +600,7 @@
     <div class="row align-items-center">
       <!-- Left: Text & Button -->
       <div class="col-lg-6 mb-0 mb-lg-0 pb-lg-5" data-aos="fade-right">
-        <h2 class="fw-bold mb-2 mb-lg-4 cta-title" style="line-height: 1.3; color: var(--heading-color);"><strong>Tertarik Mencoba</strong><br><strong>Layanan Kami?</strong></h2>
+        <h2 class="fw-bold mb-2 mb-lg-4 cta-title" style="line-height: 1.3; color: var(--heading-color);">Tertarik Mencoba<br>Layanan Kami?</h2>
         <p class="mb-3 mb-lg-5 cta-desc" style="line-height: 1.6; color: var(--default-color);">
           Konsultasikan kebutuhan talenta Anda.
         </p>
