@@ -1067,6 +1067,7 @@
 
   /* Kurangi jarak hero ke section berikutnya */
   .hero-business {
+    padding-top: 90px; /* sebelumnya 160px */
     padding-bottom: 20px; /* sebelumnya 60px */
   }
 
