@@ -1,7 +1,4 @@
   <!-- isi halaman -->
-<!-- Fonts khusus halaman ini -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-
 <!-- Business page CSS -->
 <link href="{{ asset('assets/css/business.css') }}" rel="stylesheet">
 
@@ -13,35 +10,16 @@
   <!-- Hero Decorative Background Ornaments (Desktop Only) -->
   <div class="hero-ornaments d-none d-lg-block" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: hidden;">
     
-    <!-- Radial Glow (Center) -->
-    <div style="position: absolute; top: 20%; left: 25%; width: 50%; height: 60%; background: radial-gradient(circle at center, rgba(0,74,173,.06), transparent 65%); filter: blur(40px);"></div>
+    <!-- Radial Glow (Center) - diperkecil blur -->
+    <div style="position: absolute; top: 20%; left: 25%; width: 50%; height: 60%; background: radial-gradient(circle at center, rgba(0,74,173,.06), transparent 65%); filter: blur(30px);"></div>
 
-    <!-- Organic Blobs -->
+    <!-- Organic Blobs - dikurangi dari 1 jadi 1 saja -->
     <svg viewBox="0 0 500 500" style="position: absolute; top: -10%; left: -8%; width: 40%; max-width: 500px; opacity: 0.04; fill: #44658C;">
       <path d="M421,328.5Q386,407,297,434.5Q208,462,130,410.5Q52,359,48.5,263Q45,167,117,105Q189,43,284.5,58.5Q380,74,418,162Q456,250,421,328.5Z" />
     </svg>
 
-    <!-- Flowing Curved Lines (Top Left) -->
-    <svg viewBox="0 0 600 300" preserveAspectRatio="none" style="position: absolute; top: 5%; left: -5%; width: 55%; height: 25%; opacity: 0.06; stroke: #44658C; fill: none; stroke-width: 1.2;">
-      <path d="M 0,150 C 80,50 200,250 350,100 C 500,-50 600,180 700,120" />
-      <path d="M 0,180 C 100,80 220,280 380,130 C 540,-20 640,200 750,150" />
-    </svg>
-
-
-
-    <!-- Flowing Curved Lines (Bottom) -->
-    <svg viewBox="0 0 800 200" preserveAspectRatio="none" style="position: absolute; bottom: 5%; left: 10%; width: 80%; height: 15%; opacity: 0.04; stroke: #44658C; fill: none; stroke-width: 1.5;">
-      <path d="M 0,100 C 150,0 300,200 500,80 C 700,-40 850,150 1000,100" />
-    </svg>
-
-    <!-- Circular Outlines -->
-    <svg viewBox="0 0 100 100" style="position: absolute; top: 15%; left: 5%; width: 15%; max-width: 200px; opacity: 0.04; stroke: #44658C; stroke-width: 1.5; fill: none;">
-      <circle cx="50" cy="50" r="45" />
-    </svg>
-
-
-    <!-- Dot Grid (Bottom Left) -->
-    <svg width="150" height="150" style="position: absolute; bottom: 15%; left: 3%; opacity: 0.04;">
+    <!-- Dot Grid dikurangi -->
+    <svg width="100" height="100" style="position: absolute; bottom: 15%; left: 3%; opacity: 0.04;">
       <defs>
         <pattern id="heroDotGrid2" width="18" height="18" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.2" fill="#B3D2EE" />
@@ -76,9 +54,9 @@
       </div>
 
       <!-- Right Column (52%) -->
-      <div class="col-lg-6 hero-content-right mt-2 mt-lg-0 text-center" data-aos="fade-left" data-aos-delay="200" style="padding-top: 5px;">
+      <div class="col-lg-6 hero-content-right mt-2 mt-lg-0 text-center" data-aos="fade-left" data-aos-delay="100" style="padding-top: 5px;">
         <div class="hero-right-composition position-relative">
-          <img src="assets/img/gambarhero.png" alt="Recruiter as a Service KLIK Rekrut" class="hero-image-main img-fluid" onerror="this.src='assets/img/adam.jpg'">
+          <img src="assets/img/gambarhero.png" alt="Recruiter as a Service KLIK Rekrut" class="hero-image-main img-fluid" loading="lazy" onerror="this.src='assets/img/adam.jpg'">
           
 
         </div>
@@ -99,83 +77,25 @@
 <section id="what-is-raas" class="apa-itu-raas-section">
   <!-- Decorative Background Ornaments (Desktop Only) -->
   <div class="raas-ornaments d-none d-lg-block" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; overflow: hidden;">
-    <!-- E. Radial Glow (Center) -->
-    <div style="position: absolute; top: 40%; left: 30%; width: 40%; height: 60%; background: radial-gradient(circle at center, rgba(93,224,230,.06), transparent 60%); filter: blur(50px);"></div>
-    <!-- Additional Radial Glow (Lower Center) -->
-    <div style="position: absolute; top: 70%; left: 20%; width: 50%; height: 40%; background: radial-gradient(circle at center, rgba(0,74,173,.05), transparent 60%); filter: blur(60px);"></div>
+    <!-- Radial Glow dikurangi -->
+    <div style="position: absolute; top: 40%; left: 30%; width: 40%; height: 60%; background: radial-gradient(circle at center, rgba(93,224,230,.05), transparent 60%); filter: blur(40px);"></div>
 
-    <!-- A. Large Organic Blobs (8 Blobs Total) -->
-    <!-- Blob 1 -->
-    <svg viewBox="0 0 500 500" style="position: absolute; top: 5%; left: -10%; width: 50%; max-width: 600px; opacity: 0.04; fill: #004AAD;">
+    <!-- Blob dikurangi jadi 3 saja dari 8 -->
+    <svg viewBox="0 0 500 500" style="position: absolute; top: 5%; left: -10%; width: 50%; max-width: 600px; opacity: 0.03; fill: #004AAD;">
       <path d="M421,328.5Q386,407,297,434.5Q208,462,130,410.5Q52,359,48.5,263Q45,167,117,105Q189,43,284.5,58.5Q380,74,418,162Q456,250,421,328.5Z" />
     </svg>
-    <!-- Blob 2 -->
-    <svg viewBox="0 0 500 500" style="position: absolute; top: 15%; right: -5%; width: 45%; max-width: 500px; opacity: 0.03; fill: #5DE0E6;">
+    <svg viewBox="0 0 500 500" style="position: absolute; top: 55%; left: -5%; width: 45%; max-width: 550px; opacity: 0.03; fill: #5DE0E6;">
       <path d="M410.5,334.5Q372,419,271,438.5Q170,458,111.5,372.5Q53,287,112.5,200.5Q172,114,272.5,108.5Q373,103,411,176.5Q449,250,410.5,334.5Z" />
-    </svg>
-    <!-- Blob 3 -->
-    <svg viewBox="0 0 500 500" style="position: absolute; top: 25%; left: 10%; width: 35%; max-width: 400px; opacity: 0.03; fill: #004AAD;">
-      <path d="M380,312.5Q366,375,296.5,417.5Q227,460,131,430Q35,400,24.5,296.5Q14,193,89.5,123.5Q165,54,260.5,57.5Q356,61,375,155.5Q394,250,380,312.5Z" />
-    </svg>
-    <!-- Blob 4 -->
-    <svg viewBox="0 0 500 500" style="position: absolute; top: 40%; right: -15%; width: 60%; max-width: 750px; opacity: 0.04; fill: #5DE0E6;">
-      <path d="M441.5,316.5Q396,383,313,426.5Q230,470,147.5,425.5Q65,381,62.5,285.5Q60,190,132,130Q204,70,300.5,70.5Q397,71,442,160.5Q487,250,441.5,316.5Z" />
-    </svg>
-    <!-- Blob 5 -->
-    <svg viewBox="0 0 500 500" style="position: absolute; top: 55%; left: -5%; width: 55%; max-width: 650px; opacity: 0.03; fill: #004AAD;">
-      <path d="M421,328.5Q386,407,297,434.5Q208,462,130,410.5Q52,359,48.5,263Q45,167,117,105Q189,43,284.5,58.5Q380,74,418,162Q456,250,421,328.5Z" />
-    </svg>
-    <!-- Blob 6 -->
-    <svg viewBox="0 0 500 500" style="position: absolute; top: 70%; right: 10%; width: 40%; max-width: 450px; opacity: 0.04; fill: #5DE0E6;">
-      <path d="M380,312.5Q366,375,296.5,417.5Q227,460,131,430Q35,400,24.5,296.5Q14,193,89.5,123.5Q165,54,260.5,57.5Q356,61,375,155.5Q394,250,380,312.5Z" />
-    </svg>
-    <!-- Blob 7 -->
-    <svg viewBox="0 0 500 500" style="position: absolute; top: 85%; left: -15%; width: 50%; max-width: 550px; opacity: 0.03; fill: #004AAD;">
-      <path d="M410.5,334.5Q372,419,271,438.5Q170,458,111.5,372.5Q53,287,112.5,200.5Q172,114,272.5,108.5Q373,103,411,176.5Q449,250,410.5,334.5Z" />
-    </svg>
-    <!-- Blob 8 -->
-    <svg viewBox="0 0 500 500" style="position: absolute; top: 95%; right: -5%; width: 45%; max-width: 500px; opacity: 0.04; fill: #5DE0E6;">
-      <path d="M441.5,316.5Q396,383,313,426.5Q230,470,147.5,425.5Q65,381,62.5,285.5Q60,190,132,130Q204,70,300.5,70.5Q397,71,442,160.5Q487,250,441.5,316.5Z" />
     </svg>
 
-    <!-- B. Dot Grid Patterns -->
-    <svg width="200" height="200" style="position: absolute; top: 2%; left: 2%; opacity: 0.06;">
+    <!-- Dot Grid dikurangi jadi 2 dari 4 -->
+    <svg width="150" height="150" style="position: absolute; top: 2%; left: 2%; opacity: 0.05;">
       <defs>
         <pattern id="raasDotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="#5DE0E6" />
         </pattern>
-        <pattern id="raasDotGridDark" width="20" height="20" patternUnits="userSpaceOnUse">
-          <circle cx="2" cy="2" r="1.5" fill="#004AAD" />
-        </pattern>
       </defs>
       <rect width="100%" height="100%" fill="url(#raasDotGrid)" />
-    </svg>
-    <svg width="200" height="200" style="position: absolute; top: 35%; right: 5%; opacity: 0.05;">
-      <rect width="100%" height="100%" fill="url(#raasDotGridDark)" />
-    </svg>
-    <svg width="200" height="200" style="position: absolute; top: 80%; left: 5%; opacity: 0.05;">
-      <rect width="100%" height="100%" fill="url(#raasDotGrid)" />
-    </svg>
-    <svg width="200" height="200" style="position: absolute; bottom: 5%; right: 2%; opacity: 0.05;">
-      <rect width="100%" height="100%" fill="url(#raasDotGridDark)" />
-    </svg>
-
-    <!-- C. Soft Circular Outlines -->
-    <svg viewBox="0 0 100 100" style="position: absolute; top: 25%; right: 10%; width: 25%; max-width: 400px; opacity: 0.04; stroke: #004AAD; stroke-width: 1.5; fill: none;">
-      <circle cx="50" cy="50" r="45" />
-      <circle cx="50" cy="50" r="30" />
-    </svg>
-    <svg viewBox="0 0 100 100" style="position: absolute; top: 75%; left: -5%; width: 20%; max-width: 300px; opacity: 0.05; stroke: #5DE0E6; stroke-width: 2; fill: none;">
-      <circle cx="50" cy="50" r="40" />
-    </svg>
-
-    <!-- D. Subtle Flow Lines -->
-    <svg viewBox="0 0 800 400" preserveAspectRatio="none" style="position: absolute; top: 45%; left: -10%; width: 70%; height: 20%; opacity: 0.03; stroke: #004AAD; fill: none; stroke-width: 1.5;">
-      <path d="M 0,200 C 100,300 300,-50 500,100 C 700,250 900,150 1000,200" />
-    </svg>
-    <svg viewBox="0 0 800 400" preserveAspectRatio="none" style="position: absolute; bottom: 2%; right: -10%; width: 60%; height: 30%; opacity: 0.04; stroke: #5DE0E6; fill: none; stroke-width: 1;">
-      <path d="M 0,200 C 100,300 300,-50 500,100 C 700,250 900,150 1000,200" />
-      <path d="M 0,220 C 120,340 320,0 520,120 C 720,240 920,170 1000,220" />
     </svg>
   </div>
 
@@ -254,13 +174,13 @@
   </div>
 
   <!-- ==================== KEUNTUNGAN RAAS GRID ==================== -->
-  <div class="raas-benefits-grid" data-aos="fade-up" data-aos-delay="100">
+  <div class="raas-benefits-grid" data-aos="fade-up">
     <div class="container">
       <h2 class="raas-benefits-title text-center fw-bold mb-5" data-aos="fade-up" style="color: var(--heading-color); font-size: 1.7rem;">Apa Keuntungan Merekrut dengan RaaS?</h2>
       
       <div class="row g-4 justify-content-center">
         <!-- Benefit 1: Bebas Repot -->
-        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="100">
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="0">
           <div class="raas-benefit-item">
             <div class="raas-benefit-icon-circle">
               <i class="bi bi-clipboard-check"></i>
@@ -273,7 +193,7 @@
         </div>
 
         <!-- Benefit 2: Lebih Ekonomis -->
-        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="100">
           <div class="raas-benefit-item">
             <div class="raas-benefit-icon-circle">
               <i class="bi bi-wallet2"></i>
@@ -286,7 +206,7 @@
         </div>
 
         <!-- Benefit 3: Pengisian Posisi Lebih Cepat -->
-        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
           <div class="raas-benefit-item">
             <div class="raas-benefit-icon-circle">
               <i class="bi bi-lightning-charge"></i>
@@ -299,7 +219,7 @@
         </div>
 
         <!-- Benefit 4: Aman Dari Resiko -->
-        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="400">
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="300">
           <div class="raas-benefit-item">
             <div class="raas-benefit-icon-circle">
               <i class="bi bi-shield-check"></i>
@@ -325,34 +245,34 @@
       <div class="marquee-container mb-4">
         <div class="marquee-content marquee-right">
           <!-- Logo Set 1 -->
-          <img src="assets/img/logosatupesan.png" alt="Satu Pesan" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logoirij.png" alt="Indonesia Research Institute" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logososialoka.png" alt="Sosialoka" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logodeeja.png" alt="Deeja" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logonurama.png" alt="Nurama" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logosatupesan.png" alt="Satu Pesan" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logoirij.png" alt="Indonesia Research Institute" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logososialoka.png" alt="Sosialoka" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logodeeja.png" alt="Deeja" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logonurama.png" alt="Nurama" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
           <!-- Duplicate 1 -->
-          <img src="assets/img/logosatupesan.png" alt="Satu Pesan" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logoirij.png" alt="Indonesia Research Institute" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logososialoka.png" alt="Sosialoka" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logodeeja.png" alt="Deeja" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logonurama.png" alt="Nurama" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logosatupesan.png" alt="Satu Pesan" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logoirij.png" alt="Indonesia Research Institute" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logososialoka.png" alt="Sosialoka" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logodeeja.png" alt="Deeja" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logonurama.png" alt="Nurama" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
         </div>
       </div>
       
       <div class="marquee-container">
         <div class="marquee-content marquee-left">
           <!-- Logo Set 2 -->
-          <img src="assets/img/logolaroche.png" alt="Laroche Woman Basic" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logosecretrecipe.png" alt="Secret Recipe" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logotonyjack.png" alt="Tonyjack" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logoironhead.png" alt="Ironhead" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logohanson.png" alt="Hanson" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logolaroche.png" alt="Laroche Woman Basic" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logosecretrecipe.png" alt="Secret Recipe" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logotonyjack.png" alt="Tonyjack" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logoironhead.png" alt="Ironhead" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logohanson.png" alt="Hanson" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
           <!-- Duplicate 2 -->
-          <img src="assets/img/logolaroche.png" alt="Laroche Woman Basic" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logosecretrecipe.png" alt="Secret Recipe" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logotonyjack.png" alt="Tonyjack" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logoironhead.png" alt="Ironhead" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
-          <img src="assets/img/logohanson.png" alt="Hanson" class="trusted-client-logo" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logolaroche.png" alt="Laroche Woman Basic" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logosecretrecipe.png" alt="Secret Recipe" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logotonyjack.png" alt="Tonyjack" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logoironhead.png" alt="Ironhead" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
+          <img src="assets/img/logohanson.png" alt="Hanson" class="trusted-client-logo" loading="lazy" onerror="this.src='assets/img/adam.jpg'" />
         </div>
       </div>
     </div>
@@ -363,8 +283,8 @@
 <section id="faq" class="faq-section">
     <!-- Premium Background Ornaments -->
   <div class="faq-ornaments-premium" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: hidden;">
-    <!-- Soft Radial Glow -->
-    <div style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; background: radial-gradient(circle at center, rgba(165, 195, 236, 0.15), transparent 65%); filter: blur(30px);"></div>
+    <!-- Soft Radial Glow dikurangi blur -->
+    <div style="position: absolute; top: 10%; left: 10%; width: 80%; height: 80%; background: radial-gradient(circle at center, rgba(165, 195, 236, 0.12), transparent 65%); filter: blur(25px);"></div>
   </div>
 
   <div class="container" style="max-width: 1550px;">
@@ -377,19 +297,7 @@
         <!-- Ornament Question Marks SVG (matches image) -->
         <div class="faq-ornament-svg d-none d-lg-block" style="margin-top: 20px; position: relative; width: 100%; height: 400px;">
           <svg viewBox="0 0 500 500" style="position: absolute; top: 0; left: -20px; width: 110%; height: 110%; z-index: 0; pointer-events: none;">
-            <!-- Scattered Dots -->
-            <circle cx="80" cy="50" r="14" fill="#a4c2f4" opacity="0.9" />
-            <circle cx="250" cy="40" r="10" fill="#a4c2f4" opacity="0.7" />
-            <circle cx="150" cy="110" r="6" fill="#a4c2f4" opacity="0.6" />
-            <circle cx="320" cy="100" r="5" fill="#a4c2f4" opacity="0.8" />
-            <circle cx="220" cy="420" r="12" fill="#a4c2f4" opacity="0.8" />
-            <circle cx="340" cy="380" r="7" fill="#a4c2f4" opacity="0.6" />
-            
-            <!-- Outlined Dots -->
-            <circle cx="190" cy="160" r="12" fill="none" stroke="#a4c2f4" stroke-width="3" opacity="0.6" />
-            <circle cx="370" cy="250" r="8" fill="none" stroke="#a4c2f4" stroke-width="2" opacity="0.5" />
-            <circle cx="70" cy="350" r="15" fill="none" stroke="#a4c2f4" stroke-width="3" opacity="0.7" />
-
+            <!-- Simplified - hanya 2 tanda tanya -->
             <!-- Solid Question Mark (Left) -->
             <g transform="translate(60, 60) rotate(-15)">
               <text x="0" y="320" font-family="'Nunito', 'Poppins', sans-serif" font-weight="900" font-size="360" fill="#a4c2f4">?</text>
@@ -560,43 +468,26 @@
   <!-- Decorative Background Ornaments -->
   <div class="cta-ornaments" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: hidden;">
     
-    <!-- 5. Soft Radial Glow behind text -->
-    <div class="cta-glow" style="position: absolute; top: 30%; left: 10%; width: 50%; height: 60%; background: radial-gradient(circle, rgba(0,74,173,0.08) 0%, rgba(0,74,173,0) 70%); filter: blur(40px);"></div>
+    <!-- Soft Radial Glow dikurangi -->
+    <div class="cta-glow" style="position: absolute; top: 30%; left: 10%; width: 50%; height: 60%; background: radial-gradient(circle, rgba(0,74,173,0.06) 0%, rgba(0,74,173,0) 70%); filter: blur(30px);"></div>
     
-    <!-- 1. Abstract Organic Blob (Right Side behind image) -->
-    <svg class="cta-blob-right" viewBox="0 0 500 500" style="position: absolute; bottom: -50px; right: -50px; width: 60%; max-width: 600px; opacity: 0.1; fill: #004AAD;">
+    <!-- Blob dikurangi jadi 2 saja -->
+    <svg class="cta-blob-right" viewBox="0 0 500 500" style="position: absolute; bottom: -50px; right: -50px; width: 50%; max-width: 500px; opacity: 0.08; fill: #004AAD;">
       <path d="M410.5,334.5Q372,419,271,438.5Q170,458,111.5,372.5Q53,287,112.5,200.5Q172,114,272.5,108.5Q373,103,411,176.5Q449,250,410.5,334.5Z" />
     </svg>
 
-    <!-- 2. Small Decorative Blobs -->
-    <!-- Top-left -->
-    <svg class="cta-blob-tl" viewBox="0 0 200 200" style="position: absolute; top: -30px; left: -40px; width: 150px; opacity: 0.08; fill: #5DE0E6;">
-      <path d="M165.5,123Q136,196,73.5,166.5Q11,137,21.5,73Q32,9,95,19.5Q158,30,176.5,63Q195,96,165.5,123Z" />
-    </svg>
-    <!-- Bottom-left -->
-    <svg class="cta-blob-bl" viewBox="0 0 200 200" style="position: absolute; bottom: 20px; left: 5%; width: 100px; opacity: 0.06; fill: #004AAD;">
-      <circle cx="100" cy="100" r="80" />
-    </svg>
-
-    <!-- 4. Dot Grid Pattern -->
-    <svg class="cta-dot-grid" width="100%" height="100%" style="position: absolute; top: 0; left: 0; opacity: 0.15;">
+    <!-- Dot Grid Pattern dikurangi coverage -->
+    <svg class="cta-dot-grid" width="100%" height="100%" style="position: absolute; top: 0; left: 0; opacity: 0.1;">
       <defs>
         <pattern id="dotGrid" width="20" height="20" patternUnits="userSpaceOnUse">
           <circle cx="2" cy="2" r="1.5" fill="#004AAD" />
         </pattern>
       </defs>
-      <!-- Draw grid on the right half -->
-      <rect x="60%" y="10%" width="30%" height="60%" fill="url(#dotGrid)" />
-    </svg>
-
-    <!-- 3. Flow Lines -->
-    <svg class="cta-flow-lines" viewBox="0 0 800 400" preserveAspectRatio="none" style="position: absolute; top: 40%; left: 0; width: 100%; height: 60%; opacity: 0.1; stroke: #004AAD; fill: none; stroke-width: 1;">
-      <path d="M -100,200 C 100,300 300,-50 500,100 C 700,250 900,150 1000,200" />
-      <path d="M -100,220 C 120,340 320,0 520,120 C 720,240 920,170 1000,220" />
+      <rect x="70%" y="20%" width="25%" height="50%" fill="url(#dotGrid)" />
     </svg>
   </div>
 
-  <div class="container" style="position: relative; z-index: 2;">
+  <div class="container">
     <div class="row align-items-center">
       <!-- Left: Text & Button -->
       <div class="col-lg-6 mb-0 mb-lg-0 pb-lg-5" data-aos="fade-right">
@@ -610,7 +501,7 @@
       <!-- Right: Image -->
       <div class="col-lg-6 d-flex justify-content-center align-items-end" data-aos="fade-left" style="position: relative;">
         <!-- The image is placed so it sits on the bottom edge of the section -->
-        <img src="assets/img/orgbener.png" alt="Konsultasi HR" class="img-fluid cta-person-img" style="max-height: 600px; margin-bottom: -10px; z-index: 2; position: relative;">
+        <img src="assets/img/orgbener.png" alt="Konsultasi HR" class="img-fluid cta-person-img" loading="lazy" style="max-height: 600px; margin-bottom: -10px; z-index: 2; position: relative;">
       </div>
     </div>
   </div>

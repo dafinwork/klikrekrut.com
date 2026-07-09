@@ -52,23 +52,11 @@
   color: #333;
   display: flex;
   align-items: center;
+  /* Optimasi rendering */
+  will-change: auto;
 }
 
-@media (max-width: 991px) {
-  .hero-business {
-    padding: 120px 0 60px 0;
-    min-height: auto;
-  }
-}
-
-.hero-business .container {
-  width: 100%;
-}
-
-.hero-content-left {
-  text-align: left;
-}
-
+/* Optimasi animasi dengan transform dan opacity saja */
 .badge-raas-new {
   background: #D5E8FA;
   color: #004AAD;
@@ -80,11 +68,6 @@
   align-items: center;
   margin-bottom: 25px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.02);
-  animation: floatBadge 3s ease-in-out infinite;
-}
-@keyframes floatBadge {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-5px); }
 }
 
 .badge-raas-new .dot {
@@ -199,11 +182,10 @@
   }
 }
 
-/* Floating Avatars */
+/* Floating Avatars - animasi dihapus untuk performa */
 .floating-avatar {
   position: absolute;
   z-index: 3;
-  animation: floatAvatar 4s ease-in-out infinite;
 }
 .floating-avatar img {
   border: 3px solid #fff;
@@ -216,36 +198,27 @@
   height: 65px;
   top: 15%;
   left: 5%;
-  animation-delay: 0s;
 }
 .avatar-2 {
   width: 50px;
   height: 50px;
   top: 45%;
   right: 2%;
-  animation-delay: 1.5s;
 }
 .avatar-3 {
   width: 80px;
   height: 80px;
   bottom: 10%;
   left: 20%;
-  animation-delay: 2.5s;
 }
 
-@keyframes floatAvatar {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-12px); }
-}
-
-/* Floating Statistic Cards */
+/* Floating Statistic Cards - animasi dihapus */
 .floating-card {
   position: absolute;
   z-index: 4;
   padding: 12px 18px;
   border-radius: 12px;
   box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
-  animation: floatCard 5s ease-in-out infinite;
   background: white;
   min-width: 220px;
 }
@@ -266,17 +239,14 @@
 .card-top-right {
   top: 20%;
   right: -5%;
-  animation-delay: 0.5s;
 }
 .card-bottom-right {
   bottom: 15%;
   right: -10%;
-  animation-delay: 1.2s;
 }
 .card-middle-left {
   top: 55%;
   left: -15%;
-  animation-delay: 2s;
 }
 
 .hero-small-card {
@@ -306,11 +276,6 @@
   .border-end-md {
     border-right: 1px solid #dee2e6;
   }
-}
-
-@keyframes floatCard {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-8px); }
 }
 
 @media (max-width: 991px) {
@@ -1090,8 +1055,8 @@
   }
   .cta-section-new .row { flex-direction: column; }
   .cta-section-new .col-lg-6 {
-    padding-left: 25px !important;
-    padding-right: 25px !important;
+    padding-left: 28px !important;
+    padding-right: 20px !important;
   }
   .cta-title { text-align: left; }
   .cta-desc { text-align: left; }

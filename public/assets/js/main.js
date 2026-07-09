@@ -102,10 +102,12 @@
    */
   function aosInit() {
     AOS.init({
-      duration: 600,
-      easing: 'ease-in-out',
+      duration: 500,
+      easing: 'ease-out',
       once: true,
-      mirror: false
+      mirror: false,
+      offset: 80,
+      delay: 0
     });
   }
   window.addEventListener('load', aosInit);

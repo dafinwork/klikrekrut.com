@@ -4,7 +4,7 @@
 
     <!-- Logo -->
     <a href="/" class="logo d-flex align-items-center">
-      <img src="assets/img/Header.png" alt="Klikrekrut Logo" class="logo-full" />
+      <img src="assets/img/Header.png" alt="Klikrekrut Logo" class="logo-full" loading="eager" />
     </a>
 
     <!-- Desktop Nav Menu -->
@@ -31,7 +31,7 @@
   <!-- Sidebar Header: Logo saja (tanpa tombol X) -->
   <div class="mobile-sidebar-header">
     <a href="/" class="mobile-sidebar-logo">
-      <img src="assets/img/Footer.png" alt="Klik Rekrut">
+      <img src="assets/img/Footer.png" alt="Klik Rekrut" loading="lazy">
     </a>
   </div>
 
