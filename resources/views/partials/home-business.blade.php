@@ -484,7 +484,6 @@
         <p class="mb-3 mb-lg-5 cta-desc" style="line-height: 1.6; color: var(--default-color);">
           Jangan biarkan momentum bisnis Anda hilang karena tim belum siap. Mulai merekrut dan lihat bagaimana sistem RaaS bekerja mencari karyawan untuk perusahaan Anda.
         </p>
-        <a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-cta-green">Hubungi Kami</a>
       </div>
 
       <!-- Right: Form -->
@@ -507,6 +506,7 @@
               <div class="mb-3">
                 <label for="service" class="form-label text-muted small mb-1">Service Needed</label>
                 <select class="form-select bg-light border-0" id="service" style="border-radius: 8px; padding: 10px 15px;" required>
+                  <option value="" selected disabled></option>
                   <option value="Strategic Consulting">Strategic Consulting</option>
                   <option value="CV Search">CV Search</option>
                   <option value="Interviewer">Interviewer</option>
@@ -535,7 +535,7 @@
     const challenge = document.getElementById('challenge').value;
     
     const text = `Halo tim KLIK Rekrut! Saya tertarik dengan layanan RaaS.%0A%0A*Perusahaan:* ${company}%0A*Skala Perusahaan:* ${scale}%0A*Layanan:* ${service}%0A*Tantangan:* ${challenge}%0A%0AMohon info lebih lanjut, terima kasih.`;
-    const waNumber = "6281234567890"; // Ganti dengan nomor asli
+    const waNumber = "6289678868752"; // Ganti dengan nomor asli
     
     window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank');
   }
@@ -662,7 +662,7 @@
           <h6>HUBUNGI KAMI</h6>
           <ul>
             <li><a href="mailto:hr.klikrekrut@gmail.com"><i class="bi bi-envelope me-2"></i> hr.klikrekrut@gmail.com</a></li>
-            <li><a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer"><i class="bi bi-telephone me-2"></i> +6281234567890</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=6289678868752" target="_blank" rel="noopener noreferrer"><i class="bi bi-telephone me-2"></i> +6289678868752</a></li>
             <li style="color: #44658c; font-size: 13px;"><i class="bi bi-geo-alt me-2"></i> Jakarta Pusat, Indonesia</li>
           </ul>
         </div>
@@ -693,7 +693,7 @@
 
     <!-- ==================== COPYRIGHT ==================== -->
     <div class="footer-bottom"> <!-- Bagian bawah footer -->
-      <p>© KLIKREKRUT 2025 • All Right Reserved</p> <!-- Hak cipta -->
+      <p>2026 KLIK REKRUT • All Rights Reserved</p> <!-- Hak cipta -->
     </div>
   </div>
 </footer>
