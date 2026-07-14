@@ -202,7 +202,7 @@
             </div>
             <h5 class="raas-benefit-title">Rekrutmen Cepat</h5>
             <p class="raas-benefit-desc">
-              Dalam layanan RaaS, setiap proyek rekrutmen dikerjakan serentak dan kolaboratif oleh dedicated recruiter sesuai dengan industri bisnis Anda sehingga proses pengisian posisi kosong berjalan lebih cepat
+              Dalam layanan RaaS, setiap proyek rekrutmen dikerjakan serentak dan kolaboratif oleh dedicated recruiter sesuai dengan industri bisnis Anda sehingga proses pengisian posisi kosong berjalan lebih cepat.
             </p>
           </div>
         </div>
