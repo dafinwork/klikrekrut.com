@@ -326,7 +326,7 @@
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Layanan RaaS menawarkan fleksibilitas penuh untuk memiliki tim rekruter profesional, baik hanya untuk satu tahap maupun seluruh proses rekrutmen. Anda terbebas dari biaya langganan bulanan job platform yang mengikat, tidak perlu merekrut karyawan tetap hanya untuk proses screening hingga wawancara, dan tanpa risiko membayar success fee yang menguras anggaran untuk setiap kandidat yang bergabung. Anda hanya membayar layanan yang benar-benar Anda butuhkan, memastikan tidak ada anggaran rekrutmen yang terbuang sia-sia.
+            Layanan RaaS menawarkan fleksibilitas penuh untuk memiliki tim perekrut profesional, baik hanya untuk satu tahap maupun seluruh proses rekrutmen. Anda terbebas dari biaya langganan bulanan job platform yang mengikat, tidak perlu merekrut karyawan tetap hanya untuk proses screening hingga wawancara, dan tanpa risiko membayar success fee yang menguras anggaran untuk setiap kandidat yang bergabung. Anda hanya membayar layanan yang benar-benar Anda butuhkan, memastikan tidak ada anggaran rekrutmen yang terbuang sia-sia.
           </div>
         </div>
       </div>
@@ -340,7 +340,7 @@
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Layanan RaaS bekerja dengan cara bermitra langsung dengan perekrut profesional yang mendedikasikan keahlian dan waktu mereka untuk menyelesaikan permintaan rekrutmen Anda hingga tuntas. Anda mendapatkan ekosistem rekrutmen siap pakai yang hanya berjalan dan dibayar saat Anda membutuhkannya. 
+            Layanan RaaS bekerja dengan cara bermitra langsung dengan perekrut profesional yang mendedikasikan keahlian dan waktu mereka untuk menyelesaikan permintaan rekrutmen Anda hingga tuntas. Anda mendapatkan ekosistem rekrutmen siap pakai yang hanya berjalan dan dibayar saat Anda membutuhkannya.
           </div>
         </div>
       </div>
