@@ -507,7 +507,6 @@
                 <label for="service" class="form-label text-muted small mb-1">Service Needed</label>
                 <select class="form-select bg-light border-0" id="service" style="border-radius: 8px; padding: 10px 15px;" required>
                   <option value="" selected disabled></option>
-                  <option value="Strategic Consulting">Strategic Consulting</option>
                   <option value="CV Search">CV Search</option>
                   <option value="Interviewer">Interviewer</option>
                   <option value="End-to-end Process">End-to-end Process</option>
