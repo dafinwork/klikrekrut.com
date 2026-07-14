@@ -13,7 +13,7 @@
         <li><a href="#services">Layanan</a></li>
         <li><a href="#trusted-clients">Klien Kami</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-konsultasi">Konsultasi Sekarang</a></li>
+        <li><a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-konsultasi">Konsultasi Gratis</a></li>
       </ul>
     </nav>
 
@@ -45,7 +45,7 @@
     <hr class="mobile-sidebar-divider">
     <a href="#faq" class="mobile-sidebar-link" data-close-sidebar>FAQ</a>
     <hr class="mobile-sidebar-divider">
-    <a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="mobile-sidebar-link mobile-sidebar-cta" data-close-sidebar>Konsultasi Sekarang</a>
+    <a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="mobile-sidebar-link mobile-sidebar-cta" data-close-sidebar>Konsultasi Gratis</a>
   </nav>
 </div>
 
@@ -55,16 +55,25 @@
 <style>
 /* ==================== DESKTOP NAV ==================== */
 .btn-konsultasi {
-  border: 1px solid #004AAD;
+  border: 1px solid #44658c;
   border-radius: 20px;
   padding: 5px 20px !important;
-  color: #004AAD !important;
-  font-weight: 600;
+  color: #44658c !important;
+  font-weight: bold !important;
   transition: all 0.3s;
 }
 .btn-konsultasi:hover {
-  background-color: #004AAD;
+  background-color: #44658c;
   color: #fff !important;
+}
+
+.navmenu ul li a:not(.btn-konsultasi) {
+  color: #44658c !important;
+  font-weight: 500 !important;
+  font-family: 'Poppins', sans-serif;
+}
+.navmenu ul li a:not(.btn-konsultasi):hover {
+  color: #44658c !important;
 }
 
 /* ==================== HAMBURGER BUTTON ==================== */
@@ -96,7 +105,7 @@
   display: block;
   width: 22px;
   height: 2px;
-  background-color: #004AAD;
+  background-color: #44658c;
   border-radius: 2px;
   transition: all 0.3s ease;
   flex-shrink: 0;
@@ -153,7 +162,7 @@
   align-items: center;
   width: 100%;
   padding: 16px 24px;
-  color: #334155;
+  color: #44658c;
   font-size: 15px;
   font-weight: 500;
   font-family: 'Poppins', sans-serif;
@@ -165,13 +174,13 @@
   transition: color 0.2s, background 0.2s;
 }
 .mobile-sidebar-link:hover {
-  color: #004AAD;
+  color: #44658c;
   background-color: #f0f7ff;
 }
 .mobile-sidebar-cta {
-  color: #004AAD !important;
+  color: #44658c !important;
   font-weight: 700;
-  border: 1.5px solid #004AAD !important;
+  border: 1.5px solid #44658c !important;
   border-radius: 20px;
   margin: 8px 24px;
   padding: 10px 24px;

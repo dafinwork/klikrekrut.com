@@ -520,7 +520,7 @@
         <div class="col-lg-3 col-md-6 pe-4">
           <img src="assets/img/Footer.png" alt="Klik Rekrut" style="max-width: 120px; margin-bottom: 15px;">
           <p style="font-size: 12px; color: #555;">
-            <strong>Klik Rekrut</strong> hadir sebagai solusi rekrutmen yang ergonomis untuk mendapatkan talenta Siap Kerja.
+            <strong style="color: #004AAD;">Klik Rekrut</strong> hadir sebagai solusi rekrutmen yang ergonomis untuk mendapatkan talenta Siap Kerja.
           </p>
         </div>
 

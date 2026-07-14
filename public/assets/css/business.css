@@ -3,42 +3,59 @@
    ========================================================================= */
 
 /* --- Typography Helpers --- */
-.text-sm { font-size: 0.9rem; }
-.fw-bold { font-weight: 700 !important; }
-.fw-black { font-weight: 900 !important; }
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.fw-bold {
+  font-weight: 700 !important;
+}
+
+.fw-black {
+  font-weight: 900 !important;
+}
 
 /* ==================== HEADER OVERRIDE (Business Mode Only) ==================== */
 #main-header.business-mode {
   background-color: #ffffff !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
 }
+
 #main-header.business-mode .navmenu ul li a {
-  color: #004AAD !important;
+  color: #44658c !important;
 }
+
 #main-header.business-mode .btn-konsultasi {
-  border-color: #004AAD !important;
-  color: #004AAD !important;
+  border-color: #44658c !important;
+  color: #44658c !important;
 }
+
 #main-header.business-mode .btn-konsultasi:hover {
-  background-color: #004AAD !important;
+  background-color: #44658c !important;
   color: #ffffff !important;
 }
+
 #main-header.business-mode .mobile-nav-toggle {
-  color: #004AAD !important;
+  color: #44658c !important;
 }
+
 #main-header.business-mode .logo-full {
   content: url("../img/Footer.png") !important;
 }
+
 #main-header.business-mode .view-toggle-container {
   background: rgba(0, 0, 0, 0.05) !important;
   border-color: rgba(0, 0, 0, 0.1) !important;
 }
+
 #main-header.business-mode .toggle-label {
   color: rgba(0, 0, 0, 0.5) !important;
 }
+
 #main-header.business-mode .toggle-label.active {
   color: #004AAD !important;
 }
+
 #main-header.business-mode .toggle-separator {
   color: rgba(0, 0, 0, 0.5) !important;
 }
@@ -67,7 +84,7 @@
   display: inline-flex;
   align-items: center;
   margin-bottom: 25px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
 }
 
 .badge-raas-new .dot {
@@ -84,7 +101,7 @@
   font-weight: 800;
   line-height: 1.3;
   margin-bottom: 25px;
-  color: var(--heading-color); 
+  color: var(--heading-color);
   text-align: left;
 }
 
@@ -102,6 +119,7 @@
   gap: 15px;
   margin-bottom: 0;
 }
+
 @media (max-width: 575px) {
   .hero-btn-group .btn {
     width: 100%;
@@ -118,6 +136,7 @@
   font-weight: 600;
   transition: all 0.3s;
 }
+
 .btn-rekrut-sekarang:hover {
   background-color: #63B643;
   border-color: #63B643;
@@ -134,6 +153,7 @@
   font-weight: 600;
   transition: all 0.3s;
 }
+
 .btn-jadwalkan-demo:hover {
   background-color: rgba(0, 74, 173, 0.08);
   color: #003a8c;
@@ -163,6 +183,7 @@
   transform: translateY(-15px) scale(1);
   transition: transform 0.5s ease;
 }
+
 .hero-image:hover {
   transform: translateY(-15px) scale(1.02);
 }
@@ -171,9 +192,11 @@
   width: 115%;
   max-width: 115%;
   display: block;
-  margin: 0 0 0 -7.5%; /* Pull left to keep it visually centered while being larger, top is still 0 */
+  margin: 0 0 0 -7.5%;
+  /* Pull left to keep it visually centered while being larger, top is still 0 */
   transition: transform 0.5s ease;
 }
+
 @media (max-width: 991px) {
   .hero-image-main {
     width: 100%;
@@ -187,24 +210,28 @@
   position: absolute;
   z-index: 3;
 }
+
 .floating-avatar img {
   border: 3px solid #fff;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
+
 .avatar-1 {
   width: 65px;
   height: 65px;
   top: 15%;
   left: 5%;
 }
+
 .avatar-2 {
   width: 50px;
   height: 50px;
   top: 45%;
   right: 2%;
 }
+
 .avatar-3 {
   width: 80px;
   height: 80px;
@@ -218,19 +245,22 @@
   z-index: 4;
   padding: 12px 18px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.08) !important;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) !important;
   background: white;
   min-width: 220px;
 }
+
 .floating-card .icon-check {
   color: #17B384;
   font-size: 1.5rem;
 }
+
 .floating-card h6 {
   margin: 0;
   font-size: 0.85rem;
   color: var(--heading-color);
 }
+
 .floating-card small {
   font-size: 0.65rem;
   color: var(--default-color);
@@ -240,10 +270,12 @@
   top: 20%;
   right: -5%;
 }
+
 .card-bottom-right {
   bottom: 15%;
   right: -10%;
 }
+
 .card-middle-left {
   top: 55%;
   left: -15%;
@@ -254,15 +286,16 @@
   border-radius: 8px;
   background: white;
   min-width: 180px;
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   height: 100%;
 }
+
 .hero-small-card .icon-check {
   font-size: 1.1rem;
 }
 
 .raas-intro-card {
-  border: 1px solid rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   border-radius: 16px !important;
   position: relative;
   overflow: hidden;
@@ -282,26 +315,33 @@
   .hero-business-title {
     font-size: 1.9rem;
   }
+
   .hero-content-left {
     text-align: center;
     margin-bottom: 40px;
   }
+
   .hero-business-title,
   .hero-business-desc {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
+
   .hero-btn-group {
     justify-content: center !important;
   }
-  .floating-card, .floating-avatar {
+
+  .floating-card,
+  .floating-avatar {
     display: none;
   }
+
   .hero-image {
     max-width: 100%;
     transform: none;
   }
+
   .hero-image:hover {
     transform: scale(1.02);
   }
@@ -314,18 +354,21 @@
   z-index: 1;
   padding-top: 0;
 }
-.apa-itu-raas-section > .container,
+
+.apa-itu-raas-section>.container,
 .apa-itu-raas-section .raas-fullbleed-item,
 .apa-itu-raas-section .container.px-lg-5 {
   position: relative;
   z-index: 2;
 }
+
 .raas-section-title {
   font-size: 1.7rem;
   font-weight: 700;
   color: var(--heading-color);
   margin-bottom: 24px;
 }
+
 .raas-section-desc {
   font-size: 0.9rem;
   color: var(--default-color);
@@ -333,6 +376,7 @@
   margin: 0 auto 60px auto;
   line-height: 1.7;
 }
+
 .raas-feature-list {
   display: flex;
   flex-direction: column;
@@ -340,6 +384,7 @@
   max-width: 900px;
   margin: 0 auto;
 }
+
 .raas-feature-item {
   display: flex;
   align-items: center;
@@ -347,27 +392,33 @@
   background: transparent;
   text-align: left;
 }
+
 .raas-feature-item.reverse {
   flex-direction: row-reverse;
 }
+
 .raas-feature-icon {
   flex: 0 0 250px;
   text-align: center;
 }
+
 .raas-icon {
   font-size: 140px;
   color: #111;
   line-height: 1;
 }
+
 .raas-feature-text {
   flex: 1;
 }
+
 .raas-feature-text h4 {
   font-weight: 800;
   font-size: 1.3rem;
   margin-bottom: 12px;
   color: #000;
 }
+
 .raas-feature-text p {
   color: #444;
   line-height: 1.7;
@@ -385,10 +436,12 @@
   padding: 0 10%;
   gap: 30px;
 }
+
 .raas-fullbleed-img-col {
   flex: 0 0 50%;
   max-width: 50%;
 }
+
 .bebas-repot-img-wrapper {
   position: relative;
   width: 100%;
@@ -397,6 +450,7 @@
   overflow: hidden;
   border-radius: 16px;
 }
+
 .bebas-repot-img {
   position: absolute;
   top: 0;
@@ -407,11 +461,21 @@
   border-radius: 16px;
   transition: opacity 1s ease-in-out;
 }
+
 /* Crossfade animation for the second image */
 @keyframes crossfadeImage {
-  0%, 45% { opacity: 1; }
-  55%, 100% { opacity: 0; }
+
+  0%,
+  45% {
+    opacity: 1;
+  }
+
+  55%,
+  100% {
+    opacity: 0;
+  }
 }
+
 .bebas-repot-img.img-2 {
   animation: crossfadeImage 8s infinite alternate;
 }
@@ -434,6 +498,7 @@
   margin-bottom: 20px;
   line-height: 1.3;
 }
+
 .raas-fullbleed-text-col p,
 .bebas-repot-text p,
 .lebih-ekonomis-text p,
@@ -448,6 +513,7 @@
 .raas-fullbleed-item.reverse {
   flex-direction: row-reverse;
 }
+
 .raas-fullbleed-item.reverse .raas-fullbleed-text-col {
   padding: 0 20px 40px 0;
 }
@@ -460,6 +526,7 @@
   overflow: hidden;
   border-radius: 16px;
 }
+
 .lebih-ekonomis-img {
   position: absolute;
   top: 0;
@@ -470,6 +537,7 @@
   border-radius: 16px;
   transition: opacity 1s ease-in-out;
 }
+
 .lebih-ekonomis-img.img-2 {
   animation: crossfadeImage 8s infinite alternate;
 }
@@ -482,6 +550,7 @@
   margin-bottom: 20px;
   line-height: 1.3;
 }
+
 .lebih-ekonomis-text p {
   color: #2e6bbc !important;
   font-size: 1rem !important;
@@ -497,6 +566,7 @@
   overflow: hidden;
   border-radius: 16px;
 }
+
 .pengisian-img {
   position: absolute;
   top: 0;
@@ -507,9 +577,11 @@
   border-radius: 16px;
   transition: opacity 1s ease-in-out;
 }
+
 .pengisian-img.img-2 {
   animation: crossfadeImage 8s infinite alternate;
 }
+
 .pengisian-text h4 {
   color: #004AAD !important;
   font-size: 1.9rem !important;
@@ -517,6 +589,7 @@
   margin-bottom: 20px;
   line-height: 1.3;
 }
+
 .pengisian-text p {
   color: #2e6bbc !important;
   font-size: 1rem !important;
@@ -532,6 +605,7 @@
   overflow: hidden;
   border-radius: 16px;
 }
+
 .aman-img {
   position: absolute;
   top: 0;
@@ -542,9 +616,11 @@
   border-radius: 16px;
   transition: opacity 1s ease-in-out;
 }
+
 .aman-img.img-2 {
   animation: crossfadeImage 8s infinite alternate;
 }
+
 .aman-text h4 {
   color: #004AAD !important;
   font-size: 1.9rem !important;
@@ -552,6 +628,7 @@
   margin-bottom: 20px;
   line-height: 1.3;
 }
+
 .aman-text p {
   color: #2e6bbc !important;
   font-size: 1rem !important;
@@ -562,51 +639,66 @@
   .raas-feature-list {
     gap: 60px;
   }
+
   .raas-feature-item {
     gap: 30px;
   }
+
   .raas-feature-icon {
     flex: 0 0 150px;
   }
+
   .raas-icon {
     font-size: 100px;
   }
 }
+
 @media (max-width: 767px) {
   .apa-itu-raas-section {
     padding: 20px 0;
   }
+
   .raas-section-title {
     font-size: 1.7rem;
   }
-  .raas-fullbleed-item, .raas-fullbleed-item.reverse {
+
+  .raas-fullbleed-item,
+  .raas-fullbleed-item.reverse {
     flex-direction: column;
     min-height: unset;
     padding: 0 !important;
     gap: 0;
   }
+
   .raas-fullbleed-img-col {
     flex: 0 0 100%;
     max-width: 100%;
     align-self: auto;
     padding: 0 20px;
   }
-  .bebas-repot-img-wrapper, .lebih-ekonomis-img-wrapper, .pengisian-img-wrapper, .aman-img-wrapper {
+
+  .bebas-repot-img-wrapper,
+  .lebih-ekonomis-img-wrapper,
+  .pengisian-img-wrapper,
+  .aman-img-wrapper {
     min-height: 280px;
     height: 280px;
     margin: 0 auto;
   }
+
   .raas-fullbleed-text-col,
   .raas-fullbleed-item.reverse .raas-fullbleed-text-col {
     padding: 30px 20px !important;
     text-align: left;
   }
+
   .raas-feature-item {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 20px;
   }
+
   .raas-feature-item.reverse {
     flex-direction: column;
   }
@@ -619,9 +711,11 @@
   z-index: 2;
   background: linear-gradient(to bottom, #E8F4FD, #ffffff);
 }
+
 .raas-benefit-item {
   padding: 20px 15px;
 }
+
 .raas-benefit-icon-circle {
   width: 90px;
   height: 90px;
@@ -633,20 +727,24 @@
   margin: 0 auto 20px auto;
   transition: transform 0.3s ease, background 0.3s ease;
 }
+
 .raas-benefit-icon-circle:hover {
   transform: scale(1.08);
   background: rgba(68, 101, 140, 0.2);
 }
+
 .raas-benefit-icon-circle i {
   font-size: 2rem;
   color: #2c4a6b;
 }
+
 .raas-benefit-title {
   font-weight: 800;
   font-size: 0.95rem;
   color: var(--heading-color);
   margin-bottom: 10px;
 }
+
 .raas-benefit-desc {
   font-size: 0.8rem;
   color: #555;
@@ -659,34 +757,41 @@
   z-index: 1;
   background: linear-gradient(to bottom, #ffffff, #E8F4FD);
 }
+
 .raas-pricing-card {
   background: #fff;
   border-radius: 16px;
   padding: 40px 30px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.03);
-  border: 1px solid rgba(0,0,0,0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
   transition: all 0.3s ease;
 }
+
 .raas-pricing-card.popular {
   background: linear-gradient(135deg, #072f44, #126372);
   border: none;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
+
 .raas-pricing-card .card-title {
   font-weight: 800;
   font-size: 1rem;
-  color: #003366;
+  color: #44658c;
   margin-bottom: 25px;
 }
+
 .raas-pricing-card.popular .card-title {
   color: #fff;
-  margin-top: 15px; /* space for badge */
+  margin-top: 15px;
+  /* space for badge */
 }
+
 .raas-pricing-card .card-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .raas-pricing-card .card-list li {
   margin-bottom: 15px;
   display: flex;
@@ -695,17 +800,22 @@
   line-height: 1.5;
   color: #555;
 }
+
 .raas-pricing-card.popular .card-list li {
   color: rgba(255, 255, 255, 0.9);
 }
+
 .raas-pricing-card.popular .card-list li i {
-  color: #4ade80 !important; /* Bright green checkmark on dark background */
+  color: #4ade80 !important;
+  /* Bright green checkmark on dark background */
 }
+
 .raas-pricing-card .card-list li i {
   font-size: 1rem;
   margin-right: 10px;
   margin-top: -2px;
 }
+
 .badge-popular {
   position: absolute;
   top: -15px;
@@ -726,12 +836,14 @@
   background: linear-gradient(to bottom, #ffffff, #E8F4FD);
   text-align: center;
 }
+
 .trusted-clients-title {
   font-weight: 800;
   font-size: 1.3rem;
   color: var(--heading-color);
   margin-bottom: 40px;
 }
+
 .trusted-clients-grid {
   display: flex;
   align-items: center;
@@ -739,6 +851,7 @@
   gap: 40px;
   flex-wrap: wrap;
 }
+
 .trusted-client-logo {
   width: 180px;
   height: 90px;
@@ -746,6 +859,7 @@
   opacity: 0.8;
   transition: opacity 0.3s;
 }
+
 .trusted-client-logo:hover {
   opacity: 1;
 }
@@ -754,12 +868,14 @@
   overflow: hidden;
   width: 100%;
 }
+
 .marquee-container {
   overflow: hidden;
   white-space: nowrap;
   width: 100%;
   position: relative;
 }
+
 .marquee-content {
   display: inline-flex;
   gap: 40px;
@@ -770,17 +886,29 @@
 .marquee-right {
   animation: scroll-right 25s linear infinite;
 }
+
 @keyframes scroll-right {
-  0% { transform: translateX(-50%); }
-  100% { transform: translateX(0); }
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .marquee-left {
   animation: scroll-left 25s linear infinite;
 }
+
 @keyframes scroll-left {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* ==================== FAQ SECTION ==================== */
@@ -790,6 +918,7 @@
   padding: 60px 0;
   background: linear-gradient(to bottom, #E8F4FD, #ffffff);
 }
+
 .faq-title {
   position: relative;
   z-index: 2;
@@ -800,10 +929,12 @@
   color: var(--heading-color);
   white-space: nowrap;
 }
+
 .faq-accordion {
   position: relative;
   z-index: 2;
 }
+
 /* Default (collapsed): tanpa background card, tanpa border, tanpa shadow */
 .faq-accordion .accordion-item {
   background-color: transparent;
@@ -817,8 +948,8 @@
 /* Saat item terbuka: baru muncul card putih */
 .faq-accordion .accordion-item:has(.accordion-button:not(.collapsed)) {
   background-color: #ffffff;
-  border: 1px solid rgba(0,74,173,.15);
-  box-shadow: 0 4px 15px rgba(0,74,173,.04);
+  border: 1px solid rgba(0, 74, 173, .15);
+  box-shadow: 0 4px 15px rgba(0, 74, 173, .04);
 }
 
 .faq-accordion .accordion-button {
@@ -830,44 +961,57 @@
   padding: 20px 25px;
   border: none;
 }
+
 .faq-accordion .accordion-button:hover {
   background-color: transparent;
   color: var(--heading-color) !important;
 }
+
 .faq-accordion .accordion-button:focus {
   background-color: transparent;
   box-shadow: none !important;
 }
+
 .faq-accordion .accordion-button::after {
   filter: invert(38%) sepia(18%) saturate(822%) hue-rotate(169deg) brightness(88%) contrast(85%);
 }
+
 .faq-accordion .accordion-button:not(.collapsed)::after {
   filter: invert(38%) sepia(18%) saturate(822%) hue-rotate(169deg) brightness(88%) contrast(85%);
   background-image: var(--bs-accordion-btn-icon);
 }
+
 .faq-accordion .accordion-button:not(.collapsed) {
   background-color: #ffffff;
   color: var(--heading-color);
   box-shadow: none !important;
 }
+
 .faq-accordion .accordion-button:not(.collapsed):hover {
   background-color: #ffffff;
 }
+
 .faq-accordion .accordion-collapse {
   background-color: #ffffff;
   border-top: none;
 }
+
 .faq-accordion .accordion-body {
   background-color: transparent;
   padding: 0 25px 20px 25px;
-  color: #252525;
+  color: #44658c;
   font-size: 0.8rem;
   line-height: 1.7;
 }
 
 /* ==================== CTA SECTION ==================== */
-.cta-title { font-size: 3rem; }
-.cta-desc { font-size: 1rem; }
+.cta-title {
+  font-size: 3rem;
+}
+
+.cta-desc {
+  font-size: 1rem;
+}
 
 .btn-cta-green {
   display: inline-block;
@@ -881,11 +1025,13 @@
   text-decoration: none;
   transition: all 0.3s;
 }
+
 .btn-cta-green:hover {
   background-color: #6bc245;
   color: #ffffff !important;
   transform: translateY(-2px);
 }
+
 @media (max-width: 991px) {
   .cta-person-img {
     max-height: 400px !important;
@@ -900,166 +1046,302 @@
 
 /* ==================== RESPONSIVE (MOBILE) ==================== */
 @media (max-width: 991px) {
+
   /* Hero & CTA */
-  .hero-content-left { text-align: center !important; }
-  .hero-business-title { font-size: 1.6rem; }
-  .cta-title { font-size: 1.6rem !important; }
-  .cta-desc { font-size: 0.85rem !important; }
-  .hero-title-line { white-space: normal; }
-  .badge-raas-new { 
-    margin-left: auto !important; 
-    margin-right: auto !important; 
-    width: fit-content; 
-    font-size: 0.45rem; 
-    padding: 4px 10px; 
+  .hero-content-left {
+    text-align: center !important;
+  }
+
+  .hero-business-title {
+    font-size: 1.6rem;
+  }
+
+  .cta-title {
+    font-size: 1.6rem !important;
+  }
+
+  .cta-desc {
+    font-size: 0.85rem !important;
+  }
+
+  .hero-title-line {
+    white-space: normal;
+  }
+
+  .badge-raas-new {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    width: fit-content;
+    font-size: 0.45rem;
+    padding: 4px 10px;
     text-align: center;
     display: inline-flex;
     justify-content: center;
   }
-  .hero-btn-group { flex-direction: row !important; justify-content: center !important; gap: 10px; padding: 0; }
-  .hero-btn-group .btn { width: auto !important; flex: 0 0 auto; padding: 8px 18px; font-size: 0.7rem; white-space: nowrap; }
-  .hero-cards-row { display: flex !important; flex-direction: column !important; gap: 8px !important; }
-  .hero-cards-row .hero-small-card { width: 100% !important; min-height: 60px; display: flex; align-items: center; padding: 8px 12px; }
-  .hero-business-desc { font-size: 0.85rem; }
-  .hero-benefit-cards { flex-direction: column; }
-  .benefit-card { max-width: 100%; }
-  
+
+  .hero-btn-group {
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 10px;
+    padding: 0;
+  }
+
+  .hero-btn-group .btn {
+    width: auto !important;
+    flex: 0 0 auto;
+    padding: 8px 18px;
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+
+  .hero-cards-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 8px !important;
+  }
+
+  .hero-cards-row .hero-small-card {
+    width: 100% !important;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+  }
+
+  .hero-business-desc {
+    font-size: 0.85rem;
+  }
+
+  .hero-benefit-cards {
+    flex-direction: column;
+  }
+
+  .benefit-card {
+    max-width: 100%;
+  }
+
   /* Apa itu RaaS */
-  .raas-feature-item, .raas-feature-item.reverse {
+  .raas-feature-item,
+  .raas-feature-item.reverse {
     flex-direction: column;
     text-align: center;
   }
-  .raas-feature-text { text-align: center; }
-  
+
+  .raas-feature-text {
+    text-align: center;
+  }
+
   /* RaaS Cards - More Compact on Mobile */
   .raas-pricing-card {
     padding: 20px 18px;
   }
+
   .raas-pricing-card .card-title {
     font-size: 0.9rem;
     margin-bottom: 15px;
   }
+
   .raas-pricing-card .card-list li {
     margin-bottom: 10px;
     font-size: 0.7rem;
   }
+
   .raas-services-section {
     padding: 40px 0 !important;
   }
+
   .raas-services-section h2 {
     font-size: 1.3rem !important;
   }
+
   .raas-services-section p {
     font-size: 0.8rem !important;
   }
-  
+
   /* RaaS Carousel */
-  .raas-carousel-container { height: 450px; }
-  .raas-card { width: 85%; max-width: 300px; padding: 20px 15px; }
-  .raas-card.pos-center { transform: translate(-50%, -50%) scale(1); }
-  .raas-card.pos-left { left: 50%; transform: translate(-50%, -50%) scale(0.85); opacity: 0; }
-  .raas-card.pos-right { left: 50%; transform: translate(-50%, -50%) scale(0.85); opacity: 0; }
-  .raas-nav-btn { top: auto; bottom: -20px; transform: none; }
-  .raas-nav-btn.prev { left: 30%; }
-  .raas-nav-btn.next { right: 30%; }
+  .raas-carousel-container {
+    height: 450px;
+  }
+
+  .raas-card {
+    width: 85%;
+    max-width: 300px;
+    padding: 20px 15px;
+  }
+
+  .raas-card.pos-center {
+    transform: translate(-50%, -50%) scale(1);
+  }
+
+  .raas-card.pos-left {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.85);
+    opacity: 0;
+  }
+
+  .raas-card.pos-right {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.85);
+    opacity: 0;
+  }
+
+  .raas-nav-btn {
+    top: auto;
+    bottom: -20px;
+    transform: none;
+  }
+
+  .raas-nav-btn.prev {
+    left: 30%;
+  }
+
+  .raas-nav-btn.next {
+    right: 30%;
+  }
 
   /* Trusted Clients - Bigger Logos on Mobile */
   .trusted-clients-section {
     padding: 20px 0;
   }
+
   .trusted-clients-title {
     font-size: 1.1rem;
     margin-bottom: 25px;
   }
-  .trusted-clients-grid { gap: 20px; }
+
+  .trusted-clients-grid {
+    gap: 20px;
+  }
+
   .trusted-client-logo {
     width: 250px !important;
     height: 100px;
   }
+
   .marquee-content {
     gap: 30px;
   }
-  
+
   /* FAQ */
   .faq-section {
     padding: 20px 0;
   }
-  .faq-title { font-size: 1.3rem !important; text-align: center; margin-bottom: 20px; white-space: nowrap !important; }
-  .faq-accordion .accordion-button { padding: 15px 18px; font-size: 0.75rem; }
-  .faq-accordion .accordion-body { padding: 0 18px 15px 18px; font-size: 0.72rem; }
-  
+
+  .faq-title {
+    font-size: 1.3rem !important;
+    text-align: center;
+    margin-bottom: 20px;
+    white-space: nowrap !important;
+  }
+
+  .faq-accordion .accordion-button {
+    padding: 15px 18px;
+    font-size: 0.75rem;
+  }
+
+  .faq-accordion .accordion-body {
+    padding: 0 18px 15px 18px;
+    font-size: 0.72rem;
+  }
+
   /* Apa Itu RaaS Section */
   .apa-itu-raas-section {
     padding: 40px 0;
   }
+
   .raas-intro-card .row {
     padding: 20px !important;
   }
+
   .raas-intro-card h2 {
     font-size: 1.2rem !important;
   }
+
   .raas-intro-card p {
     font-size: 0.8rem !important;
   }
+
   /* Padding luar kartu MENGENAL MODEL BARU dan Apa yang Kami Tawarkan di mobile */
-  .apa-itu-raas-section > .container {
+  .apa-itu-raas-section>.container {
     padding-left: 28px !important;
     padding-right: 28px !important;
   }
-  .raas-services-section > .container {
+
+  .raas-services-section>.container {
     padding-left: 20px !important;
     padding-right: 20px !important;
   }
+
   .raas-services-section .row.g-4 {
     padding-left: 8px;
     padding-right: 8px;
   }
-  
+
   /* Benefits Grid */
   .raas-benefits-grid {
     padding: 16px 0;
   }
+
   .raas-benefits-grid .container .row.g-4 {
     row-gap: 2px !important;
   }
+
   .raas-benefit-item {
     padding: 5px 15px !important;
   }
+
   .raas-benefits-title {
     font-size: 1.3rem !important;
   }
+
   .raas-benefit-icon-circle {
     width: 65px;
     height: 65px;
   }
+
   .raas-benefit-icon-circle i {
     font-size: 1.5rem;
   }
+
   .raas-benefit-title {
     font-size: 0.85rem;
   }
+
   .raas-benefit-desc {
     font-size: 0.72rem;
   }
-  
+
   /* CTA */
   .cta-section-new {
     padding-top: 20px !important;
   }
+
   .cta-section-new h2 {
     font-size: 1.7rem !important;
     line-height: 1.3 !important;
   }
+
   .cta-section-new p {
     font-size: 0.9rem !important;
   }
-  .cta-section-new .row { flex-direction: column; }
+
+  .cta-section-new .row {
+    flex-direction: column;
+  }
+
   .cta-section-new .col-lg-6 {
     padding-left: 28px !important;
     padding-right: 20px !important;
   }
-  .cta-title { text-align: left; }
-  .cta-desc { text-align: left; }
+
+  .cta-title {
+    text-align: left;
+  }
+
+  .cta-desc {
+    text-align: left;
+  }
+
   .cta-person-img {
     max-height: 320px !important;
     margin-top: 0 !important;
@@ -1067,21 +1349,24 @@
 
   /* Kurangi jarak hero ke section berikutnya */
   .hero-business {
-    padding-top: 90px; /* sebelumnya 160px */
-    padding-bottom: 20px; /* sebelumnya 60px */
+    padding-top: 90px;
+    /* sebelumnya 160px */
+    padding-bottom: 20px;
+    /* sebelumnya 60px */
   }
 
   .apa-itu-raas-section {
     padding-top: 0;
   }
 
-  .apa-itu-raas-section > .container.pb-5 {
+  .apa-itu-raas-section>.container.pb-5 {
     padding-top: 0 !important;
   }
 
   /* Pastikan kartu selalu di atas gradient, tidak terpengaruh */
   .raas-intro-card {
     position: relative;
-    z-index: 10; /* naikkan di atas layer gradient */
+    z-index: 10;
+    /* naikkan di atas layer gradient */
   }
 }

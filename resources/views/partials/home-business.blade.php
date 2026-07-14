@@ -44,7 +44,7 @@
         </h1>
         
         <p class="hero-business-desc mb-4">
-          KLIK Rekrut menyediakan jasa rekrutmen RaaS (Recruiter as a Service) untuk berbagai permintaan tenaga kerja.
+          KLIK Rekrut menyediakan jasa rekrutmen RaaS (Recruiter as a Service) untuk mencari karyawan.
         </p>
 
         <div class="hero-btn-group justify-content-start d-flex flex-column flex-sm-row">
@@ -108,7 +108,7 @@
         </div>
         <div class="col-md-7 text-start ps-md-5">
           <p class="mb-0" style="color: #252525; font-size: 0.9rem; line-height: 1.8;">
-            Model layanan rekrutmen berbasis jaringan recruiter on-demand, membuat perusahaan memiliki tim perekrut eksternal profesional tanpa harus mengontrak mereka sebagai karyawan tetap.
+            Model layanan rekrutmen berbasis jaringan recruiter on-demand, membuat perusahaan memiliki tim perekrut eksternal profesional untuk membantu beberapa tahapan atau seluruh proses rekrutmen.
           </p>
         </div>
       </div>
@@ -121,9 +121,9 @@
   <!-- ==================== RAAS SERVICES SECTION (Moved) ==================== -->
   <div class="raas-services-section" id="services" style="padding: 40px 0 60px 0;">
     <div class="container text-center">
-      <h2 class="fw-bold mb-3" data-aos="fade-up" style="font-size: 1.7rem; color: var(--heading-color);">Apa yang Kami Tawarkan?</h2>
+      <h2 class="fw-bold mb-3" data-aos="fade-up" style="font-size: 1.7rem; color: var(--heading-color);">Kami siap jadi support system rekrutmen Anda.</h2>
       <p class="mb-5 mx-auto" data-aos="fade-up" data-aos-delay="50" style="max-width: 100%; color: #555; font-size: 0.95rem; line-height: 1.6;">
-        Cara hemat mendapatkan resource rekrutmen profesional, tanpa biaya langganan, tanpa membayar persentase success fee atau gaji tetap rekruter tiap bulan.
+        Pilih layanan Klik Rekrut yang paling sesuai dengan kebutuhan bisnis Anda hari ini.
       </p>
       
       <div class="row g-4 align-items-stretch justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -131,41 +131,30 @@
         <!-- Card 1 -->
         <div class="col-lg-4 text-start">
           <div class="raas-pricing-card h-100">
-            <h4 class="card-title">CV Sourcing Assistant</h4>
-            <ul class="card-list">
-              <li><i class="bi bi-check text-success"></i> Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
-              <li><i class="bi bi-check text-success"></i> Asistensi pencarian CV kandidat yang prequalified</li>
-              <li><i class="bi bi-check text-success"></i> Penjadwalan initial interview</li>
-              <li><i class="bi bi-check text-success"></i> Garansi kandidat hadir interview</li>
-            </ul>
+            <h4 class="card-title">CV Search</h4>
+            <p style="font-size: 0.85rem; line-height: 1.6; color: #44658c;">
+              Kirimkan info loker Anda, dapatkan CV kandidat dari kami. Hasil CV telah kami screening, lengkap dengan ranking kecocokan. Bayar sesuai jumlah CV yang Anda terima.
+            </p>
           </div>
         </div>
 
         <!-- Card 2 -->
         <div class="col-lg-4 text-start">
           <div class="raas-pricing-card h-100">
-            <h4 class="card-title">Interview Assistant</h4>
-            <ul class="card-list">
-              <li><i class="bi bi-check text-success"></i> Dukungan rekruter sesuai industri bisnis Anda</li>
-              <li><i class="bi bi-check text-success"></i> Asistensi interview kandidat terpilih</li>
-              <li><i class="bi bi-check text-success"></i> Laporan kompetensi kandidat dan rekomendasi untuk membantu pengambilan keputusan</li>
-            </ul>
+            <h4 class="card-title">Interviewer</h4>
+            <p style="font-size: 0.85rem; line-height: 1.6; color: #44658c;">
+              Menjadwalkan sesi wawancara dan menjadi pewawancara kandidat Anda. Dapatkan laporan mendalam, lengkap dengan ranking kandidat. Bayar sesuai kandidat yang berhasil kami wawancara.
+            </p>
           </div>
         </div>
 
-        <!-- Card 3 (Paling Populer) -->
+        <!-- Card 3 -->
         <div class="col-lg-4 text-start">
-          <div class="raas-pricing-card popular h-100 position-relative">
-            <div class="badge-popular">Paling Populer</div>
-            <h4 class="card-title text-white">End-to-end Process</h4>
-            <ul class="card-list text-white">
-              <li><i class="bi bi-check text-success"></i> Layanan rekrutmen setara headhunting profesional dengan biaya yang jauh lebih hemat</li>
-              <li><i class="bi bi-check text-success"></i> Dukungan rekruter berpengalaman sesuai industri bisnis Anda</li>
-              <li><i class="bi bi-check text-success"></i> Asistensi dari pencarian sampai penyerahan kandidat</li>
-              <li><i class="bi bi-check text-success"></i> Penjadwalan dan pendampingan kandidat sampai final interview</li>
-              <li><i class="bi bi-check text-success"></i> Garansi sampai mendapatkan kandidat yang cocok untuk di-hire</li>
-              <li><i class="bi bi-check text-success"></i> Garansi kandidat selama 1 bulan onboarding</li>
-            </ul>
+          <div class="raas-pricing-card h-100 position-relative">
+            <h4 class="card-title">End-to-end Process</h4>
+            <p style="font-size: 0.85rem; line-height: 1.6; color: #44658c;">
+              Serahkan seluruh proses pencarian karyawan kepada kami, Anda tinggal terima beres kandidat terbaik yang siap kerja. Dapatkan garansi penggantian kandidat baru selama 30 hari di masa onboarding. Bayar hanya saat kandidat telah resmi bergabung dengan Anda.
+            </p>
           </div>
         </div>
 
@@ -187,7 +176,7 @@
             </div>
             <h5 class="raas-benefit-title">Bebas Repot</h5>
             <p class="raas-benefit-desc">
-              Merekrut mandiri sering kali menyita banyak waktu dan tenaga. Dengan layanan RaaS, seluruh rangkaian proses rekrutmen akan ditangani langsung oleh rekruter berpengalaman yang sesuai dengan industri bisnis Anda. Anda pun terhindar dari aktivitas pasang lowongan, menyortir CV, hingga mengatur jadwal wawancara yang dapat mengganggu tugas strategis Anda.
+              Merekrut dan melakukan seleksi mandiri menguras banyak waktu serta tenaga Anda. Layanan RaaS hadir untuk membebaskan Anda dari seluruh proses teknis operasional, sehingga Anda bisa fokus pada tugas yang lebih strategis.
             </p>
           </div>
         </div>
@@ -200,7 +189,7 @@
             </div>
             <h5 class="raas-benefit-title">Lebih Ekonomis</h5>
             <p class="raas-benefit-desc">
-              Anda terbebas dari biaya langganan bulanan platform lowongan kerja atau success fee agensi konvensional berbasis persentase yang mahal. Anda hanya membayar saat Anda membutuhkan talenta, dengan total cost yang jauh lebih murah daripada hiring tim rekruter internal secara permanen.
+              Berbeda dengan memiliki perekrut permanen, layanan RaaS memberikan Anda tenaga perekrut profesional untuk mengelola seluruh proses rekrutmen. Anda pun terbebas dari beban gaji tetap serta biaya operasional bulanan lainnya.
             </p>
           </div>
         </div>
@@ -211,9 +200,9 @@
             <div class="raas-benefit-icon-circle">
               <i class="bi bi-lightning-charge"></i>
             </div>
-            <h5 class="raas-benefit-title">Pengisian Posisi Lebih Cepat</h5>
+            <h5 class="raas-benefit-title">Rekrutmen Cepat</h5>
             <p class="raas-benefit-desc">
-              Proses pengisian posisi kosong berjalan sangat cepat (sering kali di bawah 30 hari). Hal ini karena lowongan Anda dikerjakan secara keroyokan oleh jaringan mitra rekruter spesialis yang kami pilih secara tepat sesuai dengan industri bisnis Anda.
+              Dalam layanan RaaS, setiap proyek rekrutmen dikerjakan serentak dan kolaboratif oleh dedicated recruiter yang telah kami kurasi sesuai dengan industri bisnis Anda sehingga proses pengisian posisi kosong berjalan lebih cepat.
             </p>
           </div>
         </div>
@@ -224,9 +213,9 @@
             <div class="raas-benefit-icon-circle">
               <i class="bi bi-shield-check"></i>
             </div>
-            <h5 class="raas-benefit-title">Aman Dari Resiko</h5>
+            <h5 class="raas-benefit-title">Hasil Bergaransi</h5>
             <p class="raas-benefit-desc">
-              Anda tidak perlu khawatir salah pilih orang. Jika kandidat yang kami rekomendasikan belum cocok untuk Anda atau kandidat yang lolos ternyata mengundurkan diri dalam jangka waktu tertentu, kami akan menggantinya dengan kandidat baru tanpa ada biaya tambahan (gratis)
+              Dengan layanan RaaS, tidak ada anggaran rekrutmen yang terbuang sia-sia. Setiap investasi Anda, dijamin memberikan hasil yang sesuai. Setiap hasil yang Anda terima, kami garansi.
             </p>
           </div>
         </div>
@@ -323,7 +312,7 @@
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            KLIK Rekrut adalah perusahaan penyedia layanan Recruiter as a Service (RaaS) untuk mendapatkan talenta berkualitas.
+            KLIK Rekrut adalah partner rekrutmen yang menyediakan layanan Recruiter as a Service (RaaS) untuk HR dan Perusahaan.
           </div>
         </div>
       </div>
@@ -332,12 +321,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Bagaimana cara kerja layanan RaaS KLIK Rekrut?
+            Apa yang membuat RaaS berbeda dari layanan rekrutmen lain?
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Tim KLIK Rekrut akan mengadakan initial meeting untuk memahami kebutuhan Anda secara mendalam. Kemudian, Pencarian Serentak oleh jaringan mitra rekruter berpengalaman. Anda hanya menerima daftar pendek (shortlist) kandidat yang sudah benar-benar siap kerja (qualified) untuk diwawancarai di tahap akhir, dilanjutkan dengan proses penawaran kerja (offering) hingga onboarding.
+            Layanan RaaS menawarkan fleksibilitas penuh untuk memiliki tim rekruter profesional, baik hanya untuk satu tahap maupun seluruh proses rekrutmen. Anda terbebas dari biaya langganan bulanan job platform yang mengikat, tidak perlu merekrut karyawan tetap hanya untuk proses screening hingga wawancara, dan tanpa risiko membayar success fee yang menguras anggaran untuk setiap kandidat yang bergabung. Anda hanya membayar layanan yang benar-benar Anda butuhkan, memastikan tidak ada anggaran rekrutmen yang terbuang sia-sia.
           </div>
         </div>
       </div>
@@ -346,12 +335,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Apa keuntungan yang saya dapatkan jika menggunakan layanan RaaS KLIK Rekrut?
+            Bagaimana cara kerja layanan RaaS KLIK Rekrut?
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Dengan layanan RaaS, Satu Lowongan Anda, Dikerjakan Serentak oleh Puluhan Rekruter Profesional sehingga proses pengisian posisi juga jauh lebih cepat dan tepat. Selain itu, Anda pun terbebas dari biaya langganan bulanan, success fee berbasis persentase. Anda hanya membayar saat Anda membutuhkan talenta dengan total cost yang lebih murah dari hiring tim rekruter internal, yang harus membayar gaji pokok, tunjangan, dan BPJS mereka setiap bulan, terlepas dari apakah perusahaan sedang aktif membuka lowongan atau tidak.
+            Layanan RaaS bekerja dengan cara bermitra langsung dengan perekrut profesional yang mendedikasikan keahlian dan waktu mereka untuk menyelesaikan permintaan rekrutmen Anda hingga tuntas. Anda mendapatkan ekosistem rekrutmen siap pakai yang hanya berjalan dan dibayar saat Anda membutuhkannya. 
           </div>
         </div>
       </div>
@@ -365,7 +354,7 @@
         </h2>
         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Ada. Jika kandidat yang kami berikan belum sesuai atau mengundurkan diri dalam 30 hari pertama, tim kami akan mencarikan pengganti yang sesuai dengan kriteria yang sama.
+            Ada. Jika kandidat yang kami berikan belum sesuai atau mengundurkan diri dalam 30 hari pertama, tim kami akan mencarikan pengganti dengan kriteria yang sama.
           </div>
         </div>
       </div>
@@ -393,7 +382,7 @@
         </h2>
         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Tentu saja. Layanan RaaS kami dirancang fleksibel untuk berbagai skala bisnis, mulai dari startup, UMKM, hingga perusahaan besar. Bahkan jika bisnis atau UMKM Anda belum memiliki brand perusahaan yang besar, tim kami tetap siap membantu Anda memikat dan mendapatkan kandidat terbaik secara efektif.
+            Tentu saja. Layanan RaaS kami dirancang fleksibel untuk berbagai skala bisnis, mulai dari usaha rintisan, UMKM, hingga perusahaan besar. Bahkan jika bisnis atau UMKM Anda belum begitu dikenal, kami tetap siap membantu Anda memikat dan mendapatkan kandidat terbaik.
           </div>
         </div>
       </div>
@@ -407,7 +396,7 @@
         </h2>
         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Anda bisa mulai dengan "Jadwalkan Demo" untuk mengenal tarif layanan kami. Tim kami siap memandu Anda selama proses penawaran layanan.
+            Anda dapat klik tombol "Konsultasi Gratis" untuk mengenal tarif layanan kami. Tim recruitment consultant kami siap memperkenalkan layanan yang sesuai dengan kebutuhan Anda.
           </div>
         </div>
       </div>
@@ -421,7 +410,7 @@
         </h2>
         <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Ya. Klik "Jadwalkan Demo" dan tim marketing kami akan menghubungi Anda dalam 24 jam untuk demo eksklusif gratis.
+            Ya. Klik tombol "Jadwalkan Demo" dan tim kami akan menghubungi Anda dalam 24 jam untuk demo eksklusif gratis.
           </div>
         </div>
       </div>
@@ -435,7 +424,7 @@
         </h2>
         <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Klien kami berasal dari berbagai bidang termasuk Consulting, Kreatif Agency, Retail, Fashion, Education, Garmen, dan lain-lain.
+            Klien kami berasal dari berbagai bidang termasuk Consulting, Marketing Agency, Retail, Fashion, Education, Garmen, dan lain-lain.
           </div>
         </div>
       </div>
@@ -449,7 +438,7 @@
         </h2>
         <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Anda dapat klik "Rekrut Sekarang".
+            Anda dapat klik tombol "Rekrut Sekarang".
           </div>
         </div>
       </div>
@@ -463,7 +452,7 @@
 <!-- FAQ accordion relies on Bootstrap JS (bootstrap.bundle.min.js loaded at bottom) -->
 
 <!-- ==================== NEW CTA SECTION ==================== -->
-<section id="contact" class="cta-section-new" style="background: linear-gradient(to bottom, #ffffff, #D5E8FA); padding-top: 80px; overflow: hidden; position: relative;">
+<section id="contact" class="cta-section-new" style="background: linear-gradient(to bottom, #ffffff, #D5E8FA); padding: 80px 0; overflow: hidden; position: relative;">
   
   <!-- Decorative Background Ornaments -->
   <div class="cta-ornaments" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; overflow: hidden;">
@@ -491,17 +480,47 @@
     <div class="row align-items-center">
       <!-- Left: Text & Button -->
       <div class="col-lg-6 mb-0 mb-lg-0 pb-lg-5" data-aos="fade-right">
-        <h2 class="fw-bold mb-2 mb-lg-4 cta-title" style="line-height: 1.3; color: var(--heading-color);">Tertarik Mencoba<br>Layanan Kami?</h2>
+        <h2 class="fw-bold mb-2 mb-lg-4 cta-title" style="line-height: 1.3; color: var(--heading-color);">Tertarik Mencoba<br>Layanan RaaS?</h2>
         <p class="mb-3 mb-lg-5 cta-desc" style="line-height: 1.6; color: var(--default-color);">
-          Konsultasikan kebutuhan talenta Anda.
+          Jangan biarkan momentum bisnis Anda hilang karena tim belum siap. Mulai merekrut dan lihat bagaimana sistem RaaS bekerja mencari karyawan untuk perusahaan Anda.
         </p>
         <a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-cta-green">Hubungi Kami</a>
       </div>
 
-      <!-- Right: Image -->
-      <div class="col-lg-6 d-flex justify-content-center align-items-end" data-aos="fade-left" style="position: relative;">
-        <!-- The image is placed so it sits on the bottom edge of the section -->
-        <img src="assets/img/orgbener.png" alt="Konsultasi HR" class="img-fluid cta-person-img" loading="lazy" style="max-height: 600px; margin-bottom: -10px; z-index: 2; position: relative;">
+      <!-- Right: Form -->
+      <div class="col-lg-6 d-flex justify-content-center align-items-center mt-5 mt-lg-0" data-aos="fade-left" style="position: relative; z-index: 2;">
+        <div class="card shadow-sm border-0 rounded-4 w-100" style="max-width: 500px; background: #fff;">
+          <div class="card-body p-4 p-md-5">
+            <form onsubmit="sendToWhatsApp(event)">
+              <div class="mb-3">
+                <label for="company" class="form-label text-muted small mb-1">Company Name</label>
+                <input type="text" class="form-control bg-light border-0" id="company" style="border-radius: 8px; padding: 10px 15px;" required>
+              </div>
+              <div class="mb-3">
+                <label for="scale" class="form-label text-muted small mb-1">Company Scale</label>
+                <select class="form-select bg-light border-0" id="scale" style="border-radius: 8px; padding: 10px 15px;" required>
+                  <option value="Startup">Startup</option>
+                  <option value="SME">SME</option>
+                  <option value="Enterprise">Enterprise</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="service" class="form-label text-muted small mb-1">Service Needed</label>
+                <select class="form-select bg-light border-0" id="service" style="border-radius: 8px; padding: 10px 15px;" required>
+                  <option value="Strategic Consulting">Strategic Consulting</option>
+                  <option value="CV Search">CV Search</option>
+                  <option value="Interviewer">Interviewer</option>
+                  <option value="End-to-end Process">End-to-end Process</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="challenge" class="form-label text-muted small mb-1">Your Current Challenge</label>
+                <textarea class="form-control bg-light border-0" id="challenge" rows="3" style="border-radius: 8px; padding: 10px 15px;" required></textarea>
+              </div>
+              <button type="submit" class="btn text-white w-100 py-3 mt-2" style="background-color: #1a1a1a; border-radius: 8px; font-weight: 500;">Rekrut Sekarang</button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -510,13 +529,12 @@
 <script>
   function sendToWhatsApp(e) {
     e.preventDefault();
-    const name = document.getElementById('name').value;
     const company = document.getElementById('company').value;
     const scale = document.getElementById('scale').value;
     const service = document.getElementById('service').value;
     const challenge = document.getElementById('challenge').value;
     
-    const text = `Halo tim KLIK Rekrut! Saya tertarik dengan layanan RaaS.%0A%0A*Nama:* ${name}%0A*Perusahaan:* ${company}%0A*Skala Perusahaan:* ${scale}%0A*Layanan:* ${service}%0A*Tantangan:* ${challenge}%0A%0AMohon info lebih lanjut, terima kasih.`;
+    const text = `Halo tim KLIK Rekrut! Saya tertarik dengan layanan RaaS.%0A%0A*Perusahaan:* ${company}%0A*Skala Perusahaan:* ${scale}%0A*Layanan:* ${service}%0A*Tantangan:* ${challenge}%0A%0AMohon info lebih lanjut, terima kasih.`;
     const waNumber = "6281234567890"; // Ganti dengan nomor asli
     
     window.open(`https://wa.me/${waNumber}?text=${text}`, '_blank');
@@ -613,7 +631,7 @@
       <div class="footer-about"> <!-- Kolom kiri -->
         <img src="assets/img/Footer.png" alt="Klik Rekrut Logo" class="footer-logo"> <!-- Logo Klik Rekrut -->
         <p>
-          <strong>Klik Rekrut</strong> hadir sebagai solusi rekrutmen yang ergonomis untuk mendapatkan talenta Siap Kerja.
+          Klik Rekrut adalah perusahaan rekrutmen RaaS pertama yang berbasis di Jakarta
         </p> <!-- Deskripsi singkat perusahaan -->
       </div>
 
@@ -624,38 +642,28 @@
         <div class="footer-column">
           <h6>LAYANAN</h6> <!-- Judul kolom -->
           <ul>
-            <li><a href="/">e-Recruitment</a></li> <!-- Link ke halaman utama -->
-            <li><a href="elearning">e-Learning</a></li> <!-- Link ke halaman e-learning -->
+            <li><a href="#services">CV Search</a></li>
+            <li><a href="#services">Interviewer</a></li>
+            <li><a href="#services">End-to-end</a></li>
           </ul>
         </div>
 
-        <!-- Kolom 2: Lainnya -->
+        <!-- Kolom 2: Gabung -->
         <div class="footer-column">
-          <h6>LAINNYA</h6>
+          <h6>GABUNG</h6>
           <ul>
-            <li>
-              <a href="https://chat.whatsapp.com/I3mvornLsmv96QiwlcLctQ?mode=ems_copy_t" 
-                 target="_blank" 
-                 rel="noopener noreferrer">
-                Komunitas
-              </a>
-            </li>
-            <li><a href="applypartner">Kemitraan</a></li> <!-- Link ke halaman kemitraan -->
+            <li><a href="applypartner">Partner</a></li>
+            <li><a href="#">Talent</a></li>
           </ul>
         </div>
 
-        <!-- Kolom 3: Bantuan -->
+        <!-- Kolom 3: Hubungi Kami -->
         <div class="footer-column">
-          <h6>BANTUAN</h6>
+          <h6>HUBUNGI KAMI</h6>
           <ul>
-            <li><a href="#">FAQ</a></li> <!-- Halaman pertanyaan umum -->
-            <li>
-              <a href="https://api.whatsapp.com/send?phone=6281234567890" 
-                 target="_blank" 
-                 rel="noopener noreferrer">
-                Hubungi Kami
-              </a>
-            </li> <!-- Tombol kontak langsung via WhatsApp -->
+            <li><a href="mailto:hr.klikrekrut@gmail.com"><i class="bi bi-envelope me-2"></i> hr.klikrekrut@gmail.com</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer"><i class="bi bi-telephone me-2"></i> +6281234567890</a></li>
+            <li style="color: #44658c; font-size: 13px;"><i class="bi bi-geo-alt me-2"></i> Jakarta Pusat, Indonesia</li>
           </ul>
         </div>
       </div>
@@ -694,7 +702,7 @@
 /* ==================== STYLE FOOTER UTAMA ==================== */
 .footer {
   background-color: #f9f9f9; /* Warna latar belakang abu muda */
-  color: #333; /* Warna teks abu gelap */
+  color: #44658c; /* Warna teks disamakan dengan hero & header */
   padding: 30px 20px; /* Ruang dalam atas-bawah dan sisi */
   margin-top: 0; /* Tidak ada jarak atas */
   font-family: 'Poppins', sans-serif; /* Gunakan font utama situs */
@@ -726,7 +734,7 @@
 
 .footer-about p {
   font-size: 11px; /* Lebih kecil agar ringkas */
-  color: #555; /* Abu keabu-abuan lembut */
+  color: #44658c; /* Disamakan dengan hero & header */
   margin: 0;
 }
 
@@ -759,7 +767,7 @@
 /* Link menu */
 .footer-column ul li a {
   text-decoration: none; /* Hilangkan garis bawah */
-  color: #333;
+  color: #44658c; /* Disamakan dengan hero & header */
   font-size: 13px;
   transition: color 0.3s;
 }
@@ -801,7 +809,7 @@
   width: 100%;
   text-align: left; /* Rata kiri */
   font-size: 12px; /* Kecil dan sederhana */
-  color: #666; /* Abu sedang */
+  color: #44658c; /* Disamakan dengan hero & header */
 }
 
 /* ==================== RESPONSIVE (MOBILE) ==================== */
