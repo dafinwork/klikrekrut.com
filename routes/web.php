@@ -1,6 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
+
+// Language Switch Route
+Route::get('/lang/{locale}', function (string $locale) {
+    if (in_array($locale, ['id', 'en'])) {
+        Session::put('locale', $locale);
+    }
+    return redirect()->back();
+})->name('lang.switch');
 
 Route::get('/', function () {
     $packages = \App\Models\Package::all();

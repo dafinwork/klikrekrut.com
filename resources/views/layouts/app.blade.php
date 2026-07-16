@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ app()->getLocale() }}">
 <head>
   <!-- Open Graph Tags (untuk preview saat link di-share di WhatsApp, Telegram, dll) -->
   <meta property="og:site_name" content="Klik Rekrut">

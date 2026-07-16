@@ -35,21 +35,21 @@
       <!-- Left Column (48%) -->
       <div class="col-lg-6 hero-content-left text-center text-lg-start pe-lg-4" data-aos="fade-right">
         <div class="badge-raas-new mb-3 mx-auto mx-lg-0 d-inline-flex">
-          <span class="dot"></span> BARU: RECRUITER AS A SERVICE
+          <span class="dot"></span> {{ __('BARU: RECRUITER AS A SERVICE') }}
         </div>
         
         <h1 class="hero-business-title">
-          <span class="hero-title-line">Penyedia Tenaga</span><br>
-          <span class="hero-title-line">Perekrut Profesional</span>
+          <span class="hero-title-line">{{ __('Penyedia Tenaga') }}</span><br>
+          <span class="hero-title-line">{{ __('Perekrut Profesional') }}</span>
         </h1>
         
         <p class="hero-business-desc mb-4">
-          KLIK Rekrut menyediakan jasa rekrutmen RaaS (Recruiter as a Service) untuk mencari karyawan.
+          {{ __('KLIK Rekrut menyediakan jasa rekrutmen RaaS (Recruiter as a Service) untuk mencari karyawan.') }}
         </p>
 
         <div class="hero-btn-group justify-content-start d-flex flex-column flex-sm-row">
-          <a href="#contact" class="btn btn-rekrut-sekarang rounded-pill">REKRUT SEKARANG</a>
-          <a href="#services" class="btn btn-jadwalkan-demo rounded-pill">JADWALKAN DEMO</a>
+          <a href="#contact" class="btn btn-rekrut-sekarang rounded-pill">{{ __('REKRUT SEKARANG') }}</a>
+          <a href="https://wa.me/6289678868752?text=Halo%20KLIK%20Rekrut%2C%20saya%20ingin%20konsultasi%20dan%20mengajukan%20demo%20gratis%20layanan%20RaaS" target="_blank" rel="noopener noreferrer" class="btn btn-jadwalkan-demo rounded-pill">{{ __('KONSULTASI GRATIS') }}</a>
         </div>
       </div>
 
@@ -103,12 +103,12 @@
     <div class="raas-intro-card shadow-sm bg-white rounded" data-aos="fade-up">
       <div class="row align-items-center p-4 p-md-5">
         <div class="col-md-5 text-start border-end-md">
-          <p class="text-uppercase fw-bold mb-2" style="color: #44658c; font-size: 0.8rem; letter-spacing: 1px;">MENGENAL MODEL BARU</p>
-          <h2 class="mb-3 mb-md-0" style="color: #44658c; font-size: 1.6rem; font-weight: 800; line-height: 1.3;">Apa itu Recruiter as a Service?</h2>
+          <p class="text-uppercase fw-bold mb-2" style="color: #44658c; font-size: 0.8rem; letter-spacing: 1px;">{{ __('MENGENAL MODEL BARU') }}</p>
+          <h2 class="mb-3 mb-md-0" style="color: #44658c; font-size: 1.6rem; font-weight: 800; line-height: 1.3;">{{ __('Apa itu Recruiter as a Service?') }}</h2>
         </div>
         <div class="col-md-7 text-start ps-md-5">
           <p class="mb-0" style="color: #252525; font-size: 0.9rem; line-height: 1.8;">
-            Model layanan rekrutmen berbasis jaringan recruiter on-demand, membuat perusahaan memiliki tim perekrut eksternal profesional untuk membantu beberapa tahapan atau seluruh proses rekrutmen.
+            {{ __('Model layanan rekrutmen berbasis jaringan recruiter on-demand, membuat perusahaan memiliki tim perekrut eksternal profesional untuk membantu beberapa tahapan atau seluruh proses rekrutmen.') }}
           </p>
         </div>
       </div>
@@ -121,9 +121,9 @@
   <!-- ==================== RAAS SERVICES SECTION (Moved) ==================== -->
   <div class="raas-services-section" id="services" style="padding: 40px 0 60px 0;">
     <div class="container text-center">
-      <h2 class="fw-bold mb-3" data-aos="fade-up" style="font-size: 1.7rem; color: var(--heading-color);">Kami siap jadi support system rekrutmen Anda.</h2>
+      <h2 class="fw-bold mb-3" data-aos="fade-up" style="font-size: 1.7rem; color: var(--heading-color);">{{ __('Kami siap jadi support system rekrutmen Anda.') }}</h2>
       <p class="mb-5 mx-auto" data-aos="fade-up" data-aos-delay="50" style="max-width: 100%; color: #555; font-size: 0.95rem; line-height: 1.6;">
-        Pilih layanan Klik Rekrut yang paling sesuai dengan kebutuhan bisnis Anda hari ini.
+        {{ __('Pilih layanan Klik Rekrut yang paling sesuai dengan kebutuhan bisnis Anda hari ini.') }}
       </p>
       
       <div class="row g-4 align-items-stretch justify-content-center" data-aos="fade-up" data-aos-delay="100">
@@ -133,7 +133,7 @@
           <div class="raas-pricing-card h-100">
             <h4 class="card-title">CV Search</h4>
             <p style="font-size: 0.85rem; line-height: 1.6; color: #44658c;">
-              Kirimkan info loker Anda, dapatkan CV kandidat dari kami. Hasil CV telah kami screening, lengkap dengan ranking kecocokan. Bayar sesuai jumlah CV yang Anda terima.
+              {{ __('Kirimkan info loker Anda, dapatkan CV kandidat dari kami. Hasil CV telah kami screening, lengkap dengan ranking kecocokan. Bayar sesuai jumlah CV yang Anda terima.') }}
             </p>
           </div>
         </div>
@@ -143,7 +143,7 @@
           <div class="raas-pricing-card h-100">
             <h4 class="card-title">Interviewer</h4>
             <p style="font-size: 0.85rem; line-height: 1.6; color: #44658c;">
-              Menjadwalkan sesi wawancara dan menjadi pewawancara kandidat Anda. Dapatkan laporan mendalam, lengkap dengan ranking kandidat. Bayar sesuai kandidat yang berhasil kami wawancara.
+              {{ __('Menjadwalkan sesi wawancara dan menjadi pewawancara kandidat Anda. Dapatkan laporan mendalam, lengkap dengan ranking kandidat. Bayar sesuai kandidat yang berhasil kami wawancara.') }}
             </p>
           </div>
         </div>
@@ -153,7 +153,7 @@
           <div class="raas-pricing-card h-100 position-relative">
             <h4 class="card-title">End-to-end Process</h4>
             <p style="font-size: 0.85rem; line-height: 1.6; color: #44658c;">
-              Serahkan seluruh proses pencarian karyawan kepada kami, Anda tinggal terima beres kandidat terbaik yang siap kerja. Dapatkan garansi penggantian kandidat baru selama 30 hari di masa onboarding. Bayar hanya saat kandidat telah resmi bergabung dengan Anda.
+              {{ __('Serahkan seluruh proses pencarian karyawan kepada kami, Anda tinggal terima beres kandidat terbaik yang siap kerja. Dapatkan garansi penggantian kandidat baru selama 30 hari di masa onboarding. Bayar penuh saat kandidat telah resmi bergabung dengan Anda.') }}
             </p>
           </div>
         </div>
@@ -165,7 +165,7 @@
   <!-- ==================== KEUNTUNGAN RAAS GRID ==================== -->
   <div class="raas-benefits-grid" data-aos="fade-up">
     <div class="container">
-      <h2 class="raas-benefits-title text-center fw-bold mb-5" data-aos="fade-up" style="color: var(--heading-color); font-size: 1.7rem;">Apa Keuntungan Merekrut dengan RaaS?</h2>
+      <h2 class="raas-benefits-title text-center fw-bold mb-5" data-aos="fade-up" style="color: var(--heading-color); font-size: 1.7rem;">{{ __('Apa Keuntungan Merekrut dengan RaaS?') }}</h2>
       
       <div class="row g-4 justify-content-center">
         <!-- Benefit 1: Bebas Repot -->
@@ -174,9 +174,9 @@
             <div class="raas-benefit-icon-circle">
               <i class="bi bi-clipboard-check"></i>
             </div>
-            <h5 class="raas-benefit-title">Bebas Repot</h5>
+            <h5 class="raas-benefit-title">{{ __('Bebas Repot') }}</h5>
             <p class="raas-benefit-desc">
-              Merekrut dan melakukan seleksi mandiri menguras banyak waktu serta tenaga Anda. Layanan RaaS hadir untuk membebaskan Anda dari seluruh proses teknis operasional, sehingga Anda bisa fokus pada tugas yang lebih strategis.
+              {{ __('Merekrut dan melakukan seleksi mandiri menguras banyak waktu serta tenaga Anda. Layanan RaaS hadir untuk membebaskan Anda dari seluruh proses teknis operasional, sehingga Anda bisa fokus pada tugas yang lebih strategis.') }}
             </p>
           </div>
         </div>
@@ -187,9 +187,9 @@
             <div class="raas-benefit-icon-circle">
               <i class="bi bi-wallet2"></i>
             </div>
-            <h5 class="raas-benefit-title">Lebih Ekonomis</h5>
+            <h5 class="raas-benefit-title">{{ __('Lebih Ekonomis') }}</h5>
             <p class="raas-benefit-desc">
-              Berbeda dengan memiliki perekrut permanen, layanan RaaS memberikan Anda tenaga perekrut profesional untuk mengelola seluruh proses rekrutmen. Anda pun terbebas dari beban gaji tetap serta biaya operasional bulanan lainnya.
+              {{ __('Perusahaan Anda tidak lagi harus berlangganan banyak platform dan membayar tim perekrut sendiri. Dengan layanan RaaS, semua biaya tersebut terpangkas karena Anda langsung mendapatkan asisten perekrutan profesional yang siap mengelola seluruh proses rekrutmen hingga tuntas.') }}
             </p>
           </div>
         </div>
@@ -200,9 +200,9 @@
             <div class="raas-benefit-icon-circle">
               <i class="bi bi-lightning-charge"></i>
             </div>
-            <h5 class="raas-benefit-title">Rekrutmen Cepat</h5>
+            <h5 class="raas-benefit-title">{{ __('Rekrutmen Cepat') }}</h5>
             <p class="raas-benefit-desc">
-              Dalam layanan RaaS, setiap proyek rekrutmen dikerjakan serentak dan kolaboratif oleh dedicated recruiter sesuai dengan industri bisnis Anda sehingga proses pengisian posisi kosong berjalan lebih cepat.
+              {{ __('Dalam layanan RaaS, setiap proyek rekrutmen dikerjakan serentak dan kolaboratif oleh dedicated recruiter sesuai dengan industri bisnis Anda sehingga proses pengisian posisi kosong berjalan lebih cepat.') }}
             </p>
           </div>
         </div>
@@ -213,9 +213,9 @@
             <div class="raas-benefit-icon-circle">
               <i class="bi bi-shield-check"></i>
             </div>
-            <h5 class="raas-benefit-title">Hasil Bergaransi</h5>
+            <h5 class="raas-benefit-title">{{ __('Hasil Bergaransi') }}</h5>
             <p class="raas-benefit-desc">
-              Dengan layanan RaaS, tidak ada anggaran rekrutmen yang terbuang sia-sia. Setiap investasi Anda, dijamin memberikan hasil yang sesuai. Setiap hasil yang Anda terima, kami garansi.
+              {{ __('Setiap layanan RaaS dirancang untuk memberikan hasil nyata minim risiko. Anda memiliki kontrol penuh atas anggaran rekrutmen karena pembayaran hanya dilakukan berdasarkan hasil yang Anda terima.') }}
             </p>
           </div>
         </div>
@@ -228,7 +228,7 @@
 <!-- ==================== TRUSTED CLIENTS SECTION ==================== -->
 <section id="trusted-clients" class="trusted-clients-section">
   <div class="container">
-    <h2 class="trusted-clients-title" data-aos="fade-up">Telah dipercaya oleh perusahaan dari berbagai Industri</h2>
+    <h2 class="trusted-clients-title" data-aos="fade-up">{{ __('Telah dipercaya oleh perusahaan dari berbagai Industri') }}</h2>
     
     <div class="marquee-wrapper" data-aos="fade-up" data-aos-delay="100">
       <div class="marquee-container mb-4">
@@ -307,12 +307,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingOne">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-            Apa itu KLIK Rekrut?
+            {{ __('Apa itu KLIK Rekrut?') }}
           </button>
         </h2>
         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            KLIK Rekrut adalah partner rekrutmen yang menyediakan layanan Recruiter as a Service (RaaS) untuk HR dan Perusahaan.
+            {{ __('KLIK Rekrut adalah penyedia jasa rekrutmen karyawan dengan model Recruiter as a Service (RaaS) untuk mendukung proses rekrutmen secara menyeluruh. Sebagai partner rekrutmen, kami menghadirkan kemudahan bagi HR Perusahaan dan Pemilik Bisnis mendapatkan asisten perekrutan profesional untuk membantu mencari talenta terbaik.') }}
           </div>
         </div>
       </div>
@@ -321,12 +321,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTwo">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-            Apa yang membuat RaaS berbeda dari layanan rekrutmen lain?
+            {{ __('Apa yang membuat RaaS berbeda dari layanan rekrutmen lain?') }}
           </button>
         </h2>
         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Layanan RaaS menawarkan fleksibilitas penuh untuk memiliki tim perekrut profesional, baik hanya untuk satu tahap maupun seluruh proses rekrutmen. Anda terbebas dari biaya langganan bulanan job platform yang mengikat, tidak perlu merekrut karyawan tetap hanya untuk proses screening hingga wawancara, dan tanpa risiko membayar success fee yang menguras anggaran untuk setiap kandidat yang bergabung. Anda hanya membayar layanan yang benar-benar Anda butuhkan, memastikan tidak ada anggaran rekrutmen yang terbuang sia-sia.
+            {{ __('Layanan RaaS merupakan asisten perekrutan profesional yang fleksibel untuk Anda. Cukup dengan RaaS, Anda mendapatkan pengelolaan seluruh proses rekrutmen hingga tuntas tanpa beban biaya operasional yang berlipat. Anda tidak perlu lagi membayar platform, tools, tim perekrut sendiri untuk sourcing, screening hingga wawancara, ataupun menggunakan jasa profesional lain yang menguras anggaran untuk setiap kandidat yang berhasil bergabung.') }}
           </div>
         </div>
       </div>
@@ -335,12 +335,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingThree">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-            Bagaimana cara kerja layanan RaaS KLIK Rekrut?
+            {{ __('Bagaimana cara kerja layanan RaaS KLIK Rekrut?') }}
           </button>
         </h2>
         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Layanan RaaS bekerja dengan cara bermitra langsung dengan perekrut profesional yang mendedikasikan keahlian dan waktu mereka untuk menyelesaikan permintaan rekrutmen Anda hingga tuntas. Anda mendapatkan ekosistem rekrutmen siap pakai yang hanya berjalan dan dibayar saat Anda membutuhkannya.
+            {{ __('Layanan RaaS bekerja dengan cara bermitra langsung dengan perekrut profesional yang mendedikasikan keahlian dan waktu mereka untuk menyelesaikan permintaan rekrutmen Anda hingga tuntas. Anda mendapatkan ekosistem rekrutmen fleksibel siap pakai yang hanya berjalan dan dibayar saat Anda membutuhkannya.') }}
           </div>
         </div>
       </div>
@@ -349,12 +349,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingFour">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-            Apakah ada jaminan untuk layanan RaaS KLIK Rekrut?
+            {{ __('Apakah ada jaminan untuk layanan RaaS KLIK Rekrut?') }}
           </button>
         </h2>
         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Ada. Jika kandidat yang kami berikan belum sesuai atau mengundurkan diri dalam 30 hari pertama, tim kami akan mencarikan pengganti dengan kriteria yang sama.
+            {{ __('Ada. Jika kandidat yang kami berikan belum sesuai atau mengundurkan diri dalam 30 hari pertama, tim kami akan mencarikan pengganti dengan kriteria yang sama.') }}
           </div>
         </div>
       </div>
@@ -363,12 +363,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingFive">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-            Berapa lama proses KLIK Rekrut menemukan kandidat yang tepat untuk saya?
+            {{ __('Berapa lama proses KLIK Rekrut menemukan kandidat yang tepat untuk saya?') }}
           </button>
         </h2>
         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            3 hingga 5 CV per minggu untuk posisi umum. Untuk posisi khusus, pencarian kandidat mungkin membutuhkan waktu lebih agar kualitas terbaik terpenuhi.
+            {{ __('3 hingga 5 CV per minggu untuk posisi umum. Untuk posisi khusus, pencarian kandidat mungkin membutuhkan waktu lebih agar kualitas terbaik terpenuhi.') }}
           </div>
         </div>
       </div>
@@ -377,12 +377,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingSix">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
-            Apakah layanan RaaS KLIK Rekrut cocok untuk UMKM atau perusahaan kecil?
+            {{ __('Apakah layanan RaaS KLIK Rekrut cocok untuk UMKM atau perusahaan kecil?') }}
           </button>
         </h2>
         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Tentu saja. Layanan RaaS kami dirancang fleksibel untuk berbagai skala bisnis, mulai dari usaha rintisan, UMKM, hingga perusahaan besar. Bahkan jika bisnis atau UMKM Anda belum begitu dikenal, kami tetap siap membantu Anda memikat dan mendapatkan kandidat terbaik.
+            {{ __('Tentu saja. Layanan RaaS kami dirancang fleksibel untuk berbagai skala bisnis, mulai dari usaha rintisan, UMKM, hingga perusahaan besar. Bahkan jika bisnis atau UMKM Anda belum begitu dikenal, kami tetap siap membantu Anda memikat dan mendapatkan kandidat terbaik.') }}
           </div>
         </div>
       </div>
@@ -391,12 +391,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingSeven">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
-            Berapa tarif layanan RaaS KLIK Rekrut?
+            {{ __('Berapa tarif layanan RaaS KLIK Rekrut?') }}
           </button>
         </h2>
         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Anda dapat klik tombol "Konsultasi Gratis" untuk mengenal tarif layanan kami. Tim recruitment consultant kami siap memperkenalkan layanan yang sesuai dengan kebutuhan Anda.
+            {{ __('Anda dapat klik tombol "Rekrut Sekarang" untuk mengenal tarif layanan kami. Tim kami siap memperkenalkan layanan yang sesuai dengan kebutuhan Anda.') }}
           </div>
         </div>
       </div>
@@ -405,12 +405,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingEight">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
-            Apakah KLIK Rekrut menawarkan demo gratis sebelum saya membuat komitmen?
+            {{ __('Apakah KLIK Rekrut menawarkan demo gratis sebelum saya membuat komitmen?') }}
           </button>
         </h2>
         <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Ya. Klik tombol "Jadwalkan Demo" dan tim kami akan menghubungi Anda dalam 24 jam untuk demo eksklusif gratis.
+            {{ __('Tentu saja. Klik tombol "Konsultasi Gratis" untuk membantu kami memahami kebutuhan Anda terlebih dahulu dan demo eksklusif gratis.') }}
           </div>
         </div>
       </div>
@@ -419,12 +419,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingNine">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
-            Berasal dari industri apa saja klien KLIK Rekrut?
+            {{ __('Berasal dari industri apa saja klien KLIK Rekrut?') }}
           </button>
         </h2>
         <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Klien kami berasal dari berbagai bidang termasuk Consulting, Marketing Agency, Retail, Fashion, Education, Garmen, dan lain-lain.
+            {{ __('Klien kami berasal dari berbagai bidang termasuk Consulting, Marketing Agency, Retail, Fashion, Education, Garmen, dan lain-lain.') }}
           </div>
         </div>
       </div>
@@ -433,12 +433,12 @@
       <div class="accordion-item">
         <h2 class="accordion-header" id="headingTen">
           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
-            Bagaimana cara mulai menggunakan layanan RaaS dari KLIK Rekrut?
+            {{ __('Bagaimana cara mulai menggunakan layanan RaaS dari KLIK Rekrut?') }}
           </button>
         </h2>
         <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Anda dapat klik tombol "Rekrut Sekarang".
+            {{ __('Anda dapat klik tombol "Rekrut Sekarang".') }}
           </div>
         </div>
       </div>
@@ -480,9 +480,9 @@
     <div class="row align-items-center">
       <!-- Left: Text & Button -->
       <div class="col-lg-6 mb-0 mb-lg-0 pb-lg-5" data-aos="fade-right">
-        <h2 class="fw-bold mb-2 mb-lg-4 cta-title" style="line-height: 1.3; color: var(--heading-color);">Tertarik Mencoba<br>Layanan RaaS?</h2>
+        <h2 class="fw-bold mb-2 mb-lg-4 cta-title" style="line-height: 1.3; color: var(--heading-color);">{{ __('Tertarik Mencoba') }}<br>{{ __('Layanan RaaS?') }}</h2>
         <p class="mb-3 mb-lg-5 cta-desc" style="line-height: 1.6; color: var(--default-color);">
-          Jangan biarkan momentum bisnis Anda hilang karena tim belum siap. Mulai merekrut dan lihat bagaimana sistem RaaS bekerja mencari karyawan untuk perusahaan Anda.
+          {{ __('Jangan biarkan momentum bisnis Anda hilang karena tim belum siap. Mulai rekrutmen Anda sekarang dan lihat bagaimana RaaS bekerja menghadirkan talenta terbaik untuk perusahaan Anda.') }}
         </p>
       </div>
 
@@ -492,19 +492,19 @@
           <div class="card-body p-4 p-md-5">
             <form onsubmit="sendToWhatsApp(event)">
               <div class="mb-3">
-                <label for="company" class="form-label text-muted small mb-1">Company Name</label>
+                <label for="company" class="form-label text-muted small mb-1">{{ __('Company Name') }}</label>
                 <input type="text" class="form-control bg-light border-0" id="company" style="border-radius: 8px; padding: 10px 15px;" required>
               </div>
               <div class="mb-3">
-                <label for="scale" class="form-label text-muted small mb-1">Company Scale</label>
+                <label for="scale" class="form-label text-muted small mb-1">{{ __('Company Scale') }}</label>
                 <select class="form-select bg-light border-0" id="scale" style="border-radius: 8px; padding: 10px 15px;" required>
                   <option value="Startup">Startup</option>
-                  <option value="SME">SME</option>
+                  <option value="SME">{{ __('SME') }}</option>
                   <option value="Enterprise">Enterprise</option>
                 </select>
               </div>
               <div class="mb-3">
-                <label for="service" class="form-label text-muted small mb-1">Service Needed</label>
+                <label for="service" class="form-label text-muted small mb-1">{{ __('Service Needed') }}</label>
                 <select class="form-select bg-light border-0" id="service" style="border-radius: 8px; padding: 10px 15px;" required>
                   <option value="" selected disabled></option>
                   <option value="CV Search">CV Search</option>
@@ -513,10 +513,10 @@
                 </select>
               </div>
               <div class="mb-4">
-                <label for="challenge" class="form-label text-muted small mb-1">Your Current Challenge</label>
+                <label for="challenge" class="form-label text-muted small mb-1">{{ __('Your Current Challenge') }}</label>
                 <textarea class="form-control bg-light border-0" id="challenge" rows="3" style="border-radius: 8px; padding: 10px 15px;" required></textarea>
               </div>
-              <button type="submit" class="btn text-white w-100 py-3 mt-2" style="background-color: #1a1a1a; border-radius: 8px; font-weight: 500;">Rekrut Sekarang</button>
+              <button type="submit" class="btn text-white w-100 py-3 mt-2" style="background-color: #1a1a1a; border-radius: 8px; font-weight: 500;">{{ __('Rekrut Sekarang') }}</button>
             </form>
           </div>
         </div>
@@ -630,7 +630,7 @@
       <div class="footer-about"> <!-- Kolom kiri -->
         <img src="assets/img/Footer.png" alt="Klik Rekrut Logo" class="footer-logo"> <!-- Logo Klik Rekrut -->
         <p>
-          Klik Rekrut adalah perusahaan rekrutmen RaaS pertama yang berbasis di Jakarta
+          {{ __('Klik Rekrut adalah perusahaan rekrutmen RaaS pertama yang berbasis di Jakarta') }}
         </p> <!-- Deskripsi singkat perusahaan -->
       </div>
 
@@ -639,17 +639,17 @@
 
         <!-- Kolom 1: Layanan -->
         <div class="footer-column">
-          <h6>LAYANAN</h6> <!-- Judul kolom -->
+          <h6>{{ __('LAYANAN') }}</h6>
           <ul>
-            <li><a href="#services">CV Search</a></li>
-            <li><a href="#services">Interviewer</a></li>
-            <li><a href="#services">End-to-end</a></li>
+            <li>{{ __('CV Search') }}</li>
+            <li>{{ __('Interviewer') }}</li>
+            <li>{{ __('End-to-end') }}</li>
           </ul>
         </div>
 
         <!-- Kolom 2: Gabung -->
         <div class="footer-column">
-          <h6>GABUNG</h6>
+          <h6>{{ __('GABUNG') }}</h6>
           <ul>
             <li><a href="applypartner">Partner</a></li>
             <li><a href="#">Talent</a></li>
@@ -658,7 +658,7 @@
 
         <!-- Kolom 3: Hubungi Kami -->
         <div class="footer-column">
-          <h6>HUBUNGI KAMI</h6>
+          <h6>{{ __('HUBUNGI KAMI') }}</h6>
           <ul>
             <li><a href="mailto:hr.klikrekrut@gmail.com"><i class="bi bi-envelope me-2"></i> hr.klikrekrut@gmail.com</a></li>
             <li><a href="https://api.whatsapp.com/send?phone=6289678868752" target="_blank" rel="noopener noreferrer"><i class="bi bi-telephone me-2"></i> +6289678868752</a></li>

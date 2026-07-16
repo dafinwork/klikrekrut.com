@@ -10,10 +10,21 @@
     <!-- Desktop Nav Menu -->
     <nav id="navmenu" class="navmenu d-none d-lg-flex align-items-center">
       <ul class="d-flex align-items-center mb-0 flex-row" style="gap: 15px; list-style: none; padding: 0; margin: 0;">
-        <li><a href="#services">Layanan</a></li>
-        <li><a href="#trusted-clients">Klien Kami</a></li>
+        <li><a href="#services">{{ __('Layanan') }}</a></li>
+        <li><a href="#trusted-clients">{{ __('Klien Kami') }}</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-konsultasi">Konsultasi Gratis</a></li>
+        <li class="lang-toggle-desktop">
+          <a href="#" class="lang-toggle-btn d-flex align-items-center" onclick="return false;">
+            <i class="bi bi-globe"></i>
+            <span class="text-uppercase">{{ app()->getLocale() }}</span>
+            <i class="bi bi-chevron-down lang-chevron"></i>
+          </a>
+          <div class="lang-dropdown-menu">
+            <a class="lang-dropdown-item {{ app()->getLocale() == 'en' ? 'active' : '' }}" href="{{ route('lang.switch', 'en') }}">English</a>
+            <a class="lang-dropdown-item {{ app()->getLocale() == 'id' ? 'active' : '' }}" href="{{ route('lang.switch', 'id') }}">Bahasa</a>
+          </div>
+        </li>
+        <li><a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-konsultasi">{{ __('Daftar Jadi Perekrut') }}</a></li>
       </ul>
     </nav>
 
@@ -39,13 +50,25 @@
 
   <!-- Sidebar Nav Links -->
   <nav class="mobile-sidebar-nav">
-    <a href="#services" class="mobile-sidebar-link" data-close-sidebar>Layanan</a>
+    <a href="#services" class="mobile-sidebar-link" data-close-sidebar>{{ __('Layanan') }}</a>
     <hr class="mobile-sidebar-divider">
-    <a href="#trusted-clients" class="mobile-sidebar-link" data-close-sidebar>Klien Kami</a>
+    <a href="#trusted-clients" class="mobile-sidebar-link" data-close-sidebar>{{ __('Klien Kami') }}</a>
     <hr class="mobile-sidebar-divider">
     <a href="#faq" class="mobile-sidebar-link" data-close-sidebar>FAQ</a>
     <hr class="mobile-sidebar-divider">
-    <a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="mobile-sidebar-link mobile-sidebar-cta" data-close-sidebar>Konsultasi Gratis</a>
+    <a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="mobile-sidebar-link mobile-sidebar-cta" data-close-sidebar>{{ __('Daftar Jadi Perekrut') }}</a>
+    <hr class="mobile-sidebar-divider">
+    <div class="mobile-lang-toggle" id="mobile-lang-toggle">
+      <a href="#" class="mobile-lang-btn d-flex align-items-center justify-content-center" id="mobile-lang-btn" onclick="return false;">
+        <i class="bi bi-globe"></i>
+        <span class="text-uppercase">{{ app()->getLocale() }}</span>
+        <i class="bi bi-chevron-down mobile-lang-chevron"></i>
+      </a>
+      <div class="mobile-lang-dropdown" id="mobile-lang-dropdown">
+        <a class="mobile-lang-dropdown-item {{ app()->getLocale() == 'en' ? 'active' : '' }}" href="{{ route('lang.switch', 'en') }}">English</a>
+        <a class="mobile-lang-dropdown-item {{ app()->getLocale() == 'id' ? 'active' : '' }}" href="{{ route('lang.switch', 'id') }}">Bahasa</a>
+      </div>
+    </div>
   </nav>
 </div>
 
@@ -202,6 +225,126 @@
 .mobile-nav-overlay.active {
   display: block;
 }
+
+/* ==================== LANGUAGE TOGGLE (DESKTOP) ==================== */
+.lang-toggle-desktop {
+  position: relative;
+  margin-right: 5px;
+}
+.lang-toggle-btn {
+  color: #44658c !important;
+  font-weight: 500 !important;
+  font-size: 14px;
+  text-decoration: none;
+  gap: 6px;
+  cursor: pointer;
+  padding: 6px 0;
+}
+.lang-chevron {
+  font-size: 12px;
+  -webkit-text-stroke: 0.5px;
+  transition: transform 0.2s;
+}
+.lang-toggle-desktop.open .lang-chevron {
+  transform: rotate(180deg);
+}
+.lang-toggle-desktop .lang-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 140px;
+  padding: 8px;
+  background: #fff;
+  border: 1px solid #f0f0f0;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+  z-index: 9999;
+  margin-top: 8px;
+}
+.lang-toggle-desktop.open .lang-dropdown-menu {
+  display: block;
+}
+.lang-dropdown-item {
+  display: block;
+  padding: 10px 16px;
+  font-size: 14px;
+  color: #333;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.2s;
+  margin-bottom: 4px;
+}
+.lang-dropdown-item:last-child {
+  margin-bottom: 0;
+}
+.lang-dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #333;
+}
+.lang-dropdown-item.active {
+  background-color: #f1f3f5;
+  color: #333;
+}
+/* ==================== LANGUAGE TOGGLE (MOBILE) ==================== */
+.mobile-lang-toggle {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mobile-lang-btn {
+  color: #44658c;
+  font-weight: 500;
+  font-size: 15px;
+  text-decoration: none;
+  gap: 6px;
+  cursor: pointer;
+  width: 100%;
+  justify-content: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.mobile-lang-btn:hover,
+.mobile-lang-btn:focus,
+.mobile-lang-btn:active {
+  color: #44658c;
+}
+.mobile-lang-chevron {
+  font-size: 13px;
+  -webkit-text-stroke: 0.5px;
+  transition: transform 0.2s;
+}
+.mobile-lang-toggle.open .mobile-lang-chevron {
+  transform: rotate(180deg);
+}
+.mobile-lang-dropdown {
+  display: none;
+  width: 100%;
+  margin-top: 10px;
+  flex-direction: column;
+}
+.mobile-lang-toggle.open .mobile-lang-dropdown {
+  display: flex;
+}
+.mobile-lang-dropdown-item {
+  display: block;
+  padding: 12px 16px;
+  font-size: 14px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  text-align: center;
+  transition: background 0.2s;
+}
+.mobile-lang-dropdown-item:hover {
+  background-color: #f8f9fa;
+  color: #333;
+}
+.mobile-lang-dropdown-item.active {
+  background-color: #f1f3f5;
+  color: #333;
+}
 </style>
 
 <script>
@@ -248,5 +391,32 @@
     document.querySelectorAll("[data-close-sidebar]").forEach(function (el) {
       el.addEventListener("click", closeSidebar);
     });
+
+    // Mobile language toggle
+    const mobileLangBtn = document.getElementById("mobile-lang-btn");
+    const mobileLangToggle = document.getElementById("mobile-lang-toggle");
+    if (mobileLangBtn && mobileLangToggle) {
+      mobileLangBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        mobileLangToggle.classList.toggle("open");
+      });
+    }
+
+    // Desktop language toggle (click to open)
+    const desktopLangToggle = document.querySelector(".lang-toggle-desktop");
+    const desktopLangBtn = desktopLangToggle ? desktopLangToggle.querySelector(".lang-toggle-btn") : null;
+    if (desktopLangBtn && desktopLangToggle) {
+      desktopLangBtn.addEventListener("click", function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        desktopLangToggle.classList.toggle("open");
+      });
+      // Klik di luar dropdown → tutup
+      document.addEventListener("click", function (e) {
+        if (!desktopLangToggle.contains(e.target)) {
+          desktopLangToggle.classList.remove("open");
+        }
+      });
+    }
   });
 </script>

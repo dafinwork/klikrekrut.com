@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Klik Rekrut - Layanan Asisten Rekrutmen')
+@section('title', 'Indonesia Recruitment Assistant | On-Demand Professional Recruiters for HR & Business Owners')
 @section('description', 'Temukan pekerjaan impianmu di Klik Rekrut')
 @section('keywords', 'find job, lowongan kerja, klik rekrut')
 
