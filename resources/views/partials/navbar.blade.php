@@ -24,7 +24,7 @@
             <a class="lang-dropdown-item {{ app()->getLocale() == 'id' ? 'active' : '' }}" href="{{ route('lang.switch', 'id') }}">Bahasa</a>
           </div>
         </li>
-        <li><a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="btn-konsultasi">{{ __('Daftar Jadi Perekrut') }}</a></li>
+        <li><a href="https://forms.gle/eVidvrkgo2BBQCqKA" target="_blank" rel="noopener noreferrer" class="btn-konsultasi">{{ __('Daftar Jadi Perekrut') }}</a></li>
       </ul>
     </nav>
 
@@ -56,7 +56,7 @@
     <hr class="mobile-sidebar-divider">
     <a href="#faq" class="mobile-sidebar-link" data-close-sidebar>FAQ</a>
     <hr class="mobile-sidebar-divider">
-    <a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank" rel="noopener noreferrer" class="mobile-sidebar-link mobile-sidebar-cta" data-close-sidebar>{{ __('Daftar Jadi Perekrut') }}</a>
+    <a href="https://forms.gle/eVidvrkgo2BBQCqKA" target="_blank" rel="noopener noreferrer" class="mobile-sidebar-link mobile-sidebar-cta" data-close-sidebar>{{ __('Daftar Jadi Perekrut') }}</a>
     <hr class="mobile-sidebar-divider">
     <div class="mobile-lang-toggle" id="mobile-lang-toggle">
       <a href="#" class="mobile-lang-btn d-flex align-items-center justify-content-center" id="mobile-lang-btn" onclick="return false;">

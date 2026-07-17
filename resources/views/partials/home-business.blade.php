@@ -651,8 +651,8 @@
         <div class="footer-column">
           <h6>{{ __('GABUNG') }}</h6>
           <ul>
-            <li><a href="applypartner">Partner</a></li>
-            <li><a href="#">Talent</a></li>
+            <li><a href="https://forms.gle/eVidvrkgo2BBQCqKA" target="_blank" rel="noopener noreferrer">Partner</a></li>
+            <li><a href="https://forms.gle/9Qxh4W5BnJkLfxCB8" target="_blank" rel="noopener noreferrer">Talent</a></li>
           </ul>
         </div>
 
