@@ -529,7 +529,6 @@
           <h6 class="fw-bold" style="font-size: 13px;">LAYANAN</h6>
           <ul class="list-unstyled" style="font-size: 13px;">
             <li class="mb-2"><a href="/" class="text-dark text-decoration-none">e-Recruitment</a></li>
-            <li class="mb-2"><a href="/elearning" class="text-dark text-decoration-none">e-Learning</a></li>
           </ul>
         </div>
 
@@ -538,7 +537,6 @@
           <h6 class="fw-bold" style="font-size: 13px;">LAINNYA</h6>
           <ul class="list-unstyled" style="font-size: 13px;">
             <li class="mb-2"><a href="#" class="text-dark text-decoration-none">Komunitas</a></li>
-            <li class="mb-2"><a href="/applypartner" class="text-dark text-decoration-none">Kemitraan</a></li>
           </ul>
         </div>
 

@@ -38,6 +38,7 @@
   <title>@yield('title', 'Klik Rekrut')</title>
   <meta name="description" content="@yield('description', 'Platform assisten rekrutmen')">
   <meta name="keywords" content="@yield('keywords', 'job, career, klik rekrut')">
+  @yield('meta')
 
   <!-- Favicons -->
   <link rel="icon" href="https://klikrekrut.com/assets/img/square.png" type="image/png" sizes="32x32">

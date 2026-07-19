@@ -64,7 +64,6 @@
 <nav id="navmenu" class="navmenu">
   <ul>
     <li><a href="/">Services</a></li>
-    <li><a href="elearning">E-learning</a></li>
     <li><a href="partner">Apply as partner</a></li>
     <li>
 <a href="community"
@@ -393,7 +392,6 @@
           <h6>LAYANAN</h6>
           <ul>
             <li><a href="/">e-Recruitment</a></li>
-            <li><a href="elearning">e-Learning</a></li>
           </ul>
         </div>
         <!-- Komunitas -->

@@ -21,12 +21,7 @@ Route::get('/community', function () {
 Route::get('/partner', function () {
     return view('partner');
 });
-Route::get('/elearning', function () {
-    return view('elearning');
-});
-Route::get('/applypartner', function () {
-    return view('applypartner');
-});Route::get('/find', function () {
+Route::get('/find', function () {
     return view('find');
 });
 Route::get('/job', function () {
