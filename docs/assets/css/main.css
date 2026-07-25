@@ -1,0 +1,693 @@
+/**
+* Template Name: SoftLand
+* Template URL: https://bootstrapmade.com/softland-bootstrap-app-landing-page-template/
+* Updated: Aug 07 2024 with Bootstrap v5.3.3
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# Font & Color Variables
+# Help: https://bootstrapmade.com/color-system/
+--------------------------------------------------------------*/
+/* Fonts */
+:root {
+  --default-font: "Poppins",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --heading-font: "Poppins",  sans-serif;
+  --nav-font: "Poppins",  sans-serif;
+}
+
+/* Global Colors - The following color variables are used throughout the website. Updating them here will change the color scheme of the entire website */
+:root { 
+  --background-color: #ffffff; /* Background color for the entire website, including individual sections */
+  --default-color: #252525; /* Default color used for the majority of the text content across the entire website */
+  --heading-color: #44658c; /* Color for headings, subheadings and title throughout the website */
+  --accent-color: #ff8d1e; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
+  --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
+}
+
+/* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
+:root {
+  --nav-color: rgba(255, 255, 255, 0.5);  /* The default color of the main navmenu links */
+  --nav-hover-color: #ffffff; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
+  --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
+  --nav-dropdown-color: #212529; /* Used for navigation links of the dropdown items in the navigation menu. */
+  --nav-dropdown-hover-color: #559bcc; /* Similar to --nav-hover-color, this color is applied to dropdown navigation links when they are hovered over. */
+}
+
+/* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
+
+.light-background {
+  --background-color: #f1f3f8;
+  --surface-color: #ffffff;
+}
+
+.dark-background {
+  --background-color: #142e6c;
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  --surface-color: #1c4097;
+  --contrast-color: #ffffff;
+}
+
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
+/*--------------------------------------------------------------
+# General Styling & Shared Classes
+--------------------------------------------------------------*/
+body {
+  color: var(--default-color);
+  background-color: var(--background-color);
+  font-family: var(--default-font);
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: color-mix(in srgb, var(--accent-color), transparent 25%);
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+}
+
+/* PHP Email Form Messages
+------------------------------*/
+.php-email-form .error-message {
+  display: none;
+  background: #df1529;
+  color: #ffffff;
+  text-align: left;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .sent-message {
+  display: none;
+  color: #ffffff;
+  background: #059652;
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+  font-weight: 600;
+}
+
+.php-email-form .loading {
+  display: none;
+  background: var(--surface-color);
+  text-align: center;
+  padding: 15px;
+  margin-bottom: 24px;
+}
+
+.php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid var(--accent-color);
+  border-top-color: var(--surface-color);
+  animation: php-email-form-loading 1s linear infinite;
+}
+
+@keyframes php-email-form-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Global Header
+--------------------------------------------------------------*/
+
+.counter {
+  font-family: 'Poppins', sans-serif !important;
+}
+
+.header {
+  --background-color: rgba(255, 255, 255, 0); /* transparan */
+  --default-color: #ffffff;
+  --heading-color: #ffffff;
+  color: var(--default-color);
+  background-color: var(--background-color);
+  padding: 5px 0;
+  transition: all 0.3s ease;
+  z-index: 10000;
+}
+
+.header.scrolled {
+  background-color: #ffffff !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.header.scrolled .navmenu ul li a {
+  color: #004AAD;
+}
+
+.header.scrolled .navmenu ul li .btn {
+  border-color: #004AAD;
+  color: #004AAD;
+}
+
+.navmenu ul li a,
+.navmenu ul li .btn {
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.header.scrolled .mobile-nav-toggle {
+  color: #004AAD;
+}
+
+.mobile-nav-toggle {
+  transition: color 0.3s ease;
+}
+
+/* Tombol saat header discroll */
+.header.scrolled .btn-outline-light {
+  color: #004AAD !important;
+  border-color: #004AAD !important;
+  background-color: #ffffff !important;
+}
+
+.btn-outline-light {
+  transition: all 0.3s ease;
+}
+
+.header.scrolled .btn-outline-light:hover {
+  background-color: #004AAD !important;
+  color: #fff !important;
+  border-color: #004AAD !important;
+}
+
+/* Logo */
+.logo-full {
+  max-height: 46px;
+  width: auto;
+  object-fit: contain;
+  transition: opacity 0.3s ease;
+}
+
+.logo {
+  padding-left: 16px;
+}
+
+@media (max-width: 768px) {
+  .logo-full {
+    max-height: 40px;
+  }
+}
+
+.header .logo-full {
+  max-height: 46px;
+  width: auto;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
+.header.scrolled .logo-full {
+  content: url("Footer.png");
+}
+
+@media (max-width: 768px) {
+  .header .logo-full {
+    max-height: 40px;
+  }
+}
+
+.scrolled .header {
+  --background-color: rgba(0, 74, 173, 0.95);
+  box-shadow: 0px 0 18px rgba(0, 0, 0, 0.1);
+}
+
+
+/* ==============================================================
+   DESKTOP NAVIGATION
+   ==============================================================
+*/
+
+/* Desktop navmenu */
+@media (min-width: 1200px) {
+  .navmenu {
+    padding: 0;
+  }
+
+  .navmenu ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+  }
+
+  .navmenu li {
+    position: relative;
+  }
+
+  .navmenu a,
+  .navmenu a:focus {
+    color: var(--nav-color);
+    padding: 18px 15px;
+    font-size: 16px;
+    font-family: var(--nav-font);
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+    transition: 0.3s;
+  }
+
+  .navmenu a i,
+  .navmenu a:focus i {
+    font-size: 12px;
+    line-height: 0;
+    margin-left: 5px;
+    transition: 0.3s;
+  }
+
+  .navmenu li:last-child a {
+    padding-right: 0;
+  }
+
+  .navmenu li:hover > a,
+  .navmenu .active,
+  .navmenu .active:focus {
+    color: var(--nav-hover-color);
+  }
+
+  .navmenu .dropdown ul {
+    margin: 0;
+    padding: 10px 0;
+    background: var(--nav-dropdown-background-color);
+    display: block;
+    position: absolute;
+    visibility: hidden;
+    left: 14px;
+    top: 130%;
+    opacity: 0;
+    transition: 0.3s;
+    border-radius: 4px;
+    z-index: 99;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .navmenu .dropdown ul li {
+    min-width: 200px;
+  }
+
+  .navmenu .dropdown ul a {
+    padding: 10px 20px;
+    font-size: 15px;
+    text-transform: none;
+    color: var(--nav-dropdown-color);
+  }
+
+  .navmenu .dropdown ul a i {
+    font-size: 12px;
+  }
+
+  .navmenu .dropdown ul a:hover,
+  .navmenu .dropdown ul .active:hover,
+  .navmenu .dropdown ul li:hover > a {
+    color: var(--nav-dropdown-hover-color);
+  }
+
+  .navmenu .dropdown:hover > ul {
+    opacity: 1;
+    top: 100%;
+    visibility: visible;
+  }
+
+  .navmenu .dropdown .dropdown ul {
+    top: 0;
+    left: -90%;
+    visibility: hidden;
+  }
+
+  .navmenu .dropdown .dropdown:hover > ul {
+    opacity: 1;
+    top: 0;
+    left: -100%;
+    visibility: visible;
+  }
+}
+
+.navmenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navmenu ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navmenu ul li .btn {
+  border: 2px solid white;
+  color: white;
+}
+
+.navmenu ul li .btn-outline-light:hover {
+  background-color: #ffffff !important;
+  color: #004AAD !important;
+  border-color: #ffffff !important;
+}
+
+/* Dropdown Desktop */
+.navmenu ul li {
+  position: relative;
+}
+
+.navmenu ul li ul {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  display: none;
+  flex-direction: column;
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  z-index: 99;
+}
+
+.navmenu ul li ul li a {
+  padding: 10px 15px;
+  color: #004AAD;
+  display: block;
+}
+
+@media (min-width: 992px) {
+  .navmenu ul li:hover ul {
+    display: none !important;
+  }
+}
+
+.navmenu ul li.open > ul {
+  display: flex !important;
+  max-height: 300px;
+  opacity: 1;
+}
+
+.navmenu ul li ul li a:hover {
+  background: #f1f1f1;
+}
+
+
+/* ==============================================================
+   MOBILE NAVIGATION
+   ==============================================================
+*/
+
+.mobile-nav-toggle {
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  z-index: 1001;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+    position: relative;
+    z-index: 10002;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+  }
+
+  #navmenu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 280px;
+    background-color: #ffffff;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.15);
+    padding: 80px 25px 30px;
+    transition: right 0.35s ease-in-out;
+    overflow-y: auto;
+    z-index: 10001;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navmenu.active {
+    right: 0;
+  }
+
+  .navmenu ul {
+    flex-direction: column;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    width: 100%;
+    gap: 0;
+  }
+
+  #nav-business-links {
+    align-items: flex-start !important;
+    width: 100%;
+    padding-left: 15px;
+  }
+
+  .navmenu ul li {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .navmenu ul li a {
+    display: block;
+    width: 100%;
+    color: #334155;
+    font-weight: 500;
+    padding: 15px 15px 15px 0;
+    border-bottom: none;
+    font-size: 16px;
+    text-align: left;
+    transition: color 0.3s;
+  }
+  .navmenu ul li a:hover {
+    color: #004AAD;
+  }
+  .mobile-nav-logo {
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 20px;
+    margin-bottom: 20px !important;
+  }
+
+  /* Dropdown submenu inside mobile */
+  .navmenu ul li ul,
+  .navmenu ul li .dropdown-menu-list {
+    position: static !important;
+    box-shadow: none !important;
+    background: #f5f8fc !important;
+    border-radius: 8px !important;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.35s ease, opacity 0.25s ease;
+    display: flex !important;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+
+  .navmenu ul li.open > ul,
+  .navmenu ul li.open > .dropdown-menu-list {
+    max-height: 400px;
+    opacity: 1;
+    padding: 5px 0;
+  }
+
+  .navmenu ul li ul li a,
+  .navmenu ul li .dropdown-menu-list li a {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-bottom: none;
+    color: #333;
+  }
+
+  .navmenu ul li ul li a:hover,
+  .navmenu ul li .dropdown-menu-list li a:hover {
+    background: #e8f0fe;
+    color: #004AAD;
+  }
+
+  .navmenu ul li .btn {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 10px;
+    background-color: #004AAD;
+    color: white;
+    border-radius: 50px;
+    font-weight: 500;
+  }
+
+  /* Toggle wrapper inside mobile sidebar */
+  .view-toggle-wrapper {
+    margin-left: 0 !important;
+    margin-top: 25px !important;
+    padding-top: 15px;
+    border-top: 1px solid rgba(0, 74, 173, 0.1);
+  }
+
+  .view-toggle-container {
+    background: #f0f4f8 !important;
+    border: none !important;
+    padding: 8px 20px !important;
+    border-radius: 50px !important;
+  }
+
+  .toggle-label {
+    color: rgba(0, 0, 0, 0.4) !important;
+  }
+
+  .toggle-label.active {
+    color: #004AAD !important;
+  }
+
+  .toggle-separator {
+    color: rgba(0, 0, 0, 0.3) !important;
+  }
+
+  /* Mobile nav overlay */
+  .mobile-nav-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease;
+  }
+
+  .mobile-nav-overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@media (max-width: 991px) {
+  body.mobile-nav-active .mobile-nav-toggle {
+    color: #000 !important;
+  }
+}
+
+/*--------------------------------------------------------------
+# Preloader
+--------------------------------------------------------------*/
+#preloader {
+  position: fixed;
+  inset: 0;
+  z-index: 999999;
+  overflow: hidden;
+  background: var(--background-color);
+  transition: all 0.3s ease-out;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 4px solid #ffffff;
+  border-color: var(--accent-color) transparent var(--accent-color) transparent;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 0.8s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*--------------------------------------------------------------
+# Scroll Top Button
+--------------------------------------------------------------*/
+.scroll-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  background-color: var(--heading-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.scroll-top i {
+  font-size: 24px;
+  color: var(--contrast-color);
+  line-height: 0;
+}
+
+.scroll-top:hover {
+  background-color: color-mix(in srgb, var(--heading-color), transparent 20%);
+  color: var(--contrast-color);
+}
+
+.scroll-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# Disable aos animation delay on mobile devices
+--------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+
