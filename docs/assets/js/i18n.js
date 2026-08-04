@@ -67,7 +67,7 @@
       "LAYANAN": "SERVICES",
       "CV Search": "CV Search",
       "Interviewer": "Interviewer",
-      "End-to-end": "End-to-end",
+      "Talent Search": "Talent Search",
       "GABUNG": "JOIN",
       "HUBUNGI KAMI": "CONTACT US"
     }
