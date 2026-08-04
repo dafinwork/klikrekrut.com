@@ -21,7 +21,7 @@
           </a>
           <div class="lang-dropdown-menu">
             <a class="lang-dropdown-item {{ app()->getLocale() == 'en' ? 'active' : '' }}" href="{{ route('lang.switch', 'en') }}">English</a>
-            <a class="lang-dropdown-item {{ app()->getLocale() == 'id' ? 'active' : '' }}" href="{{ route('lang.switch', 'id') }}">Bahasa</a>
+            <a class="lang-dropdown-item {{ app()->getLocale() == 'id' ? 'active' : '' }}" href="{{ route('lang.switch', 'id') }}">Indonesian</a>
           </div>
         </li>
         <li><a href="https://forms.gle/eVidvrkgo2BBQCqKA" target="_blank" rel="noopener noreferrer" class="btn-konsultasi">{{ __('Daftar jadi Mitra') }}</a></li>
@@ -66,7 +66,7 @@
       </a>
       <div class="mobile-lang-dropdown" id="mobile-lang-dropdown">
         <a class="mobile-lang-dropdown-item {{ app()->getLocale() == 'en' ? 'active' : '' }}" href="{{ route('lang.switch', 'en') }}">English</a>
-        <a class="mobile-lang-dropdown-item {{ app()->getLocale() == 'id' ? 'active' : '' }}" href="{{ route('lang.switch', 'id') }}">Bahasa</a>
+        <a class="mobile-lang-dropdown-item {{ app()->getLocale() == 'id' ? 'active' : '' }}" href="{{ route('lang.switch', 'id') }}">Indonesian</a>
       </div>
     </div>
   </nav>

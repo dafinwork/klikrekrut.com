@@ -151,7 +151,7 @@
         <!-- Card 3 -->
         <div class="col-lg-4 text-start">
           <div class="raas-pricing-card h-100 position-relative">
-            <h4 class="card-title">End-to-end Process</h4>
+            <h4 class="card-title">Talent Search</h4>
             <p style="font-size: 0.85rem; line-height: 1.6; color: #44658c;">
               {{ __('Serahkan seluruh proses pencarian karyawan kepada kami, Anda tinggal terima beres kandidat terbaik yang siap kerja. Dapatkan garansi penggantian kandidat baru selama 30 hari di masa onboarding. Bayar penuh saat kandidat telah resmi bergabung dengan Anda.') }}
             </p>
@@ -643,7 +643,7 @@
           <ul>
             <li>{{ __('CV Search') }}</li>
             <li>{{ __('Interviewer') }}</li>
-            <li>{{ __('End-to-end') }}</li>
+            <li>{{ __('Talent Search') }}</li>
           </ul>
         </div>
 
